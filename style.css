@@ -1,6 +1,9 @@
-/* * {
-
-} */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
 a {
   text-decoration: none;
 }
@@ -17,7 +20,13 @@ li {
     header
 */
 header {
-  padding: 0 60px;
+  padding: 60px 3.5% 30px 3.5%;
+  height: 500px;
+  position: relative;
+
+  background-image: url("./pics/pc_teaser_02.jpg");
+  /* background-size: cover; */
+  /* object-fit: cover; */
 }
 header ul,
 small {
@@ -34,12 +43,34 @@ header ul li {
     mainvisual
 */
 .mainvisual {
-  background-image: url("/Applications/MAMP/htdocs/yamaden/pics/p2_bg_01.jpg");
+  height: 500px;
 }
+.logo {
+  position: absolute;
+  top: 0%;
+  left: 3.5%;
+  z-index: 7;
+}
+/* .mainvisual {
+  background-image: url("./pics/pc_teaser_02.jpg");
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 13%;
+  z-index: 5;
+} */
 
 /*
     greeting
 */
 .greeting {
-  background-image: url("/Applications/MAMP/htdocs/yamaden/pics/p2_bg_01.jpg");
+  height: 1000px;
+  background-color: pink;
+  /* background-image: url("./pics/p2_bg_01.jpg");
+  background-size: contain no-repeat; */
+}
+.greeting .background {
+  width: 100%;
+  object-fit: cover;
 }
