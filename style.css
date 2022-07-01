@@ -3,30 +3,47 @@
 }
 body {
   width: 100%;
+  font-family: メイリオ, Meiryo, arial, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
 }
 a {
   text-decoration: none;
+}
+p,
+span {
+  line-height: 2;
+  font-size: 15px;
+}
+.sec_title {
+  font-size: 25px;
+  text-align: center;
 }
 li {
   list-style: none;
 }
 .padding {
   padding: 0 240px;
+  padding: 0 17%;
 }
 .bold {
   font-weight: bold;
 }
+
 /*
     header
 */
+
 header {
-  padding: 60px 3.5% 30px 3.5%;
-  height: 500px;
   position: relative;
+  padding: 60px 3.5% 0 3.5%;
+  height: 570px;
+  width: 100%;
 
   background-image: url("./pics/pc_teaser_02.jpg");
   /* background-size: cover; */
-  /* object-fit: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 header ul,
 small {
@@ -35,42 +52,59 @@ small {
 }
 header ul li {
   padding-left: 50px;
+  font-size: 15px;
 }
 .header-swiped {
   display: none;
 }
+
 /*
     mainvisual
 */
-.mainvisual {
-  height: 500px;
-}
 .logo {
   position: absolute;
   top: 0%;
   left: 3.5%;
   z-index: 7;
 }
-/* .mainvisual {
-  background-image: url("./pics/pc_teaser_02.jpg");
-  background-size: cover;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 13%;
-  z-index: 5;
-} */
 
 /*
     greeting
 */
 .greeting {
-  height: 1000px;
-  background-color: pink;
-  /* background-image: url("./pics/p2_bg_01.jpg");
-  background-size: contain no-repeat; */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+  padding-top: 80px;
+  background-image: url("./pics/p2_bg_01.jpg");
+  /* background-size: cover; */
+  background-position: center;
 }
-.greeting .background {
-  width: 100%;
+.pic_of_ceo {
+  /* position: absolute; */
+  /* width: 31%; */
+  /* top: 83px; */
+
+  width: 31vw;
+  height: 55vh;
   object-fit: cover;
+}
+.greeting-text_box {
+  /* background-color: pink; */
+  width: 450px;
+  margin: 24vh 5% 24vh 20%;
+  margin: 24vh 0%;
+  /* padding: 10% 0 auto auto; */
+  height: 50vh;
+  /* width: 30vw; */
+  /* padding: 25vh 4vw; */
+}
+.greeting-span {
+  color: blue;
+  font-size: 18px;
+}
+
+.greeting-text_box .sec_title {
+  margin-bottom: 50px;
 }
