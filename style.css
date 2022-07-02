@@ -9,15 +9,17 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 p,
-span {
+span,
+th,
+td {
   line-height: 2;
   font-size: 15px;
 }
 .sec_title {
   font-size: 25px;
-  text-align: center;
   line-height: 2.5;
 }
 li {
@@ -25,7 +27,7 @@ li {
 }
 .padding {
   /* padding: 0 240px; */
-  padding: 0 17%;
+  padding: 0 15.5%;
 }
 .bold {
   font-weight: bold;
@@ -123,13 +125,94 @@ header ul li {
     corporate policy
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.corporate_policy {
+.sec-title {
   background-image: url("./pics/entry_title_bg.png");
-  /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: 1000px 1000px; */
+  margin-bottom: 40px;
 }
+/* .corporate_policy {
+  background-image: url("./pics/entry_title_bg.png");
+  background-repeat: no-repeat;
+} */
 .span-policy {
   color: red;
   font-size: 23px;
+}
+.subtitle {
+  background-image: url("./pics/sub_entry_title_bg.jpg");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin: 40px 0;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    company history
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+table {
+  width: 100%;
+  border: 1px solid black;
+  margin: 40px 0 100px 0;
+}
+tr {
+  border: 1px solid black;
+  font-size: 14px;
+}
+th {
+  border: 1px solid black;
+  background-color: #66d2fe;
+  font-weight: normal;
+  text-align: left;
+  padding: 20px 0 20px 20px;
+  /* padding: auto 0 auto 20px; */
+}
+td {
+  padding-left: 20px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    company info
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.table-company_info {
+  display: flex;
+}
+.table-company_info table {
+  width: 48%;
+  margin-right: calc(100% - (49% * 2));
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    map
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.map {
+  background-color: #5c6266;
+  height: 450px;
+  width: 100%;
+}
+.map-btn {
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+  border: 1px solid #0080c8;
+  padding: 10px;
+  font-size: 12px;
+}
+.map-btn:hover {
+  background-color: #0080c8;
+  color: white;
+  text-decoration: underline;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    pics of us
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pics {
+  display: flex;
+  justify-content: space-between;
+}
+.pics img {
+  width: 32%;
 }
