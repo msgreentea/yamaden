@@ -212,7 +212,42 @@ td {
 .pics {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.pics img {
-  width: 32%;
+.pic_of_us {
+  width: 31%;
+  display: block;
+  margin-right: calc(100% - (33% * 3));
+}
+.pic_of_us img {
+  width: 100%;
+  margin-bottom: 70px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    organization chart
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pic_org_chart {
+  margin-bottom: 40px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    members
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pics-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item {
+  width: 31%;
+  display: block;
+  margin-right: calc(100% - (33% * 3));
+}
+.title_members {
+  border: 2px solid #0080c8;
+  padding: 10px;
+  font-weight: normal;
 }
