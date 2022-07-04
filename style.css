@@ -47,29 +47,49 @@ small {
 */
 header small {
   font-size: 10px;
+  padding: 0 50px 0 0;
+  display: flex;
+  justify-content: right;
 }
 header small:hover {
   text-decoration: underline;
 }
 .header-normal {
   position: relative;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
   /* padding: 60px 3.5% 0 3.5%; */
-  padding: 10px 3.5% 0 3.5%;
+  padding: 20px 3.5% 0 3.5%;
   text-align: center;
-  height: 500px;
+  height: 50px;
   width: 100%;
+  z-index: 2;
 
-  background-image: url("./pics/pc_teaser_02.jpg");
+  /* background-image: url("./pics/pc_teaser_02.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
-header ul,
-small {
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #82cbeb;
+  /* background-color: #86d8ff; */
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.9;
+}
+header ul {
   display: flex;
   justify-content: right;
 }
 header ul li {
   padding-left: 50px;
+  padding-top: 30px;
 }
 .header-swiped {
   display: none;
@@ -80,11 +100,18 @@ header ul li {
     mainvisual
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.mainvisual {
+  background-image: url("./pics/pc_teaser_02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin-top: 20px;
+}
 .logo {
   position: absolute;
   top: 0%;
   left: 3.5%;
-  z-index: 7;
+  /* z-index: 7; */
 }
 
 /*
