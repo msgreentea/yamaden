@@ -22,6 +22,11 @@ td {
   font-size: 25px;
   line-height: 2.5;
 }
+.entry-title {
+  background-image: url("./pics/entry_title_bg.png");
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
 li {
   list-style: none;
 }
@@ -61,8 +66,9 @@ header small:hover {
   left: 0;
   /* padding: 60px 3.5% 0 3.5%; */
   padding: 20px 3.5% 0 3.5%;
+  background-color: white;
   text-align: center;
-  height: 50px;
+  height: 100px;
   width: 100%;
   z-index: 2;
 
@@ -71,13 +77,14 @@ header small:hover {
   background-repeat: no-repeat; */
 }
 nav {
+  /* position: relative; */
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #82cbeb;
-  /* background-color: #86d8ff; */
   height: 80px;
+  padding: auto 0;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -111,7 +118,7 @@ header ul li {
   position: absolute;
   top: 0%;
   left: 3.5%;
-  /* z-index: 7; */
+  z-index: 7;
 }
 
 /*
@@ -120,10 +127,12 @@ header ul li {
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .greeting {
-  height: 700px;
+  height: 1000px;
   padding-top: 6%;
+  padding-top: 17%;
   background-image: url("./pics/p2_bg_01.jpg");
   background-position: center;
+  background-repeat: no-repeat;
 }
 .side {
   display: flex;
@@ -139,20 +148,20 @@ header ul li {
   width: 31vw;
   height: 55vh;
   height: 450px;
+  height: 500px;
   object-fit: cover;
 }
 .greeting-text_box {
-  /* background-color: aqua; */
   width: 450px;
-  margin: 20vh 0%;
-  height: 50vh;
+  margin: 20vh 0% 30px 0;
+  margin: 150px 0% 30px 0;
 }
 .span-greeting {
   color: blue;
   font-size: 18px;
 }
 .greeting-text_box h3 {
-  margin: 50px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 .right {
   text-align: right;
@@ -162,11 +171,7 @@ header ul li {
     corporate policy
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.sec-title {
-  background-image: url("./pics/entry_title_bg.png");
-  background-repeat: no-repeat;
-  margin-bottom: 40px;
-}
+
 /* .corporate_policy {
   background-image: url("./pics/entry_title_bg.png");
   background-repeat: no-repeat;
@@ -205,6 +210,9 @@ th {
 td {
   padding-left: 20px;
   padding: 0 0 20px 20px;
+}
+.company_history {
+  margin-top: 100px;
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -312,7 +320,7 @@ footer {
 }
 footer img {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
   justify-content: left;
 }
 footer ul {
@@ -320,16 +328,18 @@ footer ul {
   font-weight: bold;
   font-size: 12px;
   justify-content: right;
+  margin-bottom: 10px;
+  padding-right: 50px;
 }
 footer a {
   padding-left: 10px;
   border-left: 1px solid black;
   margin-right: 10px;
-  line-height: 25px;
 }
 footer a:hover {
   text-decoration: underline;
 }
 footer small {
   line-height: 40px;
+  font-size: 10px;
 }
