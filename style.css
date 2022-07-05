@@ -35,8 +35,8 @@ small {
   font-size: 13px;
 }
 .padding {
-  /* padding: 0 240px; */
-  padding: 0 15.5%;
+  /* padding: 0 17%; */
+  padding: 0 240px;
 }
 .bold {
   font-weight: bold;
@@ -60,21 +60,23 @@ header small:hover {
   text-decoration: underline;
 }
 .header-normal {
+  background-color: white;
+  height: 100px;
   position: relative;
-  /* position: fixed; */
+  width: 100%;
   top: 0;
   left: 0;
-  /* padding: 60px 3.5% 0 3.5%; */
-  padding: 20px 3.5% 0 3.5%;
-  background-color: white;
   text-align: center;
-  height: 100px;
-  width: 100%;
   z-index: 2;
-
-  /* background-image: url("./pics/pc_teaser_02.jpg");
-  background-position: center;
-  background-repeat: no-repeat; */
+}
+header ul {
+  padding-right: 3.5%;
+  display: flex;
+  justify-content: right;
+}
+.header-normal ul li {
+  padding-left: 50px;
+  padding-top: 30px;
 }
 nav {
   /* position: relative; */
@@ -83,23 +85,16 @@ nav {
   top: 0;
   left: 0;
   background-color: #82cbeb;
-  height: 80px;
-  padding: auto 0;
+  height: 70px;
+  padding: 20px 0;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   opacity: 0.9;
 }
-header ul {
-  display: flex;
-  justify-content: right;
-}
-header ul li {
-  padding-left: 50px;
-  padding-top: 30px;
-}
-.header-swiped {
-  display: none;
+nav ul li {
+  margin-right: 70px;
+  padding: 20px 0;
 }
 
 /*
@@ -111,8 +106,11 @@ header ul li {
   background-image: url("./pics/pc_teaser_02.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  width: 100%;
+  height: 550px;
   margin-top: 20px;
+  position: absolute;
+  top: 0%;
 }
 .logo {
   position: absolute;
@@ -126,32 +124,29 @@ header ul li {
     greeting
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.pic_of_ceo {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
 .greeting {
-  height: 1000px;
-  padding-top: 6%;
-  padding-top: 17%;
   background-image: url("./pics/p2_bg_01.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  /* background-size: 100% auto; */
+  /* background-color: antiquewhite; */
+  height: 1200px;
+  margin-top: 250px;
+  padding-top: 330px;
 }
 .side {
+  /* background-color: cornflowerblue; */
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
 }
-.pic_of_ceo {
-  /* ※参考HPはベタベタのピクセル指定。レスポンシブは全く対応していない */
-  /* position: absolute; */
-  /* width: 31%; */
-  /* top: 83px; */
-
-  width: 31vw;
-  height: 55vh;
-  height: 450px;
-  height: 500px;
-  object-fit: cover;
-}
 .greeting-text_box {
+  /* background-color: aliceblue; */
   width: 450px;
   margin: 20vh 0% 30px 0;
   margin: 150px 0% 30px 0;
@@ -165,6 +160,9 @@ header ul li {
 }
 .right {
   text-align: right;
+}
+.greeting p {
+  margin: 10px 0;
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
