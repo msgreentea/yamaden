@@ -1,108 +1,12 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  width: 100%;
-  font-family: メイリオ, Meiryo, arial, "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
-  line-height: 2;
-  font-size: 15px;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-th,
-td {
-  font-size: 14px;
-  line-height: 2;
-}
-.sec_title {
-  font-size: 25px;
-  line-height: 2.5;
-}
-.entry-title {
-  background-image: url("./pics/entry_title_bg.png");
-  background-repeat: no-repeat;
-  margin-bottom: 40px;
-}
-li {
-  list-style: none;
-}
-small {
-  padding: 10px;
-  font-size: 13px;
-}
-.padding {
-  /* padding: 0 17%; */
-  padding: 0 240px;
-}
-.bold {
-  font-weight: bold;
-}
-.center {
-  text-align: center;
-}
-
-/*
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    header
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-*/
-header small {
-  font-size: 10px;
-  padding: 0 50px 0 0;
-  display: flex;
-  justify-content: right;
-}
-header small:hover {
-  text-decoration: underline;
-}
-.header-normal {
-  background-color: white;
-  height: 100px;
-  position: relative;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
-  z-index: 2;
-}
-header ul {
-  padding-right: 3.5%;
-  display: flex;
-  justify-content: right;
-}
-.header-normal ul li {
-  padding-left: 50px;
-  padding-top: 30px;
-}
-nav {
-  /* position: relative; */
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #82cbeb;
-  height: 70px;
-  padding: 20px 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  opacity: 0.9;
-}
-nav ul li {
-  margin-right: 70px;
-  padding: 20px 0;
-}
-
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     mainvisual
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .mainvisual {
+  background-image: url("./pics/pc_teaser_02.jpg");
+}
+/* .mainvisual {
   background-image: url("./pics/pc_teaser_02.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -117,7 +21,7 @@ nav ul li {
   top: 0%;
   left: 3.5%;
   z-index: 7;
-}
+} */
 
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -128,35 +32,30 @@ nav ul li {
   width: 450px;
   height: 450px;
   object-fit: cover;
+  padding-top: 320px;
 }
 .greeting {
   background-image: url("./pics/p2_bg_01.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: 100% auto; */
-  /* background-color: antiquewhite; */
   height: 1200px;
   margin-top: 250px;
+  /* margin-top: 500px; */
   padding-top: 330px;
+  padding-top: 1030px;
 }
-.side {
-  /* background-color: cornflowerblue; */
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0px;
-}
+
 .greeting-text_box {
-  /* background-color: aliceblue; */
   width: 450px;
-  margin: 20vh 0% 30px 0;
-  margin: 150px 0% 30px 0;
+  margin-top: 490px;
+  margin-bottom: 30px;
 }
 .span-greeting {
   color: blue;
   font-size: 18px;
 }
 .greeting-text_box h3 {
-  margin: 30px 0 10px 0;
+  margin: 30px 0 20px 0;
 }
 .right {
   text-align: right;
@@ -178,12 +77,7 @@ nav ul li {
   color: red;
   font-size: 23px;
 }
-.subtitle {
-  background-image: url("./pics/sub_entry_title_bg.jpg");
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  margin: 40px 0;
-}
+
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     company history
@@ -287,57 +181,17 @@ td {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.pic-members img {
+  width: 100%;
+  padding-bottom: 10px;
+}
 .item {
   width: 31%;
-  display: block;
+  /* display: block; */
   /* margin-right: calc(100% - (33% * 3)); */
 }
 .title_members {
   border: 2px solid #0080c8;
-  padding: 10px;
+  padding: 5px;
   font-weight: normal;
-}
-/*
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    contact
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-*/
-.contact {
-  background-color: #66d2fd;
-  margin-top: 80px;
-}
-/*
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    footer
-  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-*/
-footer {
-  background-image: url("./pics/footer_bg.jpg");
-  height: 300px;
-  width: 100%;
-}
-footer img {
-  padding-top: 30px;
-  padding-bottom: 22px;
-  justify-content: left;
-}
-footer ul {
-  display: flex;
-  font-weight: bold;
-  font-size: 12px;
-  justify-content: right;
-  margin-bottom: 10px;
-  padding-right: 50px;
-}
-footer a {
-  padding-left: 10px;
-  border-left: 1px solid black;
-  margin-right: 10px;
-}
-footer a:hover {
-  text-decoration: underline;
-}
-footer small {
-  line-height: 40px;
-  font-size: 10px;
 }

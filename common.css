@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: メイリオ, Meiryo, arial, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  line-height: 2;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+th,
+td {
+  font-size: 14px;
+  line-height: 2;
+}
+.sec_title {
+  font-size: 25px;
+  line-height: 2.5;
+}
+.entry-title {
+  background-image: url("./pics/entry_title_bg.png");
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+li {
+  list-style: none;
+}
+small {
+  padding: 10px;
+  font-size: 13px;
+}
+.padding {
+  /* padding: 0 17%; */
+  padding: 0 240px;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.side {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.subtitle {
+  background-image: url("./pics/sub_entry_title_bg.jpg");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin: 40px 0;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    header
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+header small {
+  font-size: 10px;
+  padding: 0 50px 0 0;
+  display: flex;
+  justify-content: right;
+}
+header small:hover {
+  text-decoration: underline;
+}
+.header-normal {
+  background-color: white;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+}
+header ul {
+  padding-right: 3.5%;
+  display: flex;
+  justify-content: right;
+}
+.header-normal ul li {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+nav {
+  /* position: relative; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #60bee6;
+  height: 70px;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.8;
+}
+nav ul li {
+  margin-right: 115px;
+  padding: 20px 0;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    mainvisual
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.mainvisual {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-top: 20px;
+  position: absolute;
+  top: 0%;
+}
+.logo {
+  position: absolute;
+  top: 0%;
+  left: 3.5%;
+  z-index: 7;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    contact
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.contact {
+  background-color: #66d2fd;
+  margin-top: 80px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    footer
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+footer {
+  background-image: url("./pics/footer_bg.jpg");
+  height: 300px;
+  width: 100%;
+}
+footer img {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  justify-content: left;
+}
+footer ul {
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+  justify-content: right;
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
+footer a {
+  padding-left: 10px;
+  border-left: 1px solid black;
+  margin-right: 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer small {
+  line-height: 40px;
+  font-size: 10px;
+}
