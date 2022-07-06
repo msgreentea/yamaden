@@ -25,7 +25,8 @@
 
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    greeting
+      代表ご挨拶
+      greeting
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .pic_of_ceo {
@@ -40,9 +41,6 @@
   background-repeat: no-repeat;
   height: 1200px;
   margin-top: 250px;
-  /* margin-top: 500px; */
-  padding-top: 330px;
-  padding-top: 1030px;
 }
 
 .greeting-text_box {
@@ -65,7 +63,8 @@
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    corporate policy
+      企業方針
+      corporate policies
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 
@@ -80,7 +79,8 @@
 
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    company history
+      沿革 -社歴-
+      company history
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 table {
@@ -108,19 +108,21 @@ td {
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    company info
+      会社概要
+      company info
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .table-company_info {
   display: flex;
+  justify-content: space-between;
 }
 .table-company_info table {
-  width: 48%;
-  margin-right: calc(100% - (49% * 2));
+  width: 49%;
+  margin-right: calc(100% - (50% * 2));
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    map
+      google map
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .map {
@@ -143,7 +145,8 @@ td {
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    pics of us
+      会社風景
+      pics of us
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .pics {
@@ -152,20 +155,19 @@ td {
   flex-wrap: wrap;
 }
 .pic_of_us {
-  width: 31%;
+  width: 32%;
   display: block;
-  margin-right: calc(100% - (33% * 3));
+  margin-right: calc(100% - (33.3% * 3));
 }
 .pic_of_us img {
   width: 100%;
   margin-bottom: 70px;
 }
-.whiter:hover {
-  opacity: 0.8;
-}
+
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    organization chart
+      組織図
+      organization chart
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .pic_org_chart {
@@ -173,22 +175,29 @@ td {
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    members
+      社員紹介
+      members
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.members {
+  background-color: azure;
+}
+
 .pics-members {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.pic-members img {
-  width: 100%;
-  padding-bottom: 10px;
+.pic-members {
+  margin-bottom: calc(100% - (33.3% * 3));
+  /* margin-right: calc(100% - (33% * 3)); */
+  margin-right: 30px;
+}
+.pic-members:nth-child(3n) {
+  margin-right: 0;
 }
 .item {
-  width: 31%;
-  /* display: block; */
-  /* margin-right: calc(100% - (33% * 3)); */
+  width: 30%;
 }
 .title_members {
   border: 2px solid #0080c8;

@@ -16,3 +16,21 @@
     job description
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.job_description {
+  margin-bottom: 100px;
+  margin-top: 500px;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    仕事内容のご紹介
+    work sceneries
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.items-work_sceneries {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.items-work_sceneries a img {
+  width: 31%;
+}

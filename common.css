@@ -38,6 +38,12 @@ small {
   /* padding: 0 17%; */
   padding: 0 240px;
 }
+.inner {
+  background-color: #f5f1ed;
+  width: 960px;
+  margin: 0 auto;
+  display: block;
+}
 .bold {
   font-weight: bold;
 }
@@ -54,6 +60,9 @@ small {
   background-repeat: no-repeat;
   padding-left: 20px;
   margin: 40px 0;
+}
+.whiter:hover {
+  opacity: 0.8;
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
