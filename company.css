@@ -86,7 +86,7 @@
 table {
   width: 100%;
   border: 1px solid black;
-  margin: 40px 0 100px 0;
+  margin-bottom: 100px;
 }
 tr {
   border: 1px solid black;
@@ -143,26 +143,26 @@ td {
   color: white;
   text-decoration: underline;
 }
-/*
+/* 
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
       会社風景
       pics of us
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.pics {
+/* .pics {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.pic_of_us {
+.trisection {
   width: 32%;
   display: block;
   margin-right: calc(100% - (33.3% * 3));
 }
-.pic_of_us img {
+.trisection img {
   width: 100%;
-  margin-bottom: 70px;
-}
+  margin-bottom: 60px;
+} */
 
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -179,10 +179,6 @@ td {
       members
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.members {
-  background-color: azure;
-}
-
 .pics-members {
   display: flex;
   justify-content: space-between;
@@ -203,4 +199,5 @@ td {
   border: 2px solid #0080c8;
   padding: 5px;
   font-weight: normal;
+  margin-bottom: 30px;
 }

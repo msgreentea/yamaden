@@ -26,11 +26,34 @@
     work sceneries
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.items-work_sceneries {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+.work_sceneries .trisection img {
+  margin-bottom: 10px;
 }
-.items-work_sceneries a img {
-  width: 31%;
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      仕事の流れ
+      work flow
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.work_flow {
+  margin-bottom: 30px;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    banners
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.banners {
+  background-image: url("./pics/business/banner_bg.jpg");
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 100%;
+  margin-bottom: 0%;
+}
+.banners a {
+  width: 47%;
+  padding: 100px 0;
+}
+.banners img {
+  width: 100%;
 }
