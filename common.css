@@ -65,11 +65,25 @@ small {
 .whiter:hover {
   opacity: 0.8;
 }
+.btn {
+  display: block;
+  width: 100%;
+}
+.btn:hover {
+  color: white;
+  text-decoration: underline;
+}
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
       画像３分割
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.frame_title {
+  border: 2px solid #0080c8;
+  padding: 5px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
 .pics {
   display: flex;
   justify-content: space-between;

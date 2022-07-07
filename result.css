@@ -12,6 +12,30 @@
       Construction Results
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.items {
+  margin-top: 70px;
+}
 .construction_results {
   height: 1000px;
+  margin-top: 500px;
+}
+.frame_title {
+  padding: 0%;
+}
+.frame_title a:hover {
+  text-decoration: underline;
+}
+
+.trisection img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cr-btn {
+  background-color: #0080c8;
+  color: white;
+  font-weight: bold;
+  padding: 2px;
+}
+.cr-btn:hover {
+  background-color: #072a56;
 }
