@@ -1,3 +1,6 @@
+p {
+  padding-bottom: 10px;
+}
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     mainvisual
@@ -13,8 +16,53 @@
 */
 .pride {
   background-image: url("./pics/recruit/p5_bg_01.jpg");
+  /* background-image: url(./pics/recruit/p5_bg_01.jpg)no-repeat/center/top/transparent; */
   background-repeat: no-repeat;
-  width: 100%;
-  height: 1000px;
-  margin-top: 500px;
+  background-position: top;
+  height: 750px;
+  margin-top: 490px;
+  padding-top: 60px;
+}
+.pride h1 {
+  font-size: 30px;
+}
+.pride p {
+  line-height: 2;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    features
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.features .entry-title {
+  margin-bottom: 40px;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        Application Guidelines
+        募集要項
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+table td p {
+  line-height: 1.7;
+}
+.ag-table th {
+  width: 15%;
+}
+.ag-table td {
+  width: 85%;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      Qualifications
+      電気工事士の各種資格！こんな資格が取得可能！
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.table-qualifications th {
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.table-qualifications td {
+  padding-top: 15px;
+  border-right: 1px solid black;
 }

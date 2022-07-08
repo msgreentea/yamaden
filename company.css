@@ -51,11 +51,6 @@
       corporate policies
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-
-/* .corporate_policy {
-  background-image: url("./pics/entry_title_bg.png");
-  background-repeat: no-repeat;
-} */
 .span-policy {
   color: red;
   font-size: 23px;
@@ -67,26 +62,6 @@
       company history
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-table {
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 100px;
-}
-tr {
-  border: 1px solid black;
-  font-size: 14px;
-}
-th {
-  border: 1px solid black;
-  background-color: #66d2fe;
-  font-weight: normal;
-  text-align: left;
-  padding: 10px 20px 0px 20px;
-}
-td {
-  padding-left: 20px;
-  padding: 0 0 20px 20px;
-}
 .company_history {
   margin-top: 100px;
 }

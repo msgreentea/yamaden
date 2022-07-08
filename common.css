@@ -80,7 +80,7 @@ small {
 */
 .frame_title {
   border: 2px solid #0080c8;
-  padding: 5px;
+  padding: 3px;
   font-weight: normal;
   margin-bottom: 30px;
 }
@@ -97,6 +97,38 @@ small {
 .trisection img {
   width: 100%;
   margin-bottom: 60px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      2分割
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.half {
+  width: 47%;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      table
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+table {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 100px;
+}
+tr {
+  border: 1px solid black;
+  font-size: 14px;
+}
+th {
+  border: 1px solid black;
+  background-color: #66d2fe;
+  font-weight: normal;
+  text-align: left;
+  padding: 15px 20px 0px 15px;
+}
+td {
+  padding: 0 0 15px 15px;
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
