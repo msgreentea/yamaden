@@ -23,6 +23,9 @@ p {
   margin-top: 490px;
   padding-top: 60px;
 }
+.pride .side {
+  padding: 50px 0;
+}
 .pride h1 {
   font-size: 30px;
 }
@@ -65,4 +68,40 @@ table td p {
 .table-qualifications td {
   padding-top: 15px;
   border-right: 1px solid black;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      Frequently Asked Questions
+      よくあるご質問
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.faq .side {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  margin: 30px 0;
+}
+.faq .frame_title {
+  margin-bottom: 70px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.ul-faq li {
+  color: #0d79fc;
+  padding: 5px 0;
+  border-bottom: 1px dotted #0080c8;
+}
+.ul-faq li a:hover {
+  color: #0d79fc;
+  text-decoration: underline;
+}
+.btn-faq {
+  background-color: #0080c8;
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  padding: 7px;
+  margin: 15px 0 auto auto;
+}
+.btn-faq:hover {
+  background-color: #072a56;
 }
