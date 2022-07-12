@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="shortcut icon" href="./pics/favicon.ico" type="image/x-icon">
-  <title>＊ | 有限会社山田電気</title>
+  <title>＊お問い合わせ/応募フォーム | 有限会社山田電気</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <!-- ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
             これ共通じゃない！
       ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !  -->
-      <a href=""><small>|有限会社山田電気</small></a>
+      <a href=""><small>お問い合わせ/応募フォーム|有限会社山田電気</small></a>
       <!-- ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
               これ共通じゃない！
       ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !  -->
@@ -58,14 +58,101 @@
         <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
       </div>
       <div class="side">
-        <table>
-          <th>
-            <span>※必須</span>
-          </th>
-          <td></td>
-        </table>
+        <div class="form-left">
+          <table>
+            <tr>
+              <th class="th-form">ご用件<br>
+                <span>※必須</span>
+              </th>
+              <td>
+                <p class="middle"><input type="radio" id="form-radio-0" name="requirement" value="0"><label for="form-radio-0">求人のご応募</label></p>
+                <p class="middle"><input type="radio" id="form-radio-1" name="requirement" value="1"><label for="form-radio-1">仕事のご相談</label></p>
+                <p class="middle"><input type="radio" id="form-radio-2" name="requirement" value="2"><label for="form-radio-2">お問い合わせ</label></p>
+              </td>
+            </tr>
+            <tr>
+              <th class="th-form">お名前<br>
+                <span>※必須</span>
+              </th>
+              <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+              <th class="th-form">ふりがな<br>
+                <span>※必須</span>
+              </th>
+              <td><input type="text" name="kana"></td>
+            </tr>
+            <tr>
+              <th class="th-form">E-MAIL<br>
+                <span>※必須</span>
+              </th>
+              <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+              <th class="th-form">電話番号<br>
+                <span>※必須</span>
+              </th>
+              <!-- <td><label for=""><input type="text" name="text"></label></td> -->
+            </tr>
+            <tr>
+              <th class="th-form">FAX番号<br>
+              </th>
+              <!-- <td><label for=""><input type="text" name="text"></label></td> -->
+            </tr>
+            <tr>
+              <th class="th-form">郵便番号<br>
+              </th>
+              <!-- <td><label for=""><input type="text" name="text"></label></td> -->
+            </tr>
+            <tr>
+              <th class="th-form">都道府県<br>
+              </th>
+              <td><input type="text" name="prefecture"></td>
+            </tr>
+            <tr>
+              <th class="th-form">市町村〜番地<br>
+              </th>
+              <td><label for=""><input type="text" name="city"></label></td>
+            </tr>
+            <tr>
+              <th class="th-form">建物名<br>
+              </th>
+              <td><input type="text" name="building"></td>
+            </tr>
+            <tr>
+              <th class="th-form">プライバシーポリシー<br>
+                <span>※必須</span>
+              </th>
+              <td><input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label></td>
+            </tr>
+  
+            <tr>
+              <th class="th-form">お問い合わせ内容<br>
+                <span>※必須</span>
+              </th>
+              <td><textarea name="textarea" id="" cols="50" rows="10"></textarea></td>
+            </tr>
+          </table>
+          <input type="button" class="btn-form" value="確認画面へ">
+        </div>
+        <div class="form-right">
+          <p>有限会社山田電気では、メールやお電話での求人ご応募・お問い合わせを承っております。 メールでのご応募・お問い合わせはご返信までお時間がかかる場合もございますので、お急ぎの方はお電話にて直接ご応募・お問い合わせ下さい。
+          尚、ご応募・お問い合わせの際は、下記プライバシーポリシーをご確認ください。</p>
+        </div>
       </div>
     </section>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+      Privacy Policy
+      プライバシーポリシー
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+  <section class="pp inner">
+    <div class="entry-title">
+      <h1 class="sec_title bold center">プライバシーポリシー</h1>
+    </div>
+    <p>お預かりした個人情報は、個人情報保護法に基づき管理致します。<br>
+      お問い合わせの際は下記の「個人情報保護方針」をご確認ください。
+    </p>
+  </section>
 
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         footer

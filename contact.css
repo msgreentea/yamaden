@@ -12,6 +12,31 @@
     応募フォーム・お問い合わせ
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+.form {
+  margin-top: 490px;
+}
+.form table {
+  margin-bottom: 20px;
+}
+.btn-form {
+  margin-bottom: 40px;
+}
 .form table th span {
   color: yellow;
+}
+.form .th-form {
+  font-weight: bold;
+}
+.middle {
+  vertical-align: middle;
+}
+input[type="text"] {
+  width: 300px;
+}
+.form-left {
+  width: 66%;
+}
+.form-right {
+  width: 31%;
+  line-height: 2.5;
 }
