@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 body {
   width: 100%;
   font-family: メイリオ, Meiryo, arial, "ヒラギノ角ゴ Pro W3",

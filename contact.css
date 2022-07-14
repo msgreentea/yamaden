@@ -15,6 +15,16 @@
 .form {
   margin-top: 490px;
 }
+.form-left {
+  width: 66%;
+}
+.form-right {
+  width: 31%;
+  line-height: 2.5;
+}
+.middle {
+  vertical-align: middle;
+}
 .form table {
   margin-bottom: 20px;
 }
@@ -24,19 +34,46 @@
 .form table th span {
   color: yellow;
 }
-.form .th-form {
+.form .form-th {
   font-weight: bold;
 }
-.middle {
-  vertical-align: middle;
+.form-shorter input {
+  width: 50px;
 }
+.form table td {
+  padding: 0 0 15px 5px;
+}
+/* .form-th,
+.form table td {
+  vertical-align: middle;
+} */
+
 input[type="text"] {
   width: 300px;
+  margin-top: 10px;
 }
-.form-left {
-  width: 66%;
+/* input[type="radio"] {
+  margin-bottom: 30px;
+} */
+input[type="select"] {
+  border: 1px solid black;
 }
-.form-right {
-  width: 31%;
-  line-height: 2.5;
+
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      Privacy Policy
+      プライバシーポリシー
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pp {
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.pp-subtitle {
+  font-size: 17px;
+}
+.pp-list li {
+  list-style: square;
+  list-style-position: inside;
+  padding-left: 10px;
 }
