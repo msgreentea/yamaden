@@ -4,7 +4,7 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .mainvisual {
-  background-image: url("./pics/pc_teaser_02.jpg");
+  background-image: url("./pics/company/pc_teaser_02.jpg");
 }
 
 /*
@@ -20,7 +20,7 @@
   padding-top: 320px;
 }
 .greeting {
-  background-image: url("./pics/p2_bg_01.jpg");
+  background-image: url("./pics//company/p2_bg_01.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 1200px;

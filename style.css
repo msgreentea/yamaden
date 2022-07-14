@@ -4,6 +4,78 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .mainvisual {
-  background-image: url("./pics/pc_teaser_02.jpg");
-  height: 2000px;
+  background-color: azure;
+  /* background-image: url("./pics/pc_teaser_02.jpg"); */
+  height: 100vh;
+  /* margin-top: 200vh; */
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    to_business
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.to_business {
+  background-image: url("./pics/index/top_bg_01.jpg");
+  /* padding-top: 100vh; */
+  height: 100vh;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    blank space
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.blank_space {
+  background-color: darkgray;
+  background-image: url("./pics/index/para_bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    to_business
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    to_result
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.to_result {
+  background-image: url("./pics/index/top_bg_04.jpg");
+  height: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    新着情報
+    news
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.news {
+  background-image: url("./pics/index/bg_top_rss.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+  line-height: 2;
+}
+.ul-news li {
+  border-bottom: 1px dotted #0080c8;
+  padding: 10px 0;
+}
+.news-left-subtitle {
+  color: #0d79fc;
+  font-size: 16px;
+}
+.news-left {
+  width: 81%;
+}
+.news-right {
+  width: 16%;
+}
+.news-right-img {
+  width: 100%;
+  width: 150px;
+  height: auto;
 }
