@@ -1,13 +1,64 @@
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    mainvisual
+    header
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+header small {
+  background-color: inherit;
+}
+.header-normal {
+  background-color: inherit;
+}
+header {
+  /* background-color: azure; */
+  /* height: 120vh; */
+  /* position: absolute; */
+  /* z-index: 99; */
+  /* top: 0; */
+  /* left: 0; */
+  /* background-image: url("./pics/index/mainvisual/slid_01.jpg"); */
+}
 .mainvisual {
-  background-color: azure;
-  /* background-image: url("./pics/pc_teaser_02.jpg"); */
-  height: 100vh;
-  /* margin-top: 200vh; */
+  height: 130vh;
+  height: 1100px;
+  position: absolute;
+  /* z-index: 99; */
+  top: 0;
+  top: -20px;
+  left: 0;
+  /* background-color: antiquewhite; */
+}
+.img1 {
+  background-image: url("./pics/index/mainvisual/slid_01.jpg");
+}
+.img2 {
+  background-image: url("./pics/index/mainvisual/slid_02.jpg");
+}
+.img3 {
+  background-image: url("./pics/index/mainvisual/slid_03.jpg");
+}
+.img4 {
+  background-image: url("./pics/index/mainvisual/slid_04.jpg");
+}
+.img5 {
+  background-image: url("./pics/index/mainvisual/slid_05.jpg");
+}
+.img6 {
+  background-image: url("./pics/index/mainvisual/slid_06.jpg");
+}
+.img7 {
+  background-image: url("./pics/index/mainvisual/slid_07.jpg");
+}
+.img8 {
+  background-image: url("./pics/index/mainvisual/slid_08.jpg");
+}
+header .slick-dots {
+  bottom: 4%;
+  z-index: 1;
+}
+
+.header-swiped {
+  /* z-index: 2; */
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -15,9 +66,25 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .to_business {
+  background-color: blue;
   background-image: url("./pics/index/top_bg_01.jpg");
-  /* padding-top: 100vh; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 600px;
   height: 100vh;
+  position: relative;
+}
+.text-to_business {
+  color: white;
+  /* background-color: antiquewhite; */
+  width: 540px;
+  position: absolute;
+  top: 30%;
+  left: 210px;
+}
+.btn-to_business {
+  padding-top: 70px;
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -25,11 +92,13 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .blank_space {
-  background-color: darkgray;
   background-image: url("./pics/index/para_bg.jpg");
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  position: fixed;
+  position: sticky;
+  z-index: 9;
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -38,13 +107,33 @@
 */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    to_recruit
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.to_recruit {
+  background-image: url("./pics/index/top_bg_02.png");
+  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 130vh;
+  display: flex;
+}
+.text-to_recruit {
+  height: 300px;
+  margin: auto auto 50px auto;
+}
+.btn-to_recruit {
+  padding-top: 15px;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     to_result
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .to_result {
   background-image: url("./pics/index/top_bg_04.jpg");
-  height: 110vh;
-  background-position: center;
+  height: 117vh;
+  background-position: top;
   background-repeat: no-repeat;
 }
 /*

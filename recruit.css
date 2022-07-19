@@ -3,10 +3,10 @@ p {
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    mainvisual
+    header
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.mainvisual {
+header {
   background-image: url("./pics/recruit/pc_teaser_05.jpg");
 }
 /*
@@ -20,7 +20,8 @@ p {
   background-repeat: no-repeat;
   background-position: top;
   height: 750px;
-  margin-top: 490px;
+  margin-top: 20px;
+  margin-bottom: 70px;
   padding-top: 60px;
 }
 .pride .side {

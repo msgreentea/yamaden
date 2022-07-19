@@ -1,9 +1,9 @@
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-    mainvisual
+    header
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.mainvisual {
+header {
   background-image: url("./pics/company/pc_teaser_02.jpg");
 }
 
@@ -17,20 +17,24 @@
   width: 450px;
   height: 450px;
   object-fit: cover;
-  padding-top: 320px;
+  /* padding-top: 90px; */
+  position: absolute;
+  top: 80px;
 }
 .greeting {
   background-image: url("./pics//company/p2_bg_01.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  height: 1200px;
-  margin-top: 250px;
+  background-position: top;
+  height: 900px;
+
+  position: relative;
 }
 
 .greeting-text_box {
+  /* background-color: beige; */
   width: 450px;
   margin-top: 490px;
-  margin-bottom: 30px;
+  margin: 243px 0 30px auto;
 }
 .span-greeting {
   color: blue;

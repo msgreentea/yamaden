@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./pics/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>＊電気設備工事の設計・施工は大阪府の有限会社山田電気へ | 有限会社山田電気</title>
     <!-- 要改善　タイトル途切れてるんですけど… -->
   </head>
@@ -16,24 +20,16 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         header
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <header>
-    <section class="header-normal">
-      <!-- ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-            これ共通じゃない！
-      ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !  -->
-      <a href="./index.html"><small>電気設備工事の設計・施工は大阪府の有限会社山田電気へ|求人募集中</small></a>
-      <!-- ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !
-              これ共通じゃない！
-      ！ ! ! ! ! ! ! ! ! ! ! ! ! ! ! !  -->
-      <ul id="header-normal" class="header-normal">
-        <li class="bold"><a href="./company.html">会社概要</a></li>
-        <li class="bold"><a href="./business.html">業務内容</a></li>
-        <li class="bold"><a href="./result.html">施工実績</a></li>
-        <li class="bold"><a href="./recruit.html">採用情報</a></li>
-        <li class="bold"><a href="./contact.html">応募フォーム<br>お問い合わせ</a></li>
-      </ul>
-    </section>
-    <nav class="padding center">
+  <header class="header">
+    <a href="./index.html" class="underline"><small>電気設備工事の設計・施工は大阪府の有限会社山田電気へ|有限会社山田電気</small></a>
+    <ul id="header-normal" class="header-normal">
+      <li class="bold"><a href="./company.html">会社概要</a></li>
+      <li class="bold"><a href="./business.html">業務内容</a></li>
+      <li class="bold"><a href="./result.html">施工実績</a></li>
+      <li class="bold"><a href="./recruit.html">採用情報</a></li>
+      <li class="bold"><a href="./contact.html">応募フォーム<br>お問い合わせ</a></li>
+    </ul>
+    <!-- <nav class="header-swiped padding center">
       <ul>
         <li class="bold"><a href="./company.html">会社概要</a></li>
         <li class="bold"><a href="./business.html">業務内容</a></li>
@@ -41,23 +37,52 @@
         <li class="bold"><a href="./recruit.html">採用情報</a></li>
         <li class="bold"><a href="./contact.html">応募フォーム<br>お問い合わせ</a></li>
       </ul>
-    </nav>
+    </nav> -->
+    <a href="./index.html" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+    <div class="mainvisual img1"></div>
+    <div class="mainvisual img2"></div>
+    <div class="mainvisual img3"></div>
+    <div class="mainvisual img4"></div>
+    <div class="mainvisual img5"></div>
+    <div class="mainvisual img6"></div>
+    <div class="mainvisual img7"></div>
+    <div class="mainvisual img8"></div>
   </header>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       mainvisual
+      https://rilaks.jp/blog/website-creation/slide-banner/
+      https://125naroom.com/web/3486
+      検索検索ぅ
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="mainvisual">
-    <a href="./index.html" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+    <!-- <a href="./index.html" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a> -->
+
+    <!-- <div class="img01"></div>
+    <div class="img02"></div>
+    <div class="img03"></div>
+    <div class="img04"></div>
+    <div class="img05"></div>
+    <div class="img06"></div>
+    <div class="img07"></div>
+    <div class="img08"></div> -->
   </section>
 
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_business
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="to_business">
-
+    <div class="text-to_business">
+      <p>有限会社山田電気は大阪市にあり、総合電気工事会社として社会に貢献できるよう日々取り組んでおります。<br>
+      ビル・住宅等の電気設備工事、商業施設等の電気設備工事、工場電気の電気設備工事、生産プラントの電気設備工事、防犯カメラ・ＬＡＮ設備工事、空調・換気の電気設備工事など、ありとあらゆる電気工事のスペシャリスト集団なんです。</p>
+      <br>
+      <p>建築現場におきましても腕を磨いて行く事のみならず、社会に貢献できる人間集団作りに邁進しております。</p>
+      <!-- 要改善　ボタンhover時動きつけたいなぁ -->
+      <a class="btn btn-to_business center" href="./business.html"><img src="./pics/index/business_btn.png" alt="業務内容はこちら"></a>
+    </div>
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       blank space
+      https://webdesignfacts.net/entry/css-scroll-animation/#gsc.tab=0
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="blank_space">
 
@@ -65,8 +90,17 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_recruit
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="to_recruit">
-  
+  <section class="to_recruit center">
+    <div class="text-to_recruit">
+      <p>あなたの頑張りがきちんと評価される！<br>
+      やり甲斐あるアットホームな職場が仲間募集中！</p>
+      <br>
+      <p>この業界では 珍しい土日祝の週休2日制！ / 仕事もプライベートも充実<br>
+      必要な資格取得を支援(消防設備士、電気工事施工管理技師、 溶接、玉掛けなど、一生モノの資格が取得可能)<br>
+      昇給年1回・賞与年2回 / 交通費全額支給<br>
+      各種社会保険完備 / 各種手当有・資格手当有 / 社員旅行有</p>
+      <a class="btn btn-to_recruit center" href="./business.html"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
+    </div>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       banners
