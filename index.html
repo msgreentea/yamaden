@@ -10,12 +10,17 @@
     <link rel="shortcut icon" href="./pics/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- ライブラリ読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jsファイル読み込み -->
+    <script src="sample.js"></script>
+    
     <title>＊電気設備工事の設計・施工は大阪府の有限会社山田電気へ | 有限会社山田電気</title>
     <!-- 要改善　タイトル途切れてるんですけど… -->
   </head>
-
+  
   <body>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         header
@@ -70,7 +75,7 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_business
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="to_business">
+  <section class="to_business scrollbox">
     <div class="text-to_business">
       <p>有限会社山田電気は大阪市にあり、総合電気工事会社として社会に貢献できるよう日々取り組んでおります。<br>
       ビル・住宅等の電気設備工事、商業施設等の電気設備工事、工場電気の電気設備工事、生産プラントの電気設備工事、防犯カメラ・ＬＡＮ設備工事、空調・換気の電気設備工事など、ありとあらゆる電気工事のスペシャリスト集団なんです。</p>
@@ -83,14 +88,16 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       blank space
       https://webdesignfacts.net/entry/css-scroll-animation/#gsc.tab=0
+      スクロールエフェクト
+      パララックス
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="blank_space">
+  <section id="parallax" class="blank_space parallax-bg">
 
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_recruit
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="to_recruit center">
+  <section class="to_recruit center scrollbox">
     <div class="text-to_recruit">
       <p>あなたの頑張りがきちんと評価される！<br>
       やり甲斐あるアットホームな職場が仲間募集中！</p>
@@ -99,7 +106,7 @@
       必要な資格取得を支援(消防設備士、電気工事施工管理技師、 溶接、玉掛けなど、一生モノの資格が取得可能)<br>
       昇給年1回・賞与年2回 / 交通費全額支給<br>
       各種社会保険完備 / 各種手当有・資格手当有 / 社員旅行有</p>
-      <a class="btn btn-to_recruit center" href="./business.html"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
+      <a class="btn btn-to_recruit center" href="./recruit.html"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
     </div>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -113,18 +120,23 @@
       to_result
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="to_result">
-  
+    <div class="text-to_result">
+      <h2>大きな現場から小さな現場まで各現場を担当</h2>
+      <div class="text-to_result-bottom">
+        <p>ビルやマンション、工場、プラントなどの電気設備工事を手掛けてきました。有名ゼネコンや大手メーカーを顧客に、好調な業績を続けています。</p>
+        <br>
+        <p>手掛けて来ました実績の多さが、自信の証です。<br>
+        丁寧・安全・迅速に電気設備工事してまいります。</p>
+        <a class="btn btn-to_result center" href="./result.html"><img src="./pics/index/results_btn.png" alt="施工実績はこちら"></a>
+      </div>
+    </div>
   </section>
-
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-      to_recruit
-  -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       新着情報
       news
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="padding news">
-    <div class="entry-title">
+    <div class="entry-title news-title">
       <h1 class="sec_title bold center">新着情報</h1>
     </div>
     <ul class="ul-news">
@@ -157,7 +169,7 @@
       contacts
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <section class="contact">
-    <a href="" class="inner whiter"><img src="./pics/contact_banner.png" alt=""></a>
+    <a href="" class="padding whiter"><img src="./pics/contact_banner.png" alt=""></a>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       footer

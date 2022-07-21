@@ -173,6 +173,9 @@ header ul {
   display: flex;
   justify-content: right;
 }
+header ul li {
+  text-align: center;
+}
 .header-normal li {
   padding-left: 50px;
   padding-top: 30px;
