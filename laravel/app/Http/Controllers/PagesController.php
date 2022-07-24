@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    // indexを表示
+    public function getIndex()
+    {
+        return view('index');
+    }
+
     // companyを表示
     public function getCompany()
     {
@@ -22,5 +28,17 @@ class PagesController extends Controller
     public function getResult()
     {
         return view('result');
+    }
+
+    // recruitを表示
+    public function getRecruit()
+    {
+        return view('recruit');
+    }
+
+    // contactを表示
+    public function getContact()
+    {
+        return view('contact');
     }
 }

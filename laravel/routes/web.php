@@ -18,6 +18,9 @@ use App\Http\Controllers\PagesController;
 //     return view('welcome');
 // });
 
-Route::get('/', [PagesController::class, 'getCompany']);
+Route::get('/', [PagesController::class, 'getIndex']);
+Route::get('/company', [PagesController::class, 'getCompany']);
 Route::get('/business', [PagesController::class, 'getBusiness']);
 Route::get('/result', [PagesController::class, 'getResult']);
+Route::get('/recruit', [PagesController::class, 'getRecruit']);
+Route::get('/contact', [PagesController::class, 'getContact']);

@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('layout')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="shortcut icon" href="./pics/favicon.ico" type="image/x-icon">
-  <title>＊お問い合わせ/応募フォーム | 有限会社山田電気</title>
-</head>
+@section('css')
+    <link rel="stylesheet" href="{{ asset('/css/contact.css') }}">
+@endsection
 
-<body>
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        header
-  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <header>
-    <a href="./index.html" class="underline"><small>お問い合わせ/応募フォーム|有限会社山田電気</small></a>
-    <ul id="header-normal" class="header-normal">
-      <li class="bold"><a href="./company.html">会社概要</a></li>
-      <li class="bold"><a href="./business.html">業務内容</a></li>
-      <li class="bold"><a href="./result.html">施工実績</a></li>
-      <li class="bold"><a href="./recruit.html">採用情報</a></li>
-      <li class="bold"><a href="./contact.html">応募フォーム<br>お問い合わせ</a></li>
-    </ul>
-    <nav class="header-swiped padding center">
-      <ul>
-        <li class="bold"><a href="./company.html">会社概要</a></li>
-        <li class="bold"><a href="./business.html">業務内容</a></li>
-        <li class="bold"><a href="./result.html">施工実績</a></li>
-        <li class="bold"><a href="./recruit.html">採用情報</a></li>
-        <li class="bold"><a href="./contact.html">応募フォーム<br>お問い合わせ</a></li>
-      </ul>
-    </nav>
-    <a href="./index.html" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
-  </header>
-  
+@section('title')
+    お問い合わせ/応募フォーム
+@endsection
+
+@section('content')
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       Application Form & inquiry
       応募フォーム・お問い合わせ
@@ -177,7 +150,7 @@
               </th>
               <td><input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label></td>
             </tr>
-  
+
             <tr>
               <th class="form-th">お問い合わせ内容<br>
                 <span>※必須</span>
@@ -215,21 +188,4 @@
     </ul>
   </section>
 
-  <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        footer
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <footer class="padding">
-    <img src="./pics/footer_box_bg.png" alt="">
-    <ul>
-      <a href="./index.html" class="underline"><li>トップページ</li></a>
-      <a href="./company.html" class="underline"><li>会社概要</li></a>
-      <a href="./business.html" class="underline"><li>業務内容</li></a>
-      <a href="./result.html" class="underline"><li>施工実績</li></a>
-      <a href="./recruit.html" class="underline"><li>採用情報</li></a>
-      <a href="./contact.html" class="underline"><li>お問い合わせ応募フォーム</li></a>
-      <a href="./blog.html" class="underline"><li>オフィシャルブログ</li></a>
-    </ul>
-    <p class="center"><small class="">Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
-  </footer>
-</body>
-</html>
+@endsection

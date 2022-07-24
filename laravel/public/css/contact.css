@@ -4,7 +4,7 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 header {
-  background-image: url("./pics/contact/pc_teaser_06.jpg");
+    background-image: url(/pics/contact/pc_teaser_06.jpg);
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -13,32 +13,32 @@ header {
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .form-left {
-  width: 66%;
+    width: 66%;
 }
 .form-right {
-  width: 31%;
-  line-height: 2.5;
+    width: 31%;
+    line-height: 2.5;
 }
 .middle {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 .form table {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .btn-form {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .form table th span {
-  color: yellow;
+    color: yellow;
 }
 .form .form-th {
-  font-weight: bold;
+    font-weight: bold;
 }
 .form-shorter input {
-  width: 50px;
+    width: 50px;
 }
 .form table td {
-  padding: 0 0 15px 5px;
+    padding: 0 0 15px 5px;
 }
 /* .form-th,
 .form table td {
@@ -46,14 +46,14 @@ header {
 } */
 
 input[type="text"] {
-  width: 300px;
-  margin-top: 10px;
+    width: 300px;
+    margin-top: 10px;
 }
 /* input[type="radio"] {
   margin-bottom: 30px;
 } */
 input[type="select"] {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 /*
@@ -63,14 +63,14 @@ input[type="select"] {
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .pp {
-  font-size: 13px;
-  margin-bottom: 50px;
+    font-size: 13px;
+    margin-bottom: 50px;
 }
 .pp-subtitle {
-  font-size: 17px;
+    font-size: 17px;
 }
 .pp-list li {
-  list-style: square;
-  list-style-position: inside;
-  padding-left: 10px;
+    list-style: square;
+    list-style-position: inside;
+    padding-left: 10px;
 }
