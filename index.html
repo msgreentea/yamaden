@@ -12,10 +12,21 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- 候補１ -->
     <!-- ライブラリ読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <!-- jsファイル読み込み -->
-    <script src="sample.js"></script>
+    <!-- <script src="sample.js"></script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script>
+      jQuery(function ($) {
+        $('.header').bgSwitcher({
+          images: ['./pics/index/mainvisual/slid_01.jpg', './pics/index/mainvisual/slid_02.jpg', './pics/index/mainvisual/slid_03.jpg','./pics/index/mainvisual/slid_04.jpg','./pics/index/mainvisual/slid_05.jpg','./pics/index/mainvisual/slid_06.jpg','./pics/index/mainvisual/slid_07.jpg','./pics/index/mainvisual/slid_08.jpg'],
+        });
+      });
+    </script>
     
     <title>＊電気設備工事の設計・施工は大阪府の有限会社山田電気へ | 有限会社山田電気</title>
     <!-- 要改善　タイトル途切れてるんですけど… -->
@@ -56,7 +67,9 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       mainvisual
       https://rilaks.jp/blog/website-creation/slide-banner/
+      ↑　background-imageではない
       https://125naroom.com/web/3486
+      https://fit-jp.com/bgswitcher/
       検索検索ぅ
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <section class="mainvisual">
