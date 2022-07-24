@@ -4,7 +4,7 @@
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 header {
-  background-image: url("./pics/result/pc_teaser_04.jpg");
+    background-image: url(/pics/result/pc_teaser_04.jpg);
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -13,22 +13,22 @@ header {
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .pics {
-  margin: 30px 0;
+    margin: 30px 0;
 }
 .frame_title {
-  padding: 0%;
-  margin-top: 40px;
+    padding: 0%;
+    margin-top: 40px;
 }
 .trisection img {
-  width: 100%;
-  margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .cr-btn {
-  background-color: #0080c8;
-  color: white;
-  font-weight: bold;
-  padding: 2px;
+    background-color: #0080c8;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
 }
 .cr-btn:hover {
-  background-color: #072a56;
+    background-color: #072a56;
 }
