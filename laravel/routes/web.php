@@ -19,3 +19,4 @@ use App\Http\Controllers\PagesController;
 // });
 
 Route::get('/', [PagesController::class, 'getCompany']);
+Route::get('/business', [PagesController::class, 'getBusiness']);

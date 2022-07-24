@@ -11,4 +11,10 @@ class PagesController extends Controller
     {
         return view('company');
     }
+
+    // businessを表示
+    public function getBusiness()
+    {
+        return view('business');
+    }
 }

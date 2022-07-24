@@ -21,6 +21,7 @@
     <a href="./index.html" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
     <ul id="header-normal" class="header-normal">
       <li class="bold"><a href="./company.html">会社概要</a></li>
+        {{-- <li class="bold"><a href="{{ route('/') }}">会社概要</a></li> --}}
       <li class="bold"><a href="./business.html">業務内容</a></li>
       <li class="bold"><a href="./result.html">施工実績</a></li>
       <li class="bold"><a href="./recruit.html">採用情報</a></li>
@@ -107,7 +108,7 @@
 {{-- @extends('layout')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/.css') }}">
 @endsection
 
 @section('title')
