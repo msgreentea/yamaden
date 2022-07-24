@@ -1,0 +1,157 @@
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    header
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+header {
+    /* background-image: url("./pics/company/pc_teaser_02.jpg"); */
+    background-image: url(/pics/company/pc_teaser_02.jpg);
+}
+
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      代表ご挨拶
+      greeting
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pic_of_ceo {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    /* padding-top: 90px; */
+    position: absolute;
+    top: 80px;
+}
+.greeting {
+    background-image: url(/pics//company/p2_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 900px;
+
+    position: relative;
+}
+
+.greeting-text_box {
+    /* background-color: beige; */
+    width: 450px;
+    margin-top: 490px;
+    margin: 243px 0 30px auto;
+}
+.span-greeting {
+    color: blue;
+    font-size: 18px;
+}
+.greeting-text_box h3 {
+    margin: 30px 0 20px 0;
+}
+.right {
+    text-align: right;
+}
+.greeting p {
+    margin: 10px 0;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      企業方針
+      corporate policies
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.span-policy {
+    color: red;
+    font-size: 23px;
+}
+
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      沿革 -社歴-
+      company history
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.company_history {
+    margin-top: 100px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      会社概要
+      company info
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.table-company_info {
+    display: flex;
+    justify-content: space-between;
+}
+.table-company_info table {
+    width: 49%;
+    margin-right: calc(100% - (50% * 2));
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      google map
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.map {
+    background-color: #5c6266;
+    height: 450px;
+    width: 100%;
+}
+.map-btn {
+    border: 1px solid #0080c8;
+    font-size: 12px;
+    padding: 10px;
+    margin: 30px 0;
+}
+.map-btn:hover {
+    background-color: #0080c8;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      会社風景
+      pics of us
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+/* .pics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trisection {
+  width: 32%;
+  display: block;
+  margin-right: calc(100% - (33.3% * 3));
+}
+.trisection img {
+  width: 100%;
+  margin-bottom: 60px;
+} */
+
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      組織図
+      organization chart
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pic_org_chart {
+    margin-bottom: 40px;
+}
+/*
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      社員紹介
+      members
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.pics-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pic-members {
+    margin-bottom: calc(100% - (33.3% * 3));
+    /* margin-right: calc(100% - (33% * 3)); */
+    margin-right: 30px;
+}
+.pic-members:nth-child(3n) {
+    margin-right: 0;
+}
+.item {
+    width: 30%;
+}
