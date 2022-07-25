@@ -192,13 +192,16 @@ header ul li {
     display: flex;
     justify-content: space-evenly;
     opacity: 0.8;
+    vertical-align: middle;
 }
 .header-swiped li {
     margin-right: 125px;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    /* vertical-align: middle; */
 }
 .header-swiped li:last-child {
     margin-right: 0;
+    line-height: 1.2;
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
@@ -246,6 +249,9 @@ header ul li {
 */
 .contact {
     background-color: #66d2fd;
+}
+.inner {
+    margin: 0 auto;
 }
 /*
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊

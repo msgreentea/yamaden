@@ -149,5 +149,12 @@
   <section class="inner work_flow">
     <img src="./pics/business/p3_flow.jpg" alt="仕事の流れ" class="work_flow">
   </section>
+  <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        banners
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <section class="padding side banners">
+    <a href="{{ url('/company')}}" class="whiter"><img class="" src="./pics/company_banner.png" alt=""></a>
+    <a href="{{ url('/result')}}" class="whiter"><img src="./pics/results_banner.png" alt=""></a>
+  </section>
 
 @endsection

@@ -495,7 +495,7 @@
         banners
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <section class="padding side banners">
-    <a href="./company.html" class="whiter"><img class="" src="./pics/company_banner.png" alt=""></a>
-    <a href="./result.html" class="whiter"><img src="./pics/results_banner.png" alt=""></a>
+    <a href="{{ url('/company')}}" class="whiter"><img class="" src="./pics/company_banner.png" alt=""></a>
+    <a href="{{ url('/result')}}" class="whiter"><img src="./pics/results_banner.png" alt=""></a>
   </section>
 @endsection
