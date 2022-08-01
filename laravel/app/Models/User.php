@@ -41,4 +41,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // 都道府県名を返すメソッド
+    public function getPrefNameAttribute() {
+        return config('pref' . $this->pref_id)
+    }
 }
