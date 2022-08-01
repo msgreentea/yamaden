@@ -18,14 +18,14 @@
     <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
     </div>
     <div class="side">
-    <form action="" method="" class="form-left">
+    <form action="" method="post" class="form-left">
         <!-- 要改善　入力欄が分割されてるの時代遅れじゃない？ -->
         <table>
         <tr>
             <th class="form-th">ご用件<br>
             <span>※必須</span>
             </th>
-            <td>
+            <td class="requirement">
             <p class="middle"><input type="radio" id="form-radio-0" name="requirement" value="0"><label for="form-radio-0">求人のご応募</label></p>
             <p class="middle"><input type="radio" id="form-radio-1" name="requirement" value="1"><label for="form-radio-1">仕事のご相談</label></p>
             <p class="middle"><input type="radio" id="form-radio-2" name="requirement" value="2"><label for="form-radio-2">お問い合わせ</label></p>
@@ -35,6 +35,7 @@
             <th class="form-th">お名前<br>
             <span>※必須</span>
             </th>
+            {{-- 要改善　苗字・名前の間にスペースいるかどうかがわからない。placeholderとかで例がある方が親切やと思う --}}
             <td><input type="text" name="name"></td>
         </tr>
         <tr>
@@ -47,14 +48,14 @@
             <th class="form-th">E-MAIL<br>
             <span>※必須</span>
             </th>
-            <td><input type="text" name="email"></td>
+            <td><input type="email" name="email"></td>
         </tr>
         <tr>
             <th class="form-th">電話番号<br>
             <span>※必須</span>
             </th>
             <td class="form-shorter">
-            <!-- 要改善　固定電話でも携帯電話でも良いってことなのかな？　ならtelか -->
+            <!-- 要改善　固定電話でも携帯電話でも良いってこと？ -->
             <input type="tel" name="tel-5-0" id="tel-0" value=""> -
             <input type="tel" name="tel-5-1" id="tel-1" value=""> -
             <input type="tel" name="tel-5-2" id="tel-2" value="">
@@ -83,7 +84,10 @@
             <td>
             <!-- 要改善　郵便番号入力したら自動補完されて欲しい -->
             <select name="pref">
-                <option value="" selected>選択して下さい</option>
+                @foreach ($prefs as $item)
+                    <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>$name</option>
+                @endforeach
+                {{-- <option value="" selected>選択して下さい</option>
                 <option value="1">北海道</option>
                 <option value="2">青森県</option>
                 <option value="3">岩手県</option>
@@ -130,7 +134,7 @@
                 <option value="44">大分県</option>
                 <option value="45">宮崎県</option>
                 <option value="46">鹿児島県</option>
-                <option value="47">沖縄県</option>
+                <option value="47">沖縄県</option> --}}
             </select>
             </td>
         </tr>

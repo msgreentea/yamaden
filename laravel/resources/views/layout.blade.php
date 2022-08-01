@@ -4,13 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{-- <link rel="stylesheet" href="reset.css"> --}}
-  {{-- <link rel="stylesheet" href="common.css"> --}}
   <link rel="stylesheet" href="{{ asset('/css/reset.css') }}">
   <link rel="stylesheet" href="{{ asset('/css/common.css') }}">
   @yield('css')
   <link rel="shortcut icon" href="/pics/favicon.ico" type="image/x-icon">
-  {{-- <link rel="shortcut icon" href="{{ asset('./pics/favicon.ico')}}" type="image/x-icon"> --}}
   <title>@yield('title') | 有限会社山田電気</title>
 </head>
 
@@ -20,9 +17,35 @@
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <header>
     <a href="{{ url('/')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
-    <ul id="header-normal" class="header-normal">
-      {{-- <li class="bold"><a href="{{('./company.html')}}">会社概要</a></li> --}}
-        <li class="bold"><a href="{{ url('/company') }}">会社概要</a></li>
+    {{-- <ul id="header-normal" class="header-normal">
+    　<li class="bold header-list-normal"><a href="{{ url('/company') }}">会社概要</a></li>
+    　<li class="bold header-list-hover"><a href="{{ url('/company') }}">COMPANY</a></li>
+      <li class="bold header-list-normal"><a href="{{ url('/business')}}">業務内容</a></li>
+      <li class="bold header-list-hover"><a href="{{ url('/business')}}">BUSINESS</a></li>
+      <li class="bold header-list-normal"><a href="{{ url('/result')}}">施工実績</a></li>
+      <li class="bold header-list-hover"><a href="{{ url('/result')}}">RESULT</a></li>
+      <li class="bold header-list-normal"><a href="{{ url('/recruit')}}">採用情報</a></li>
+      <li class="bold header-list-hover"><a href="{{ url('/recruit')}}">RECRUIT</a></li>
+      <li class="bold header-list-normal"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
+      <li class="bold header-list-hover"><a href="{{ url('/contact')}}">CONTACT</a></li>
+    </ul> --}}
+
+    {{-- <ul id="header-normal" class="header-normal">
+    　<li class="bold"><a class="header-list-normal" href="{{ url('/company') }}">会社概要</a></li>
+    　<li class="bold"><a class="header-list-hover" href="{{ url('/company') }}">COMPANY</a></li>
+      <li class="bold"><a class="header-list-normal" href="{{ url('/business')}}">業務内容</a></li>
+      <li class="bold"><a class="header-list-hover" href="{{ url('/business')}}">BUSINESS</a></li>
+      <li class="bold"><a class="header-list-normal" href="{{ url('/result')}}">施工実績</a></li>
+      <li class="bold"><a class="header-list-hover" href="{{ url('/result')}}">RESULT</a></li>
+      <li class="bold"><a class="header-list-normal" href="{{ url('/recruit')}}">採用情報</a></li>
+      <li class="bold"><a class="header-list-hover" href="{{ url('/recruit')}}">RECRUIT</a></li>
+      <li class="bold"><a class="header-list-normal" href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
+      <li class="bold"><a class="header-list-hover" href="{{ url('/contact')}}">CONTACT</a></li>
+    </ul> --}}
+
+
+    <ul id="header-normal" class="header-normal middle">
+    　<li class="bold"><a href="{{ url('/company') }}">会社概要</a></li>
       <li class="bold"><a href="{{ url('/business')}}">業務内容</a></li>
       <li class="bold"><a href="{{ url('/result')}}">施工実績</a></li>
       <li class="bold"><a href="{{ url('/recruit')}}">採用情報</a></li>
@@ -37,7 +60,6 @@
         <li class="bold"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
       </ul>
     </nav>
-    {{-- <a href="{{ url('./index')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a> --}}
     <a href="{{ url('./')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
   </header>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

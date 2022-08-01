@@ -157,6 +157,31 @@ header small {
     display: flex;
     justify-content: right;
 }
+
+/* header common */
+header ul {
+    padding-right: 3.5%;
+    display: flex;
+    justify-content: right;
+}
+header ul li {
+    text-align: center;
+}
+header ul li:last-child {
+    vertical-align: middle;
+    line-height: 1.5;
+}
+/* .header-list-hover {
+    display: none;
+}
+.header-list-hover:hover {
+    display: inline;
+}
+.header-list-normal:hover {
+    display: none;
+} */
+
+/* normal */
 .header-normal {
     background-color: white;
     position: absolute;
@@ -168,18 +193,12 @@ header small {
     width: 100%;
     text-align: center;
 }
-header ul {
-    padding-right: 3.5%;
-    display: flex;
-    justify-content: right;
-}
-header ul li {
-    text-align: center;
-}
 .header-normal li {
     padding-left: 50px;
     padding-top: 30px;
 }
+
+/* swiped */
 .header-swiped {
     position: fixed;
     z-index: 2;

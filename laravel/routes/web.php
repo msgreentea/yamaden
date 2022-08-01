@@ -23,4 +23,5 @@ Route::get('/company', [PagesController::class, 'getCompany']);
 Route::get('/business', [PagesController::class, 'getBusiness']);
 Route::get('/result', [PagesController::class, 'getResult']);
 Route::get('/recruit', [PagesController::class, 'getRecruit']);
+// 入力ページ
 Route::get('/contact', [PagesController::class, 'getContact']);

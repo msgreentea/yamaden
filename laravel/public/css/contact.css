@@ -19,6 +19,7 @@ header {
     width: 31%;
     line-height: 2.5;
 }
+
 .middle {
     vertical-align: middle;
 }
@@ -30,28 +31,27 @@ header {
 }
 .form table th span {
     color: yellow;
+    font-size: 10px;
 }
 .form .form-th {
     font-weight: bold;
 }
+.form .form-th,
+.form table td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.requirement p:last-child {
+    margin-bottom: 30px;
+}
 .form-shorter input {
     width: 50px;
 }
-.form table td {
-    padding: 0 0 15px 5px;
-}
-/* .form-th,
-.form table td {
-  vertical-align: middle;
-} */
 
 input[type="text"] {
     width: 300px;
-    margin-top: 10px;
 }
-/* input[type="radio"] {
-  margin-bottom: 30px;
-} */
 input[type="select"] {
     border: 1px solid black;
 }
