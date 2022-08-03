@@ -26,28 +26,7 @@
             <span>※必須</span>
             </th>
             <td class="requirement">
-            <p class="middle"><input type="radio" id="radio-0" name="requirement" value="0"><label for="radio-0">求人のご応募</label></p>
-            <p class="middle"><input type="radio" id="radio-1" name="requirement" value="1"><label for="radio-1">仕事のご相談</label></p>
-            <p class="middle"><input type="radio" id="radio-2" name="requirement" value="2"><label for="radio-2">お問い合わせ</label></p>
-
-            {{-- <td class="col-md-6">
-                <p class="middle">
-                    <input type="radio" id="radio-0" name="requirement" value="0">
-                    <label for="radio01">求人のご応募</label>
-                </p>
-                <p class="middle">
-                    <input type="radio" id="radio-1" name="requirement" value="1">
-                    <label for="radio02">仕事のご相談</label>
-                </p>
-                <p class="middle">
-                    <input type="radio" id="radio2" name="requirement" value="2">
-                    <label for="radio03">お問い合わせ</label>
-                </p>
-            </td> --}}
-<div class="form-group row">
-   <label for="radio01" class="col-md-4 col-form-label text-md-right">好み２</label>
-</div>
-
+            <p class="middle">{{  }}</p>
             </td>
         </tr>
         <tr>
@@ -55,7 +34,7 @@
             <span>※必須</span>
             </th>
             {{-- 要改善　苗字・名前の間にスペースいるかどうかがわからない。placeholderとかで例がある方が親切やと思う --}}
-            <td><input type="text" name="name"></td>
+            <td>{{}}</td>
         </tr>
         <tr>
             <th class="form-th">ふりがな<br>
@@ -67,7 +46,7 @@
             <th class="form-th">E-MAIL<br>
             <span>※必須</span>
             </th>
-            <td><input type="email" name="email"></td>
+            <td>{{}}</td>
         </tr>
         <tr>
             <th class="form-th">電話番号<br>
@@ -93,8 +72,7 @@
             <th class="form-th">郵便番号<br>
             </th>
             <td class="form-shorter">&#12306;
-            <input type="tel" name="zipcode-7-0" id="zipcode-0" value=""> -
-            <input type="tel" name="zipcode-7-1" id="zipcode-1" value="">
+            {{  }} - {{  }}
             </td>
         </tr>
         <tr>
@@ -171,14 +149,14 @@
             <th class="form-th">プライバシーポリシー<br>
             <span>※必須</span>
             </th>
-            <td><input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label></td>
+            <td>プライバシーポリシーを確認し、内容に同意します。</td>
         </tr>
 
         <tr>
             <th class="form-th">お問い合わせ内容<br>
             <span>※必須</span>
             </th>
-            <td><textarea name="textarea" id="" cols="50" rows="10"></textarea></td>
+            <td>{{}}/td>
         </tr>
         </table>
         <input type="submit" class="btn-form" value="確認画面へ">
