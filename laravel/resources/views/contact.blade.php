@@ -19,6 +19,7 @@
     </div>
     <div class="side">
     <form action="" method="post" class="form-left">
+        @csrf
         <!-- 要改善　入力欄が分割されてるの時代遅れじゃない？ -->
         <table>
         <tr>
@@ -29,6 +30,9 @@
             <p class="middle"><input type="radio" id="radio-0" name="requirement" value="0"><label for="radio-0">求人のご応募</label></p>
             <p class="middle"><input type="radio" id="radio-1" name="requirement" value="1"><label for="radio-1">仕事のご相談</label></p>
             <p class="middle"><input type="radio" id="radio-2" name="requirement" value="2"><label for="radio-2">お問い合わせ</label></p>
+                @error('requirement')
+                    <p class="red">{{ $message }}</p>
+                @enderror
 
             {{-- <td class="col-md-6">
                 <p class="middle">
@@ -44,9 +48,9 @@
                     <label for="radio03">お問い合わせ</label>
                 </p>
             </td> --}}
-<div class="form-group row">
+{{-- <div class="form-group row">
    <label for="radio01" class="col-md-4 col-form-label text-md-right">好み２</label>
-</div>
+</div> --}}
 
             </td>
         </tr>
@@ -55,19 +59,34 @@
             <span>※必須</span>
             </th>
             {{-- 要改善　苗字・名前の間にスペースいるかどうかがわからない。placeholderとかで例がある方が親切やと思う --}}
-            <td><input type="text" name="name"></td>
+            <td>
+                <input type="text" name="name">
+                    @error('name')
+                        <p class="red">{{ $message }}</p>
+                    @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">ふりがな<br>
             <span>※必須</span>
             </th>
-            <td><input type="text" name="kana"></td>
+            <td>
+                <input type="text" name="kana">
+                    @error('kana')
+                        <p class="red">{{ $message }}</p>
+                    @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">E-MAIL<br>
             <span>※必須</span>
             </th>
-            <td><input type="email" name="email"></td>
+            <td>
+                <input type="email" name="email">
+                    @error('email')
+                        <p class="red">{{ $message }}</p>
+                    @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">電話番号<br>
@@ -75,9 +94,13 @@
             </th>
             <td class="form-shorter">
             <!-- 要改善　固定電話でも携帯電話でも良いってこと？ -->
+            {{-- 半角数字じゃないとエラーになる。不親切。せめて例書くべきでは --}}
             <input type="tel" name="tel-0" id="tel-0" value=""> -
             <input type="tel" name="tel-1" id="tel-1" value=""> -
             <input type="tel" name="tel-2" id="tel-2" value="">
+                @error('tel-0')
+                    <p class="red">{{ $message }}</p>
+                @enderror
             </td>
         </tr>
         <tr>
@@ -87,6 +110,9 @@
             <input type="tel" name="fax-0" id="fax-0" value=""> -
             <input type="tel" name="fax-1" id="fax-1" value=""> -
             <input type="tel" name="fax-2" id="fax-2" value="">
+                @error('fax-0')
+                    <p class="red">{{ $message }}</p>
+                @enderror
             </td>
         </tr>
         <tr>
@@ -96,6 +122,9 @@
             <input type="tel" name="zipcode-0" id="zipcode-0" value=""> -
             <input type="tel" name="zipcode-1" id="zipcode-1" value="">
             </td>
+                @error('zipcode-0')
+                    <p class="red">{{ $message }}</p>
+                @enderror
         </tr>
         <tr>
             <th class="form-th">都道府県<br>
@@ -155,30 +184,53 @@
                 <option value="46">鹿児島県</option>
                 <option value="47">沖縄県</option> --}}
             </select>
+                @error('pref')
+                    <p class="red">{{ $message }}</p>
+                @enderror
             </td>
         </tr>
         <tr>
             <th class="form-th">市町村〜番地<br>
             </th>
-            <td><label for=""><input type="text" name="city"></label></td>
+            <td>
+                <label for=""><input type="text" name="city"></label>
+                @error('city')
+                    <p class="red">{{ $message }}</p>
+                @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">建物名<br>
             </th>
-            <td><input type="text" name="building"></td>
+            <td>
+                <input type="text" name="building">
+                @error('building')
+                <p class="red">{{ $message }}</p>
+                @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">プライバシーポリシー<br>
             <span>※必須</span>
             </th>
-            <td><input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label></td>
+            <td>
+                <input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
+                @error('privacy_policy')
+                <p class="red">{{ $message }}</p>
+                @enderror
+            </td>
         </tr>
 
         <tr>
             <th class="form-th">お問い合わせ内容<br>
             <span>※必須</span>
             </th>
-            <td><textarea name="content" id="" cols="50" rows="10"></textarea></td>
+            <td>
+                <textarea name="content" id="" cols="50" rows="10"></textarea>
+                @error('content')
+                <p class="red">{{ $message }}</p>
+                @enderror
+            </td>
         </tr>
         </table>
         <input type="submit" class="btn-form" value="確認画面へ">

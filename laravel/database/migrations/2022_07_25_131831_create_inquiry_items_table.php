@@ -15,7 +15,7 @@ class CreateInquiryItemsTable extends Migration
     {
         Schema::create('inquiry_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('inquiry'); // ご用件
+            $table->integer('requirement'); // ご用件
             $table->string('name'); // お名前
             $table->string('kana'); // ふりがな
             $table->string('email'); // E-MAIL
