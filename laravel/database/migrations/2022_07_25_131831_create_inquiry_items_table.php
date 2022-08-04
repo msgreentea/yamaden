@@ -19,14 +19,14 @@ class CreateInquiryItemsTable extends Migration
             $table->string('name'); // お名前
             $table->string('kana'); // ふりがな
             $table->string('email'); // E-MAIL
-            $table->integer('tel-5-0'); // 電話番号
-            $table->integer('tel-5-1'); // 電話番号
-            $table->integer('tel-5-2'); // 電話番号
+            $table->integer('tel-0'); // 電話番号
+            $table->integer('tel-1'); // 電話番号
+            $table->integer('tel-2'); // 電話番号
             $table->integer('fax-0')->nullable(); // FAX番号
             $table->integer('fax-1')->nullable(); // FAX番号
             $table->integer('fax-2')->nullable(); // FAX番号
-            $table->integer('zipcode-7-0')->nullable(); // 郵便番号
-            $table->integer('zipcode-7-1')->nullable(); // 郵便番号
+            $table->integer('zipcode-0')->nullable(); // 郵便番号
+            $table->integer('zipcode-1')->nullable(); // 郵便番号
             $table->integer('pref')->nullable(); // 都道府県
             $table->string('city')->nullable(); // 市町村〜番地
             $table->string('building')->nullable(); // 建物名

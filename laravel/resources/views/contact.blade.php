@@ -75,26 +75,26 @@
             </th>
             <td class="form-shorter">
             <!-- 要改善　固定電話でも携帯電話でも良いってこと？ -->
-            <input type="tel" name="tel-5-0" id="tel-0" value=""> -
-            <input type="tel" name="tel-5-1" id="tel-1" value=""> -
-            <input type="tel" name="tel-5-2" id="tel-2" value="">
+            <input type="tel" name="tel-0" id="tel-0" value=""> -
+            <input type="tel" name="tel-1" id="tel-1" value=""> -
+            <input type="tel" name="tel-2" id="tel-2" value="">
             </td>
         </tr>
         <tr>
             <th class="form-th">FAX番号<br>
             </th>
             <td class="form-shorter">
-            <input type="tel" name="fax-6-0" id="fax-0" value=""> -
-            <input type="tel" name="fax-6-1" id="fax-1" value=""> -
-            <input type="tel" name="fax-6-2" id="fax-2" value="">
+            <input type="tel" name="fax-0" id="fax-0" value=""> -
+            <input type="tel" name="fax-1" id="fax-1" value=""> -
+            <input type="tel" name="fax-2" id="fax-2" value="">
             </td>
         </tr>
         <tr>
             <th class="form-th">郵便番号<br>
             </th>
             <td class="form-shorter">&#12306;
-            <input type="tel" name="zipcode-7-0" id="zipcode-0" value=""> -
-            <input type="tel" name="zipcode-7-1" id="zipcode-1" value="">
+            <input type="tel" name="zipcode-0" id="zipcode-0" value=""> -
+            <input type="tel" name="zipcode-1" id="zipcode-1" value="">
             </td>
         </tr>
         <tr>
@@ -178,7 +178,7 @@
             <th class="form-th">お問い合わせ内容<br>
             <span>※必須</span>
             </th>
-            <td><textarea name="textarea" id="" cols="50" rows="10"></textarea></td>
+            <td><textarea name="content" id="" cols="50" rows="10"></textarea></td>
         </tr>
         </table>
         <input type="submit" class="btn-form" value="確認画面へ">
