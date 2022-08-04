@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::get('/result', [PagesController::class, 'getResult']);
 Route::get('/recruit', [PagesController::class, 'getRecruit']);
 // 入力ページ
 Route::get('/contact', [PagesController::class, 'getContact']);
+Route::get('/contact/confirm', [ContactController::class, 'toConfirm'])->name('confirm');

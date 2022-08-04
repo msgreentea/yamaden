@@ -18,7 +18,7 @@
     <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
     </div>
     <div class="side">
-    <form action="" method="post" class="form-left">
+    <form action="{{  }}" method="post" class="form-left">
         @csrf
         <!-- 要改善　入力欄が分割されてるの時代遅れじゃない？ -->
         <table>
