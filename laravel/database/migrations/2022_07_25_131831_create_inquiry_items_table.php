@@ -22,9 +22,9 @@ class CreateInquiryItemsTable extends Migration
             $table->integer('tel-0'); // 電話番号
             $table->integer('tel-1'); // 電話番号
             $table->integer('tel-2'); // 電話番号
-            $table->integer('fax-0')->nullable(); // FAX番号
-            $table->integer('fax-1')->nullable(); // FAX番号
-            $table->integer('fax-2')->nullable(); // FAX番号
+            $table->integer('fax-0')->nullable(); // fax-番号
+            $table->integer('fax-1')->nullable(); // fax-番号
+            $table->integer('fax-2')->nullable(); // fax-番号
             $table->integer('zipcode-0')->nullable(); // 郵便番号
             $table->integer('zipcode-1')->nullable(); // 郵便番号
             $table->integer('pref')->nullable(); // 都道府県

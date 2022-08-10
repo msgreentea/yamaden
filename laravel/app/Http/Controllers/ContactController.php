@@ -9,7 +9,7 @@ class ContactController extends Controller
 {
     public function Confirm(Request $request)
     {
-        $this->validate($request, Inquiry_Item::$rules);
+        // $this->validate($request, Inquiry_Item::$rules);
 
         dd($request);
 
@@ -17,14 +17,14 @@ class ContactController extends Controller
         $name = $request->name;
         $kana = $request->kana;
         $email = $request->email;
-        // $tel-0 = $request->tel-0;
-        // $tel-0 = $request->tel-1;
-        // $tel-0 = $request->tel-2;
-        // $fax-0 = $request->fax-0;
-        // $fax-1 = $request->fax-1;
-        // $fax-2 = $request->fax-2;
-        // $zipcode-0 = $request->zipcode-0;
-        // $zipcode-1 = $request->zipcode-1;
+        $tel0 = $request->tel - 0;
+        $tel1 = $request->tel - 1;
+        $tel2 = $request->tel - 2;
+        $fax0 = $request->fax - 0;
+        $fax1 = $request->fax - 1;
+        $fax2 = $request->fax - 2;
+        $zipcode0 = $request->zipcode - 0;
+        $zipcode1 = $request->zipcode - 1;
         $pref = $request->pref;
         $city = $request->city;
         $building = $request->building;
@@ -32,7 +32,7 @@ class ContactController extends Controller
         $content = $request->content;
 
 
-        return view('confirm', ['items' => $items]);
+        // return view('confirm', ['items' => $items]);
     }
 
     //

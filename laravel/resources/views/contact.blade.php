@@ -60,7 +60,7 @@
             </th>
             {{-- 要改善　苗字・名前の間にスペースいるかどうかがわからない。placeholderとかで例がある方が親切やと思う --}}
             <td>
-                <input type="text" name="name">
+                <input type="text" name="name" value="{{ old('name')}}">
                     @error('name')
                         <p class="red">{{ $message }}</p>
                     @enderror
@@ -71,7 +71,7 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="text" name="kana">
+                <input type="text" name="kana" value="{{ old('kana')}}">
                     @error('kana')
                         <p class="red">{{ $message }}</p>
                     @enderror
@@ -82,7 +82,7 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="email" name="email">
+                <input type="email" name="email" value="{{ old('email')}}" autocomplete="email">
                     @error('email')
                         <p class="red">{{ $message }}</p>
                     @enderror
@@ -95,10 +95,10 @@
             <td class="form-shorter">
             <!-- 要改善　固定電話でも携帯電話でも良いってこと？ -->
             {{-- 半角数字じゃないとエラーになる。不親切。せめて例書くべきでは --}}
-            <input type="tel" name="tel-0" id="tel-0" value=""> -
-            <input type="tel" name="tel-1" id="tel-1" value=""> -
-            <input type="tel" name="tel-2" id="tel-2" value="">
-                @error('tel-0')
+            <input type="tel" name="tel-0" id="tel-0" value="{{ old('tel-0')}}"> -
+            <input type="tel" name="tel-1" id="tel-1" value="{{ old('tel-1')}}"> -
+            <input type="tel" name="tel-2" id="tel-2" value="{{ old('tel-2')}}">
+                @error('tel0')
                     <p class="red">{{ $message }}</p>
                 @enderror
             </td>
@@ -107,9 +107,9 @@
             <th class="form-th">FAX番号<br>
             </th>
             <td class="form-shorter">
-            <input type="tel" name="fax-0" id="fax-0" value=""> -
-            <input type="tel" name="fax-1" id="fax-1" value=""> -
-            <input type="tel" name="fax-2" id="fax-2" value="">
+            <input type="tel" name="fax-0" id="fax-0" value="{{ old('fax-0')}}"> -
+            <input type="tel" name="fax-1" id="fax-1" value="{{ old('fax-1')}}"> -
+            <input type="tel" name="fax-2" id="fax-2" value="{{ old('fax-2')}}">
                 @error('fax-0')
                     <p class="red">{{ $message }}</p>
                 @enderror
@@ -119,12 +119,15 @@
             <th class="form-th">郵便番号<br>
             </th>
             <td class="form-shorter">&#12306;
-            <input type="tel" name="zipcode-0" id="zipcode-0" value=""> -
-            <input type="tel" name="zipcode-1" id="zipcode-1" value="">
-            </td>
+            <input type="tel" name="zipcode-0" id="zipcode-0" value="{{ old('zipcode-0')}}"> -
+            <input type="tel" name="zipcode-1" id="zipcode-1" value="{{ old('zipcode-1')}}">
                 @error('zipcode-0')
                     <p class="red">{{ $message }}</p>
                 @enderror
+                @error('zipcode-1')
+                    <p class="red">{{ $message }}</p>
+                @enderror
+            </td>
         </tr>
         <tr>
             <th class="form-th">都道府県<br>
@@ -193,7 +196,7 @@
             <th class="form-th">市町村〜番地<br>
             </th>
             <td>
-                <label for=""><input type="text" name="city"></label>
+                <label for=""><input type="text" name="city" value="{{ old('city')}}" autocomplete="address-level2"></label>
                 @error('city')
                     <p class="red">{{ $message }}</p>
                 @enderror
@@ -203,7 +206,7 @@
             <th class="form-th">建物名<br>
             </th>
             <td>
-                <input type="text" name="building">
+                <input type="text" name="building" value="{{ old('building')}}">
                 @error('building')
                 <p class="red">{{ $message }}</p>
                 @enderror
@@ -214,7 +217,7 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="checkbox" id="privacy_policy" name="text"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
+                <input type="checkbox" id="privacy_policy" name="privacy_policy" value="{{ old('privacy_policy')}}"><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
                 @error('privacy_policy')
                 <p class="red">{{ $message }}</p>
                 @enderror
@@ -226,7 +229,7 @@
             <span>※必須</span>
             </th>
             <td>
-                <textarea name="content" id="" cols="50" rows="10"></textarea>
+                <textarea name="content" id="" cols="50" rows="10" value="{{ old('content')}}"></textarea>
                 @error('content')
                 <p class="red">{{ $message }}</p>
                 @enderror
