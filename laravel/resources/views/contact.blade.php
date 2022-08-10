@@ -18,7 +18,7 @@
     <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
     </div>
     <div class="side">
-    <form action="{{  }}" method="post" class="form-left">
+    <form action="{{ route('confirm') }}" method="post" class="form-left">
         @csrf
         <!-- 要改善　入力欄が分割されてるの時代遅れじゃない？ -->
         <table>
@@ -233,7 +233,7 @@
             </td>
         </tr>
         </table>
-        <input type="submit" class="btn-form" value="確認画面へ">
+        <input type="submit" class="btn-form" onclick="location.href={{ route('confirm')}}" value="確認画面へ">
     </form>
     <div class="form-right">
         <p>有限会社山田電気では、メールやお電話での求人ご応募・お問い合わせを承っております。 メールでのご応募・お問い合わせはご返信までお時間がかかる場合もございますので、お急ぎの方はお電話にて直接ご応募・お問い合わせ下さい。

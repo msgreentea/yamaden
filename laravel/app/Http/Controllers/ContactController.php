@@ -2,24 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Inquiry_Item;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function toConfirm(Request $request)
+    public function Confirm(Request $request)
     {
+        $this->validate($request, Inquiry_Item::$rules);
+
+        dd($request);
+
         $requirement = $request->requirement;
         $name = $request->name;
         $kana = $request->kana;
         $email = $request->email;
-        $tel-0 = $request->tel-0;
-        $tel-0 = $request->tel-1;
-        $tel-0 = $request->tel-2;
-        $fax-0 = $request->fax-0;
-        $fax-1 = $request->fax-1;
-        $fax-2 = $request->fax-2;
-        $zipcode-0 = $request->zipcode-0;
-        $zipcode-1 = $request->zipcode-1;
+        // $tel-0 = $request->tel-0;
+        // $tel-0 = $request->tel-1;
+        // $tel-0 = $request->tel-2;
+        // $fax-0 = $request->fax-0;
+        // $fax-1 = $request->fax-1;
+        // $fax-2 = $request->fax-2;
+        // $zipcode-0 = $request->zipcode-0;
+        // $zipcode-1 = $request->zipcode-1;
         $pref = $request->pref;
         $city = $request->city;
         $building = $request->building;
@@ -27,7 +32,7 @@ class ContactController extends Controller
         $content = $request->content;
 
 
-        return view('confirm', ['items' => $items])
+        return view('confirm', ['items' => $items]);
     }
 
     //

@@ -19,11 +19,11 @@ use App\Http\Controllers\ContactController;
 //     return view('welcome');
 // });
 
-Route::get('/', [PagesController::class, 'getIndex']);
-Route::get('/company', [PagesController::class, 'getCompany']);
-Route::get('/business', [PagesController::class, 'getBusiness']);
-Route::get('/result', [PagesController::class, 'getResult']);
-Route::get('/recruit', [PagesController::class, 'getRecruit']);
+Route::get('/', [PagesController::class, 'Index']);
+Route::get('/company', [PagesController::class, 'Company']);
+Route::get('/business', [PagesController::class, 'Business']);
+Route::get('/result', [PagesController::class, 'Result']);
+Route::get('/recruit', [PagesController::class, 'Recruit']);
 // 入力ページ
-Route::get('/contact', [PagesController::class, 'getContact']);
-Route::get('/contact/confirm', [ContactController::class, 'toConfirm'])->name('confirm');
+Route::get('/contact', [PagesController::class, 'Contact']);
+Route::post('/contact/confirm', [ContactController::class, 'Confirm'])->name('confirm');

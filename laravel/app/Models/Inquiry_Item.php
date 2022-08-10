@@ -14,7 +14,7 @@ class Inquiry_Item extends Model
     public static $rules = array(
         'requirement' => 'required',
         'name' => 'required', // 参考のHP、数字の羅列でも通っちゃう
-        'kana' => 'required',
+        'kana' => 'required | regex:/^[あ-ん゛゜ぁ-ぉゃ-ょー]+$/u',
         'email' => 'required | email', //参考のHP、メール形式じゃなくても通っちゃう
         'tel-0' => 'required | digits_between:2,4', //参考のHP、1桁でも通る、文字でも通っちゃう；；
         'tel-1' => 'required | digits_between:2,4',
