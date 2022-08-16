@@ -19,14 +19,14 @@ class CreateInquiryItemsTable extends Migration
             $table->string('name'); // お名前
             $table->string('kana'); // ふりがな
             $table->string('email'); // E-MAIL
-            $table->integer('tel-0'); // 電話番号
-            $table->integer('tel-1'); // 電話番号
-            $table->integer('tel-2'); // 電話番号
-            $table->integer('fax-0')->nullable(); // fax-番号
-            $table->integer('fax-1')->nullable(); // fax-番号
-            $table->integer('fax-2')->nullable(); // fax-番号
-            $table->integer('zipcode-0')->nullable(); // 郵便番号
-            $table->integer('zipcode-1')->nullable(); // 郵便番号
+            $table->integer('tel0'); // 電話番号
+            $table->integer('tel1'); // 電話番号
+            $table->integer('tel2'); // 電話番号
+            $table->integer('fax0')->nullable(); // fax番号
+            $table->integer('fax1')->nullable(); // fax番号
+            $table->integer('fax2')->nullable(); // fax番号
+            $table->integer('zipcode0')->nullable(); // 郵便番号
+            $table->integer('zipcode1')->nullable(); // 郵便番号
             $table->integer('pref')->nullable(); // 都道府県
             $table->string('city')->nullable(); // 市町村〜番地
             $table->string('building')->nullable(); // 建物名
@@ -36,6 +36,9 @@ class CreateInquiryItemsTable extends Migration
         });
     }
 
+
+    // リレーション
+    // https://laraweb.net/practice/4369/
     /**
      * Reverse the migrations.
      *

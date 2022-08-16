@@ -11,28 +11,80 @@ class ContactController extends Controller
     {
         // $this->validate($request, Inquiry_Item::$rules);
 
-        dd($request);
+        $all_items = $request->all();
+        // $all_items = Inquiry_Item::all();
+        // dd($all_items);
 
-        $requirement = $request->requirement;
-        $name = $request->name;
-        $kana = $request->kana;
-        $email = $request->email;
-        $tel0 = $request->tel - 0;
-        $tel1 = $request->tel - 1;
-        $tel2 = $request->tel - 2;
-        $fax0 = $request->fax - 0;
-        $fax1 = $request->fax - 1;
-        $fax2 = $request->fax - 2;
-        $zipcode0 = $request->zipcode - 0;
-        $zipcode1 = $request->zipcode - 1;
-        $pref = $request->pref;
-        $city = $request->city;
-        $building = $request->building;
-        $privacy_policy = $request->privacy_policy;
-        $content = $request->content;
+        // $all_items = [
+        //     'requirement' => $request->requirement,
+        //     'name' => $request->name,
+        //     'kana' => $request->kana,
+        //     'email' => $request->email,
+        //     'tel0' => $request->tel0,
+        //     'tel1' => $request->tel1,
+        //     'tel2' => $request->tel2,
+        //     'fax0' => $request->fax0,
+        //     'fax1' => $request->fax1,
+        //     'fax2' => $request->fax2,
+        //     'zipcode0' => $request->zipcode0,
+        //     'zipcode1' => $request->zipcode1,
+        //     'pref' => $request->pref,
+        //     'city' => $request->city,
+        //     'building' => $request->building,
+        //     'privacy_policy' => $request->privacy_policy,
+        //     'content' => $request->content,
+        // ];
 
+        $all_items = [
+            'requirement' => $request->requirement,
+            'name' => $request->name,
+            'kana' => $request->kana,
+            'email' => $request->email,
+            'tel0' => $request->tel0,
+            'tel1' => $request->tel1,
+            'tel2' => $request->tel2,
+            'fax0' => $request->fax0,
+            'fax1' => $request->fax1,
+            'fax2' => $request->fax2,
+            'zipcode0' => $request->zipcode0,
+            'zipcode1' => $request->zipcode1,
+            // 'tel-0' => $request->tel0,
+            // 'tel-1' => $request->tel1,
+            // 'tel-2' => $request->tel2,
+            // 'fax-0' => $request->fax0,
+            // 'fax-1' => $request->fax1,
+            // 'fax-2' => $request->fax2,
+            // 'zipcode-0' => $request->zipcode0,
+            // 'zipcode-1' => $request->zipcode1,
+            'pref' => $request->pref,
+            'city' => $request->city,
+            'building' => $request->building,
+            'privacy_policy' => $request->privacy_policy,
+            'content' => $request->content,
+        ];
 
-        // return view('confirm', ['items' => $items]);
+        // dd($all_items);
+
+        // $requirement = $request->requirement;
+        // $name = $request->name;
+        // $kana = $request->kana;
+        // $email = $request->email;
+        // $tel0 = $request->tel0;
+        // $tel1 = $request->tel1;
+        // $tel2 = $request->tel2;
+        // $fax0 = $request->fax0;
+        // $fax1 = $request->fax1;
+        // $fax2 = $request->fax2;
+        // $zipcode0 = $request->zipcode0;
+        // $zipcode1 = $request->zipcode1;
+        // $pref = $request->pref;
+        // $city = $request->city;
+        // $building = $request->building;
+        // $privacy_policy = $request->privacy_policy;
+        // $content = $request->content;
+
+        // return view('confirm', ['all_items' => $all_items]);
+        return view('confirm', $all_items);
     }
 
     //
