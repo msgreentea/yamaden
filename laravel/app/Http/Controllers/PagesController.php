@@ -40,11 +40,9 @@ class PagesController extends Controller
     // contactを表示
     public function Contact()
     {
-        // 都道府県
-        // https://qiita.com/sakuraya/items/42fffe0f171d49ee74a0#_reference-634af529c0214d77de0b
-        // $prefs = config('pref');
+        $prefs = config('pref');
 
-        // return view('contact')->with(['prefs' => $prefs]);
-        return view('contact');
+        return view('contact')->with(['prefs' => $prefs]);
+        // return view('contact');
     }
 }

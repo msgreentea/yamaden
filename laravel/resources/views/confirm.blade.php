@@ -96,11 +96,12 @@
             </th>
             <td>
             <!-- 要改善　郵便番号入力したら自動補完されて欲しい -->
-            <select name="_pref">
-                @foreach (config('pref') as $index => $name)
-                    <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>$name</option>
-                @endforeach
-            </select>
+            {{-- @foreach (config('pref') as $index => $name)
+                <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>$name</option>
+            @endforeach --}}
+            {{ config('pref') }}
+            {{-- <select name="_pref">
+            </select> --}}
             </td>
         </tr>
         <tr>
