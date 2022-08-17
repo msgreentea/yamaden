@@ -37,8 +37,6 @@ class CreateInquiryItemsTable extends Migration
     }
 
 
-    // リレーション
-    // https://laraweb.net/practice/4369/
     /**
      * Reverse the migrations.
      *

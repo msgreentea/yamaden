@@ -43,6 +43,6 @@ class Inquiry_Item extends Model
     // (主)prefecturesモデルへ紐付け
     public function prefectures()
     {
-        return $this->hasMany('App\Models\Inquiry_items');
+        return $this->hasMany('App\Models\Prefecture');
     }
 }

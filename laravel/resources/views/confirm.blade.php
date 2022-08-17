@@ -28,7 +28,6 @@
             </th>
             <td class="requirement">
                 <p class="middle">{{ $requirement }}</p>
-                {{-- <input type="hidden" name="requirement" value="{{ $all_items->requirement }}"> --}}
                 <input type="hidden" name="requirement" value="{{ $requirement }}">
             </td>
         </tr>
@@ -37,9 +36,7 @@
             <span>※必須</span>
             </th>
             <td>
-                {{-- {{ $all_items->name }} --}}
                 {{ $name }}
-                {{-- <input type="hidden" name="name" value="{{ $all_items->name }}"> --}}
                 <input type="hidden" name="name" value="{{ $name }}">
             </td>
         </tr>
@@ -49,7 +46,6 @@
             </th>
             <td>
                 {{ $kana }}
-                {{-- <input type="hidden" name="kana" value="{{ $all_items->kana }}"> --}}
                 <input type="hidden" name="kana" value="{{ $kana }}">
             </td>
         </tr>
@@ -59,7 +55,6 @@
             </th>
             <td>
                 {{ $email }}
-                {{-- <input type="hidden" name="email" value="{{ $all_items->email }}"> --}}
                 <input type="hidden" name="email" value="{{ $email }}">
             </td>
         </tr>
@@ -68,7 +63,8 @@
             <span>※必須</span>
             </th>
             <td class="form-shorter">
-                {{ $tel0 }} - {{ $tel1 }} - {{ $tel2 }}
+                {{-- {{ $tel0 }} - {{ $tel1 }} - {{ $tel2 }} --}}
+                {{ $tel }}
                 <input type="hidden" name="tel-0" value="{{ $tel0 }}">
                 <input type="hidden" name="tel-1" value="{{ $tel1 }}">
                 <input type="hidden" name="tel-2" value="{{ $tel2 }}">
@@ -78,7 +74,8 @@
             <th class="form-th">FAX番号<br>
             </th>
             <td class="form-shorter">
-                {{ $fax0 }} - {{ $fax1 }} - {{ $fax2 }}
+                {{-- {{ $fax0 }} - {{ $fax1 }} - {{ $fax2 }} --}}
+                {{ $fax }}
                 <input type="hidden" name="fax-0" value="{{ $fax0 }}">
                 <input type="hidden" name="fax-1" value="{{ $fax1 }}">
                 <input type="hidden" name="fax-2" value="{{ $fax2 }}">
@@ -88,7 +85,8 @@
             <th class="form-th">郵便番号<br>
             </th>
             <td class="form-shorter">&#12306;
-                {{ $zipcode0 }} - {{ $zipcode1 }}
+                {{-- {{ $zipcode0 }} - {{ $zipcode1 }} --}}
+                {{ $zipcode }}
                 <input type="hidden" name="zipcode-0" value="{{ $zipcode0 }}">
                 <input type="hidden" name="zipcode-1" value="{{ $zipcode1 }}">
             </td>
@@ -110,7 +108,6 @@
             </th>
             <td>
                 {{ $city }}
-                {{-- <input type="hidden" name="city" value="{{ $all_items->city }}"> --}}
                 <input type="hidden" name="city" value="{{ $city }}">
             </td>
         </tr>
@@ -119,7 +116,6 @@
             </th>
             <td>
                 {{ $building }}
-                {{-- <input type="hidden" name="building" value="{{ $all_items->building }}"> --}}
                 <input type="hidden" name="building" value="{{ $building }}">
             </td>
         </tr>
@@ -129,7 +125,6 @@
             </th>
             <td>
                 プライバシーポリシーを確認し、内容に同意します。
-                {{-- <input type="hidden" name="pravacy_policy" value="{{ $all_items->privacy_policy }}"> --}}
                 <input type="hidden" name="pravacy_policy" value="{{ $privacy_policy }}">
             </td>
         </tr>
@@ -140,7 +135,6 @@
             </th>
             <td>
                 {{ $content }}
-                {{-- <input type="hidden" name="content" value="{{ $all_items->content }}"> --}}
                 <input type="hidden" name="content" value="{{ $content }}">
             </td>
         </tr>

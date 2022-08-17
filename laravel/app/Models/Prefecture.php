@@ -12,6 +12,6 @@ class Prefecture extends Model
     // (従)Inquiry_Itemモデルへ紐付け
     public function inquiry_items()
     {
-        return $this->belongsTo('App\Models\Inquiry_Items');
+        return $this->belongsTo('App\Models\Inquiry_Item');
     }
 }

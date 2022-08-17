@@ -99,9 +99,6 @@
             <input type="tel" name="tel0" id="tel-0" value="{{ old('tel0')}}"> -
             <input type="tel" name="tel1" id="tel-1" value="{{ old('tel1')}}"> -
             <input type="tel" name="tel2" id="tel-2" value="{{ old('tel2')}}">
-            {{-- <input type="tel" name="tel-0" id="tel-0" value="{{ old('tel-0')}}"> -
-            <input type="tel" name="tel-1" id="tel-1" value="{{ old('tel-1')}}"> -
-            <input type="tel" name="tel-2" id="tel-2" value="{{ old('tel-2')}}"> --}}
                 @error('tel0')
                     <p class="red">{{ $message }}</p>
                 @enderror
