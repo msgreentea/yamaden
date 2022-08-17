@@ -9,6 +9,10 @@ class Prefecture extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'pref_id'
+    ];
+
     // 都道府県名を返すメソッド。
     // getPrefNameAttribute = 都道府県名を取得する為のアクセサ。
     public function getPrefNameAttribute()

@@ -9,7 +9,7 @@ class ContactController extends Controller
 {
     public function Confirm(Request $request)
     {
-        // $this->validate($request, Inquiry_Item::$rules);
+        $this->validate($request, Inquiry_Item::$rules);
 
         $all_items = $request->all();
         // $all_items = Inquiry_Item::all();
