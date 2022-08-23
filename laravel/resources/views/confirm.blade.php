@@ -104,8 +104,8 @@
             {{-- {{ $pref->PrefName }} --}}
 
             {{-- 選択した都道府県の数字のみ表示される --}}
-            {{-- {{ $pref }} --}}
-            {{-- {{ $this->pref_name }} --}}
+            {{-- {{ $pref->pref_name }} --}}
+            {{ $pref }}
 
             {{-- htmlspecialcharsってエラー出る --}}
             {{-- {{ config('pref') }} --}}
@@ -148,7 +148,7 @@
             </td>
         </tr>
         </table>
-        <input type="submit" class="btn-form" value="確認画面へ">
+        <input type="submit" class="btn-form" value="送信する">
     </form>
     <div class="form-right">
         <p>有限会社山田電気では、メールやお電話での求人ご応募・お問い合わせを承っております。 メールでのご応募・お問い合わせはご返信までお時間がかかる場合もございますので、お急ぎの方はお電話にて直接ご応募・お問い合わせ下さい。

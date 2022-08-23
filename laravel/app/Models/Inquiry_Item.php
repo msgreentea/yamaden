@@ -34,6 +34,12 @@ class Inquiry_Item extends Model
     );
 
 
+    public function getPrefNameAttribute()
+    {
+        return config('pref.' . $this->pref_id);
+    }
+
+
     // (主)prefecturesモデルへ紐付け
     public function prefectures()
     {

@@ -61,8 +61,8 @@ class ContactController extends Controller
             // 'fax-2' => $request->fax2,
             // 'zipcode-0' => $request->zipcode0,
             // 'zipcode-1' => $request->zipcode1,
-            // 'pref' => $request->pref,
-            'pref' => Prefecture::find(1),
+            'pref' => $request->pref,
+            // 'pref' => Prefecture::find(1),
             // 'pref' => Prefecture::find(1)->pref_name(),
             'city' => $request->city,
             'building' => $request->building,
@@ -70,11 +70,10 @@ class ContactController extends Controller
             'content' => $request->content,
         ];
 
-        $user = Inquiry_Item::all();
-        // $user = Prefecture::find(1);
-        dd($user);
+
         // $pref = $request->pref;
         // $pref = config('pref');
+        // dd($pref);
 
         // dd($request->pref);
 

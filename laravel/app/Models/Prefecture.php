@@ -17,13 +17,13 @@ class Prefecture extends Model
 
     // 都道府県名を返すメソッド。
     // getPrefNameAttribute = 都道府県名を取得する為のアクセサ。
-    public function getPrefNameAttribute()
-    {
-        return config('pref.' . $this->pref_id);
-    }
+    // public function getPrefNameAttribute()
+    // {
+    //     return config('pref.' . $this->pref_id);
+    // }
 
     // (従)Inquiry_Itemモデルへ紐付け
-    public function inquiry_items()
+    public function inquiry_item()
     {
         return $this->belongsTo('App\Models\Inquiry_Item');
     }
