@@ -9,6 +9,8 @@ class Prefecture extends Model
 {
     use HasFactory;
 
+    protected $table = 'Prefectures';
+
     protected $fillable = [
         'pref_id'
     ];

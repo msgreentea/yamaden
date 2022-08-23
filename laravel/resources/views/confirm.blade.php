@@ -96,12 +96,20 @@
             </th>
             <td>
             <!-- 要改善　郵便番号入力したら自動補完されて欲しい -->
-            {{-- @foreach (config('pref') as $index => $name)
-                <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>$name</option>
-            @endforeach --}}
-            {{ config('pref') }}
-            {{-- <select name="_pref">
-            </select> --}}
+
+            {{-- {{ $pref->pref_name }} --}}
+            {{-- {{ Prefecture::prefectures()->pref_name }} --}}
+
+            {{-- このプロパティ何って出る --}}
+            {{-- {{ $pref->PrefName }} --}}
+
+            {{-- 選択した都道府県の数字のみ表示される --}}
+            {{-- {{ $pref }} --}}
+            {{-- {{ $this->pref_name }} --}}
+
+            {{-- htmlspecialcharsってエラー出る --}}
+            {{-- {{ config('pref') }} --}}
+
             </td>
         </tr>
         <tr>

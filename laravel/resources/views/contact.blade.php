@@ -135,20 +135,10 @@
             </th>
             <td>
             <!-- 要改善　郵便番号入力したら自動補完されて欲しい -->
-            <select name="_pref">
-                {{-- configから持ってきて取得 --}}
-                {{-- @foreach ($prefs as $index => $name) --}}
-
-                {{-- viewで直接取得 --}}
-                {{-- @foreach ($prefs as $pref) --}}
-                    {{-- <option value="{{ $pref->pref_id }}">{{ $pref-> }}</option> --}}
-
+            <select name="pref">
+                // 数字（$index) を文字（$name）に変換
                 @foreach (config('pref') as $index => $name)
-                    {{-- <option value="{{ $index }}">{{ $name }}</option> --}}
                     <option value="{{ $index }}" @if (old('pref') == $index) selected @endif>{{ $name }}</option>
-                    {{-- <option value="{{ $index }}" @if (old('pref') == $index) selected @endif>$name</option> --}}
-                {{-- <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>$name</option> --}}
-            {{-- <option value="{{ $index }}" @if (old('_pref') == $index) selected @endif>{{ $pref->prefName }}</option> --}}
                 @endforeach
             </select>
                 @error('pref')

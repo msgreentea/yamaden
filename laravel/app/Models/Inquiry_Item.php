@@ -33,12 +33,6 @@ class Inquiry_Item extends Model
         'content' => 'required | max:50',
     );
 
-    // 都道府県名を返すメソッド。
-    // getPrefNameAttribute = 都道府県名を取得する為のアクセサ。
-    public function getPrefNameAttribute()
-    {
-        return config('pref.' . $this->pref_id);
-    }
 
     // (主)prefecturesモデルへ紐付け
     public function prefectures()

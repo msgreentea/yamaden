@@ -16,6 +16,7 @@ class CreatePrefecturesTable extends Migration
         Schema::create('prefectures', function (Blueprint $table) {
             $table->id();
             $table->integer('pref_id')->unsigned();
+            // $table->foreign('pref_id')->references('pref_id')->on('id')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Inquiry_Item;
+use App\Models\Prefecture;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
     public function Confirm(Request $request)
     {
-        $this->validate($request, Inquiry_Item::$rules);
+        // $this->validate($request, Inquiry_Item::$rules);
 
         $all_items = $request->all();
         // $all_items = Inquiry_Item::all();
         // dd($all_items);
+        // dd($request);
 
         // $all_items = [
         //     'requirement' => $request->requirement,
@@ -59,14 +61,36 @@ class ContactController extends Controller
             // 'fax-2' => $request->fax2,
             // 'zipcode-0' => $request->zipcode0,
             // 'zipcode-1' => $request->zipcode1,
-            'pref' => $request->pref,
+            // 'pref' => $request->pref,
+            'pref' => Prefecture::find(1),
+            // 'pref' => Prefecture::find(1)->pref_name(),
             'city' => $request->city,
             'building' => $request->building,
             'privacy_policy' => $request->privacy_policy,
             'content' => $request->content,
         ];
 
-        // dd($all_items);
+        $user = Inquiry_Item::all();
+        // $user = Prefecture::find(1);
+        dd($user);
+        // $pref = $request->pref;
+        // $pref = config('pref');
+
+        // dd($request->pref);
+
+        // $pref = Prefecture::get();
+        // dd($pref);
+
+        // $prefName = $request->pref->pref_name();
+
+        // $prefName = $pref->pref_name;
+        // $pref->pref_name();
+        // $pref->pref_name;
+        // dd($pref->pref_name);
+        // dd($prefName);
+
+
+
 
         // $requirement = $request->requirement;
         // $name = $request->name;
