@@ -33,25 +33,6 @@
                 @error('requirement')
                     <p class="red">{{ $message }}</p>
                 @enderror
-
-            {{-- <td class="col-md-6">
-                <p class="middle">
-                    <input type="radio" id="radio-0" name="requirement" value="0">
-                    <label for="radio01">求人のご応募</label>
-                </p>
-                <p class="middle">
-                    <input type="radio" id="radio-1" name="requirement" value="1">
-                    <label for="radio02">仕事のご相談</label>
-                </p>
-                <p class="middle">
-                    <input type="radio" id="radio2" name="requirement" value="2">
-                    <label for="radio03">お問い合わせ</label>
-                </p>
-            </td> --}}
-{{-- <div class="form-group row">
-   <label for="radio01" class="col-md-4 col-form-label text-md-right">好み２</label>
-</div> --}}
-
             </td>
         </tr>
         <tr>

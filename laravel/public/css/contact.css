@@ -58,7 +58,9 @@ input[type="text"] {
 input[type="select"] {
     border: 1px solid black;
 }
-
+.btn-side {
+    justify-content: left;
+}
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
       Privacy Policy

@@ -25,5 +25,6 @@ Route::get('/business', [PagesController::class, 'Business']);
 Route::get('/result', [PagesController::class, 'Result']);
 Route::get('/recruit', [PagesController::class, 'Recruit']);
 // 入力ページ
-Route::get('/contact', [PagesController::class, 'Contact']);
+Route::get('/contact', [PagesController::class, 'Contact'])->name('contact');
 Route::post('/contact/confirm', [ContactController::class, 'Confirm'])->name('confirm');
+Route::post('/contact/confirm', [ContactController::class, 'Send'])->name('send');

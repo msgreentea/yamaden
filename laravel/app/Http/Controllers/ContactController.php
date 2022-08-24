@@ -12,30 +12,10 @@ class ContactController extends Controller
     {
         // $this->validate($request, Inquiry_Item::$rules);
 
-        $all_items = $request->all();
-        // $all_items = Inquiry_Item::all();
+        // $all_items = $request->all();
+        $all_items = Inquiry_Item::all();
         // dd($all_items);
         // dd($request);
-
-        // $all_items = [
-        //     'requirement' => $request->requirement,
-        //     'name' => $request->name,
-        //     'kana' => $request->kana,
-        //     'email' => $request->email,
-        //     'tel0' => $request->tel0,
-        //     'tel1' => $request->tel1,
-        //     'tel2' => $request->tel2,
-        //     'fax0' => $request->fax0,
-        //     'fax1' => $request->fax1,
-        //     'fax2' => $request->fax2,
-        //     'zipcode0' => $request->zipcode0,
-        //     'zipcode1' => $request->zipcode1,
-        //     'pref' => $request->pref,
-        //     'city' => $request->city,
-        //     'building' => $request->building,
-        //     'privacy_policy' => $request->privacy_policy,
-        //     'content' => $request->content,
-        // ];
 
         $all_items = [
             'requirement' => $request->requirement,
@@ -53,14 +33,6 @@ class ContactController extends Controller
             'zipcode0' => $request->zipcode0,
             'zipcode1' => $request->zipcode1,
             'zipcode' => $request->zipcode0 . ' - ' . $request->zipcode1,
-            // 'tel-0' => $request->tel0,
-            // 'tel-1' => $request->tel1,
-            // 'tel-2' => $request->tel2,
-            // 'fax-0' => $request->fax0,
-            // 'fax-1' => $request->fax1,
-            // 'fax-2' => $request->fax2,
-            // 'zipcode-0' => $request->zipcode0,
-            // 'zipcode-1' => $request->zipcode1,
             'pref' => $request->pref,
             // 'pref' => Prefecture::find(1),
             // 'pref' => Prefecture::find(1)->pref_name(),
@@ -69,6 +41,9 @@ class ContactController extends Controller
             'privacy_policy' => $request->privacy_policy,
             'content' => $request->content,
         ];
+
+
+        // dd(Inquiry_Item::all());
 
 
         // $pref = $request->pref;
@@ -114,7 +89,9 @@ class ContactController extends Controller
     }
 
     //
-    public function send()
+    public function send(Request $request)
     {
+        $all_items = $request->all();
+        dd($all_items);
     }
 }

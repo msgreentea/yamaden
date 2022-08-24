@@ -20,14 +20,19 @@
     <div class="side">
     <form action="" method="post" class="form-left">
         @csrf
-        <!-- 要改善　入力欄が分割されてるの時代遅れじゃない？ -->
         <table>
         <tr>
             <th class="form-th">ご用件<br>
             <span>※必須</span>
             </th>
             <td class="requirement">
-                <p class="middle">{{ $requirement }}</p>
+                @if ($requirement == 0)
+                    <p class="middle">求人のご応募</p>
+                @elseif ($requirement == 1)
+                    <p class="middle">仕事のご相談</p>
+                @else
+                    <p class="middle">お問い合わせ</p>
+                @endif
                 <input type="hidden" name="requirement" value="{{ $requirement }}">
             </td>
         </tr>
@@ -63,8 +68,9 @@
             <span>※必須</span>
             </th>
             <td class="form-shorter">
-                {{-- {{ $tel0 }} - {{ $tel1 }} - {{ $tel2 }} --}}
-                {{ $tel }}
+                @if ($tel != null && $tel0 != null && $tel1 != null && $tel2 != null)
+                    {{ $tel }}
+                @endif
                 <input type="hidden" name="tel-0" value="{{ $tel0 }}">
                 <input type="hidden" name="tel-1" value="{{ $tel1 }}">
                 <input type="hidden" name="tel-2" value="{{ $tel2 }}">
@@ -74,8 +80,9 @@
             <th class="form-th">FAX番号<br>
             </th>
             <td class="form-shorter">
-                {{-- {{ $fax0 }} - {{ $fax1 }} - {{ $fax2 }} --}}
-                {{ $fax }}
+                @if ($fax != null && $fax0 != null && $fax1 != null && $fax2 != null)
+                    {{ $fax }}
+                @endif
                 <input type="hidden" name="fax-0" value="{{ $fax0 }}">
                 <input type="hidden" name="fax-1" value="{{ $fax1 }}">
                 <input type="hidden" name="fax-2" value="{{ $fax2 }}">
@@ -84,9 +91,10 @@
         <tr>
             <th class="form-th">郵便番号<br>
             </th>
-            <td class="form-shorter">&#12306;
-                {{-- {{ $zipcode0 }} - {{ $zipcode1 }} --}}
-                {{ $zipcode }}
+            <td class="form-shorter">
+                @if ($zipcode != null && $zipcode0 != null && $zipcode1 != null)
+                    &#12306;{{ $zipcode }}
+                @endif
                 <input type="hidden" name="zipcode-0" value="{{ $zipcode0 }}">
                 <input type="hidden" name="zipcode-1" value="{{ $zipcode1 }}">
             </td>
@@ -95,6 +103,10 @@
             <th class="form-th">都道府県<br>
             </th>
             <td>
+                @if ($pref != 0)
+                    {{ $pref }}
+                @endif
+
             <!-- 要改善　郵便番号入力したら自動補完されて欲しい -->
 
             {{-- {{ $pref->pref_name }} --}}
@@ -105,7 +117,7 @@
 
             {{-- 選択した都道府県の数字のみ表示される --}}
             {{-- {{ $pref->pref_name }} --}}
-            {{ $pref }}
+            {{-- {{ $pref }} --}}
 
             {{-- htmlspecialcharsってエラー出る --}}
             {{-- {{ config('pref') }} --}}
@@ -148,8 +160,14 @@
             </td>
         </tr>
         </table>
-        <input type="submit" class="btn-form" value="送信する">
+        <div class="btn-side">
+            {{-- <input type="submit" class="btn-form" value="送信"> --}}
+            {{-- <input type="submit" class="btn-form" value="戻る"> --}}
+            <input type="submit" class="btn-form" onclick="location.href=" value="送信">
+            <input type="submit" class="btn-form" onclick="location.href={{ route('send')}}" value="送信">
+            <input type="submit" class="btn-form" onclick="location.href={{ route('contact')}}" value="戻る">
     </form>
+    </div>
     <div class="form-right">
         <p>有限会社山田電気では、メールやお電話での求人ご応募・お問い合わせを承っております。 メールでのご応募・お問い合わせはご返信までお時間がかかる場合もございますので、お急ぎの方はお電話にて直接ご応募・お問い合わせ下さい。
         尚、ご応募・お問い合わせの際は、下記プライバシーポリシーをご確認ください。</p>
