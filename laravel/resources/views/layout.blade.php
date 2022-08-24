@@ -49,7 +49,8 @@
       <li class="bold"><a href="{{ url('/business')}}">業務内容</a></li>
       <li class="bold"><a href="{{ url('/result')}}">施工実績</a></li>
       <li class="bold"><a href="{{ url('/recruit')}}">採用情報</a></li>
-      <li class="bold"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
+      {{-- <li class="bold"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li> --}}
+      <li class="bold"><a href="{{ route('contact')}}">応募フォーム<br>お問い合わせ</a></li>
     </ul>
     <nav class="header-swiped padding center">
       <ul>
@@ -57,7 +58,8 @@
         <li class="bold"><a href="{{ url('/business')}}">業務内容</a></li>
         <li class="bold"><a href="{{ url('/result')}}">施工実績</a></li>
         <li class="bold"><a href="{{ url('/recruit')}}">採用情報</a></li>
-        <li class="bold"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
+        {{-- <li class="bold"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li> --}}
+        <li class="bold"><a href="{{ route('contact')}}">応募フォーム<br>お問い合わせ</a></li>
       </ul>
     </nav>
     <a href="{{ url('./')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>

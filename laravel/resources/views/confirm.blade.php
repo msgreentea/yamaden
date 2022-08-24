@@ -163,9 +163,10 @@
         <div class="btn-side">
             {{-- <input type="submit" class="btn-form" value="送信"> --}}
             {{-- <input type="submit" class="btn-form" value="戻る"> --}}
-            <input type="submit" class="btn-form" onclick="location.href=" value="送信">
-            <input type="submit" class="btn-form" onclick="location.href={{ route('send')}}" value="送信">
-            <input type="submit" class="btn-form" onclick="location.href={{ route('contact')}}" value="戻る">
+            {{-- <input type="submit" class="btn-form" onclick="location.href=" value="送信"> --}}
+
+            {{-- <input type="submit" class="btn-form" onclick="location.href={{ route('send')}}" value="送信">
+            <input type="submit" class="btn-form" onclick="location.href={{ route('contact')}}" value="戻る"> --}}
     </form>
     </div>
     <div class="form-right">
