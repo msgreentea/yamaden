@@ -28,3 +28,4 @@ Route::get('/recruit', [PagesController::class, 'Recruit']);
 Route::get('/contact', [PagesController::class, 'Contact'])->name('contact');
 Route::post('/contact/confirm', [ContactController::class, 'Confirm'])->name('confirm');
 Route::post('/contact/send', [ContactController::class, 'Send'])->name('send');
+Route::get('/contact/completed', [ContactController::class, 'completed'])->name('completed');
