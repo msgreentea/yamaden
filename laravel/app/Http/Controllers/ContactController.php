@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function Confirm(Request $request)
     {
-        // $this->validate($request, Inquiry_Item::$rules);
+        $this->validate($request, Inquiry_Item::$rules);
 
         // $all_items = $request->all();
         // dd($all_items);
@@ -118,7 +118,7 @@ class ContactController extends Controller
         // Inquiry_Item::create($all_items);
         // dd($all_items);
 
-        return view('completed');
+        return view('completed', $items);
 
         // dd($items);
     }

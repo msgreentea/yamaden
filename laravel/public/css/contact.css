@@ -94,3 +94,6 @@ input[type="select"] {
     height: 60vh;
     padding-top: 10%;
 }
+.completed-table {
+    margin-top: 30px;
+}
