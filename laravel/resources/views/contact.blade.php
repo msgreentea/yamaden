@@ -152,7 +152,11 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1" {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy") === "1"? 'checked="checked"' : '' }}><label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
+                <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1"
+                {{-- {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy") === "1"? 'checked = "checked"' : '' }}> --}}
+                {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy"), true)? 'checked="checked"' : '' }}>
+                <label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
+
                 @error('privacy_policy')
                 <p class="red">{{ $message }}</p>
                 @enderror

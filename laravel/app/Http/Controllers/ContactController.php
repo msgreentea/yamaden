@@ -13,8 +13,8 @@ class ContactController extends Controller
         // $this->validate($request, Inquiry_Item::$rules);
 
         // $all_items = $request->all();
-        $all_items = Inquiry_Item::all();
         // dd($all_items);
+        // $all_items = Inquiry_Item::all();
         // dd($request);
 
         $all_items = [

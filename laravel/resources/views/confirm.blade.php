@@ -150,8 +150,10 @@
             <span>※必須</span>
             </th>
             <td>
+                @if ($privacy_policy != null && $privacy_policy == 1)
                 プライバシーポリシーを確認し、内容に同意します。
-                <input type="hidden" name="pravacy_policy" value="1">
+                @endif
+                <input type="hidden" id="privacy_policy" name="privacy_policy" value="1">
             </td>
         </tr>
 

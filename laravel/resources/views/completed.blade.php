@@ -9,7 +9,10 @@
 @endsection
 
 @section('content')
-
-お問い合わせありがとうございます。
-
+<div class="entry-title center inner">
+    <h1 class="sec_title bold center">送信完了</h1>
+</div>
+<div class="completed center">
+    お問い合わせありがとうございました。
+</div>
 @endsection
