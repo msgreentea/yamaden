@@ -25,7 +25,8 @@ return [
     'before'               => ':attributeには、:dateより前の日付をご利用ください。',
     'before_or_equal'      => ':attributeには、:date以前の日付をご利用ください。',
     'between'              => [
-        'numeric' => ':attributeは、:minから:maxの間で指定してください。',
+        // 'numeric' => ':attributeは、:minから:maxの間で指定してください。',
+        'numeric' => '有効な:attributeを入力してください',
         'file'    => ':attributeは、:min kBから、:max kBの間で指定してください。',
         'string'  => ':attributeは、:min文字から、:max文字の間で指定してください。',
         'array'   => ':attributeは、:min個から:max個の間で指定してください。',
@@ -37,8 +38,9 @@ return [
     'date_equals'          => ':attributeには、:dateと同じ日付けを指定してください。',
     'date_format'          => ':attributeは:format形式で指定してください。',
     'different'            => ':attributeと:otherには、異なった内容を指定してください。',
-    'digits'               => ':attributeは:digits桁で指定してください。',
-    'digits_between'       => ':attributeは:min桁から:max桁の間で指定してください。',
+    'digits'               => '有効な:attributeを入力してください',
+    // 'digits_between'       => ':attributeは:min桁から:max桁の間で指定してください。',
+    'digits_between'       => '有効な:attributeを入力してください',
     'dimensions'           => ':attributeの図形サイズが正しくありません。',
     'distinct'             => ':attributeには異なった値を指定してください。',
     'email'                => ':attributeには、有効なメールアドレスを指定してください。',
@@ -191,6 +193,7 @@ return [
         'tel1' => '電話番号',
         'tel2' => '電話番号',
         'content' => 'お問い合わせ内容',
+        'privacy_policy' => 'プライバシーポリシー'
     ],
 
 ];

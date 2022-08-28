@@ -27,9 +27,33 @@
             <span>※必須</span>
             </th>
             <td class="requirement">
-            <p class="middle"><input type="radio" id="radio-0" name="requirement" value="0"><label for="radio-0">求人のご応募</label></p>
-            <p class="middle"><input type="radio" id="radio-1" name="requirement" value="1"><label for="radio-1">仕事のご相談</label></p>
-            <p class="middle"><input type="radio" id="radio-2" name="requirement" value="2"><label for="radio-2">お問い合わせ</label></p>
+            <p class="middle">
+                <input type="radio" id="radio0" name="requirement[]" value="0"
+                    @if($all_items->requirement === "0") selected @endif
+                    {{-- {{ old('requirement', $all_items->requirement) === '0' ? 'checked' : '' }} /> --}}
+                    {{-- {{ old('requirement') === '0' ? 'checked' : '' }} /> --}}
+                {{-- {{ is_array(old("requirement")) && in_array("0", old("requirement"), true)? 'checked="checked"' : '' }} --}}
+                >
+                <label for="radio0">求人のご応募</label>
+            </p>
+            <p class="middle">
+                <input type="radio" id="radio1" name="requirement[]" value="1"
+                @if($all_items->requirement === "1") selected @endif
+                    {{-- {{ old('requirement', $all_items->requirement) === '1' ? 'checked' : '' }} /> --}}
+                    {{-- {{ old('requirement') === '1' ? 'checked' : '' }} /> --}}
+                {{-- {{ is_array(old("requirement")) && in_array("1", old("requirement"), true)? 'checked="checked"' : '' }} --}}
+                >
+                <label for="radio1">仕事のご相談</label>
+            </p>
+            <p class="middle">
+                <input type="radio" id="radio2" name="requirement[]" value="2"
+                @if($all_items->requirement === "2") selected @endif
+                    {{-- {{ old('requirement', $all_items->requirement) === '2' ? 'checked' : '' }} /> --}}
+                    {{-- {{ old('requirement') === '2' ? 'checked' : '' }} /> --}}
+                {{-- {{ is_array(old("requirement")) && in_array("2", old("requirement"), true)? 'checked="checked"' : '' }} --}}
+                >
+                <label for="radio2">お問い合わせ</label>
+            </p>
                 @error('requirement')
                     <p class="red">{{ $message }}</p>
                 @enderror
@@ -152,7 +176,8 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1"
+                <input type="checkbox" id="privacy_policy" name="privacy_policy[]" value="1"
+                {{-- <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1" --}}
                 {{-- {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy") === "1"? 'checked = "checked"' : '' }}> --}}
                 {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy"), true)? 'checked="checked"' : '' }}>
                 <label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
@@ -168,7 +193,7 @@
             <span>※必須</span>
             </th>
             <td>
-                <textarea name="content" id="" cols="50" rows="10" value="{{ old('content')}}"></textarea>
+                <textarea name="content" id="" cols="50" rows="10">{{ old('content')}}</textarea>
                 @error('content')
                 <p class="red">{{ $message }}</p>
                 @enderror

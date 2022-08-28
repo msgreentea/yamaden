@@ -41,8 +41,10 @@ class PagesController extends Controller
     public function Contact()
     {
         $prefs = config('pref');
+        // $all_items = Inquiry_Item::all();
 
         return view('contact')->with(['prefs' => $prefs]);
+        // return view('contact', compact('prefs', 'all_items'));
         // return view('contact');
     }
 }
