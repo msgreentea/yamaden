@@ -14,8 +14,13 @@ class ContactController extends Controller
 
         // $all_items = $request->all();
         // dd($all_items);
-        // $all_items = Inquiry_Item::all();
+
+        // $all_items = Inquiry_Item::find(1);
+        // dd($all_items);
         // dd($request);
+
+        // $a = $request->requirement;
+        // dd($a);
 
         $all_items = [
             'requirement' => $request->requirement,

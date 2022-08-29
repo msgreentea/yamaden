@@ -28,12 +28,16 @@
             <td class="requirement">
                 @if ($requirement == 0)
                     <p class="middle">求人のご応募</p>
+                    <input type="hidden" name="requirement" value="0">
                 @elseif ($requirement == 1)
                     <p class="middle">仕事のご相談</p>
+                    <input type="hidden" name="requirement" value="1">
                 @else
                     <p class="middle">お問い合わせ</p>
+                    <input type="hidden" name="requirement" value="2">
                 @endif
-                <input type="hidden" name="requirement" value="{{ $requirement }}">
+                {{-- <input type="hidden" name="requirement" value="{{ $requirement }}"> --}}
+                {{-- <input type="hidden" name="requirement" value="{{ $requirement }}"> --}}
             </td>
         </tr>
         <tr>

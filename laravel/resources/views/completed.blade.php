@@ -36,23 +36,24 @@
             <th>建物名</th>
             <th>お問い合わせ内容</th>
         </tr>
+        {{-- <tr>
+            <td>{{ $created_at }}</td>
+            <td>{{ $requirement }}</td>
+            <td>{{ $name }}</td>
+            <td>{{ $kana }}</td>
+            <td>{{ $email }}</td>
+            <td>{{ $tel0 }}{{ $tel1 }}{{ $tel2 }}</td>
+            <td>{{ $fax0 }}{{ $fax1 }}{{ $fax2 }}</td>
+            <td>{{ $zipcode0 }}{{ $zipcode1 }}</td>
+            <td>{{ $pref }}</td>
+            <td>{{ $city }}</td>
+            <td>{{ $building }}</td>
+            <td>{{ $content }}</td>
+        </tr> --}}
         @foreach ($items as $item)
             <tr>
-                <td>{{ $created_at }}</td>
-                <td>{{ $inquiry }}</td>
-                <td>{{ $name }}</td>
-                <td>{{ $kana }}</td>
-                <td>{{ $email }}</td>
-                <td>{{ $tel0 }}{{ $tel1 }}{{ $tel2 }}</td>
-                <td>{{ $fax0 }}{{ $fax1 }}{{ $fax2 }}</td>
-                <td>{{ $zipcode0 }}{{ $zipcode1 }}</td>
-                <td>{{ $pref }}</td>
-                <td>{{ $city }}</td>
-                <td>{{ $building }}</td>
-                <td>{{ $content }}</td>
-
-                {{-- <td>{{ $item->created_at }}</td>
-                <td>{{ $item->inquiry }}</td>
+                <td>{{ $item->created_at }}</td>
+                <td>{{ $item->requirement }}</td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->kana }}</td>
                 <td>{{ $item->email }}</td>
@@ -62,7 +63,7 @@
                 <td>{{ $item->pref }}</td>
                 <td>{{ $item->city }}</td>
                 <td>{{ $item->building }}</td>
-                <td>{{ $item->content }}</td> --}}
+                <td>{{ $item->content }}</td>
             </tr>
         @endforeach
     </table>

@@ -28,30 +28,30 @@
             </th>
             <td class="requirement">
             <p class="middle">
-                <input type="radio" id="radio0" name="requirement[]" value="0"
-                    @if($all_items->requirement === "0") selected @endif
+                <input type="radio" id="radio0" name="requirement" value="0" {{ old('requirement') === '0' ? 'checked' : '' }} />
+
+                    {{-- @if(old("requirement") === "0") selected @endif --}}
                     {{-- {{ old('requirement', $all_items->requirement) === '0' ? 'checked' : '' }} /> --}}
-                    {{-- {{ old('requirement') === '0' ? 'checked' : '' }} /> --}}
-                {{-- {{ is_array(old("requirement")) && in_array("0", old("requirement"), true)? 'checked="checked"' : '' }} --}}
-                >
+
+                {{-- <input type="radio" id="radio0" name="requirement[]" value="0" {{ is_array(old("requirement")) && in_array("0", old("requirement"), true)? 'checked="checked"' : '' }}> --}}
                 <label for="radio0">求人のご応募</label>
             </p>
             <p class="middle">
-                <input type="radio" id="radio1" name="requirement[]" value="1"
-                @if($all_items->requirement === "1") selected @endif
+                <input type="radio" id="radio1" name="requirement" value="1" {{ old('requirement') === '1' ? 'checked' : '' }} />
+
+                {{-- @if(old("requirement") === "1") selected @endif --}}
                     {{-- {{ old('requirement', $all_items->requirement) === '1' ? 'checked' : '' }} /> --}}
-                    {{-- {{ old('requirement') === '1' ? 'checked' : '' }} /> --}}
-                {{-- {{ is_array(old("requirement")) && in_array("1", old("requirement"), true)? 'checked="checked"' : '' }} --}}
-                >
+
+                {{-- <input type="radio" id="radio1" name="requirement[]" value="1" {{ is_array(old("requirement")) && in_array("1", old("requirement"), true)? 'checked="checked"' : '' }}> --}}
                 <label for="radio1">仕事のご相談</label>
             </p>
             <p class="middle">
-                <input type="radio" id="radio2" name="requirement[]" value="2"
-                @if($all_items->requirement === "2") selected @endif
+                <input type="radio" id="radio2" name="requirement" value="2" {{ old('requirement') === '2' ? 'checked' : '' }} />
+
+                {{-- @if(old("requirement") === "2") selected @endif --}}
                     {{-- {{ old('requirement', $all_items->requirement) === '2' ? 'checked' : '' }} /> --}}
-                    {{-- {{ old('requirement') === '2' ? 'checked' : '' }} /> --}}
-                {{-- {{ is_array(old("requirement")) && in_array("2", old("requirement"), true)? 'checked="checked"' : '' }} --}}
-                >
+
+                {{-- <input type="radio" id="radio2" name="requirement[]" value="2" {{ is_array(old("requirement")) && in_array("2", old("requirement"), true)? 'checked="checked"' : '' }}> --}}
                 <label for="radio2">お問い合わせ</label>
             </p>
                 @error('requirement')
@@ -176,10 +176,12 @@
             <span>※必須</span>
             </th>
             <td>
-                <input type="checkbox" id="privacy_policy" name="privacy_policy[]" value="1"
-                {{-- <input type="checkbox" id="privacy_policy" name="privacy_policy" value="1" --}}
-                {{-- {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy") === "1"? 'checked = "checked"' : '' }}> --}}
-                {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy"), true)? 'checked="checked"' : '' }}>
+                <input type="checkbox" name="privacy_policy" id="privacy_policy" value="1"
+                    @if (old("privacy_policy") === 1 )checked @endif
+                >
+
+                {{-- <input type="checkbox" name="privacy_policy[]" id="privacy_policy" value="1"
+                    {{ is_array(old("privacy_policy")) && in_array("1", old("privacy_policy"), true )? 'checked="checked"' : '' }}> --}}
                 <label for="privacy_policy">プライバシーポリシーを確認し、内容に同意します。</label>
 
                 @error('privacy_policy')
