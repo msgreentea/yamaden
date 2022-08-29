@@ -50,20 +50,20 @@
             <td>{{ $building }}</td>
             <td>{{ $content }}</td>
         </tr> --}}
-        @foreach ($items as $item)
+        @foreach ($inquiry_items as $inquiry_item)
             <tr>
-                <td>{{ $item->created_at }}</td>
-                <td>{{ $item->requirement }}</td>
-                <td>{{ $item->name }}</td>
-                <td>{{ $item->kana }}</td>
-                <td>{{ $item->email }}</td>
-                <td>{{ $item->tel0 }}{{ $item->tel1 }}{{ $item->tel2 }}</td>
-                <td>{{ $item->fax0 }}{{ $item->fax1 }}{{ $item->fax2 }}</td>
-                <td>{{ $item->zipcode0 }}{{ $item->zipcode1 }}</td>
-                <td>{{ $item->pref }}</td>
-                <td>{{ $item->city }}</td>
-                <td>{{ $item->building }}</td>
-                <td>{{ $item->content }}</td>
+                <td>{{ $inquiry_item->created_at }}</td>
+                <td>{{ $inquiry_item->requirement }}</td>
+                <td>{{ $inquiry_item->name }}</td>
+                <td>{{ $inquiry_item->kana }}</td>
+                <td>{{ $inquiry_item->email }}</td>
+                <td>{{ $inquiry_item->tel0 }}{{ $inquiry_item->tel1 }}{{ $inquiry_item->tel2 }}</td>
+                <td>{{ $inquiry_item->fax0 }}{{ $inquiry_item->fax1 }}{{ $inquiry_item->fax2 }}</td>
+                <td>{{ $inquiry_item->zipcode0 }}{{ $inquiry_item->zipcode1 }}</td>
+                <td>{{ $inquiry_item->pref }}</td>
+                <td>{{ $inquiry_item->city }}</td>
+                <td>{{ $inquiry_item->building }}</td>
+                <td>{{ $inquiry_item->content }}</td>
             </tr>
         @endforeach
     </table>
