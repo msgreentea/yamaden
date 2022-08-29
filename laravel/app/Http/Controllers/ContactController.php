@@ -70,7 +70,7 @@ class ContactController extends Controller
             'content' => $request->content,
         ]);
 
-        $inquiry_items = Inquiry_Item::all();
+        $inquiry_items = Inquiry_Item::paginate(10);
 
         return view('completed', compact('inquiry_items'));
     }

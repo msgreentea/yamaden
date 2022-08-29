@@ -67,5 +67,8 @@
             </tr>
         @endforeach
     </table>
+    <div class="pagination">
+        {{ $inquiry_items->links() }}
+    </div>
 </section>
 @endsection
