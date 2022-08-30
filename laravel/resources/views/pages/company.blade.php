@@ -15,7 +15,6 @@
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <section class="greeting inner">
     <div class="side">
-      {{-- <img class="pic_of_ceo" src="{{ asset('./pics/company/CA2935F0-96EE-A813-84D27302C38D5DE1-e1554444836262.jpg') }}" alt=""> --}}
       <img class="pic_of_ceo" src="./pics/company/CA2935F0-96EE-A813-84D27302C38D5DE1-e1554444836262.jpg" alt="">
       <div class="greeting-text_box">
         <h1 class="sec_title bold center">代表ご挨拶</h1>

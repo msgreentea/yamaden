@@ -19,7 +19,7 @@
       <br>
       <p>建築現場におきましても腕を磨いて行く事のみならず、社会に貢献できる人間集団作りに邁進しております。</p>
       <!-- 要改善　ボタンhover時動きつけたいなぁ -->
-      <a class="btn btn-to_business center" href="./business.html"><img src="./pics/index/business_btn.png" alt="業務内容はこちら"></a>
+      <a class="btn btn-to_business center" href="{{ route('business') }}"><img src="./pics/index/business_btn.png" alt="業務内容はこちら"></a>
     </div>
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -43,15 +43,15 @@
       必要な資格取得を支援(消防設備士、電気工事施工管理技師、 溶接、玉掛けなど、一生モノの資格が取得可能)<br>
       昇給年1回・賞与年2回 / 交通費全額支給<br>
       各種社会保険完備 / 各種手当有・資格手当有 / 社員旅行有</p>
-      <a class="btn btn-to_recruit center" href="./recruit.html"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
+      <a class="btn btn-to_recruit center" href="{{ route('recruit') }}"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
     </div>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       banners
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <section class="padding side banners">
-    <a href="./company.html" class="whiter"><img class="" src="./pics/company_banner.png" alt=""></a>
-    <a href="./result.html" class="whiter"><img src="./pics/results_banner.png" alt=""></a>
+    <a href="{{ route('company') }}" class="whiter"><img class="" src="./pics/company_banner.png" alt=""></a>
+    <a href="{{ route('result') }}" class="whiter"><img src="./pics/results_banner.png" alt=""></a>
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_result
@@ -64,7 +64,7 @@
         <br>
         <p>手掛けて来ました実績の多さが、自信の証です。<br>
         丁寧・安全・迅速に電気設備工事してまいります。</p>
-        <a class="btn btn-to_result center" href="./result.html"><img src="./pics/index/results_btn.png" alt="施工実績はこちら"></a>
+        <a class="btn btn-to_result center" href="{{ route('result') }}"><img src="./pics/index/results_btn.png" alt="施工実績はこちら"></a>
       </div>
     </div>
   </section>
@@ -77,7 +77,6 @@
       <h1 class="sec_title bold center">新着情報</h1>
     </div>
     <ul class="ul-news">
-      「全粒穀物や、脂肪分の少ないタンパク質、果物、野菜、種、ナッツ、豆などを食事に取り入れてみてください。野菜や豆をつかった料理、全粒穀物のクラッカー、ポップコーン、カッテージチーズ、ピーナッツバター、りんご、ギリシャヨーグルトに蜂蜜とベリーなどのおやつを試してみて！」
       <li>
         <div class="side">
           <div class="news-left">

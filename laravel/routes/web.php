@@ -4,29 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ContactController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/', [PagesController::class, 'Index']);
-Route::get('/company', [PagesController::class, 'Company']);
-Route::get('/business', [PagesController::class, 'Business']);
-Route::get('/result', [PagesController::class, 'Result']);
-Route::get('/recruit', [PagesController::class, 'Recruit']);
+Route::get('/', [PagesController::class, 'index'])->name('index');
+Route::get('/company', [PagesController::class, 'company'])->name('company');
+Route::get('/business', [PagesController::class, 'business'])->name('business');
+Route::get('/result', [PagesController::class, 'result'])->name('result');
+Route::get('/recruit', [PagesController::class, 'recruit'])->name('recruit');
 // 入力ページ
-Route::get('/contact', [PagesController::class, 'Contact'])->name('contact');
-Route::post('/contact/confirm', [ContactController::class, 'Confirm'])->name('confirm');
-Route::post('/contact/send', [ContactController::class, 'Send'])->name('send');
+Route::get('/contact', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact/confirm', [ContactController::class, 'confirm'])->name('confirm');
+Route::post('/contact/send', [ContactController::class, 'send'])->name('send');
 Route::get('/contact/completed', [ContactController::class, 'completed'])->name('completed');
 Route::get('/contact/list', [ContactController::class, 'list'])->name('list');
