@@ -50,28 +50,41 @@ class ContactController extends Controller
     //
     public function send(Request $request)
     {
-        $items = Inquiry_Item::create([
-            'requirement' => $request->requirement,
-            'name' => $request->name,
-            'kana' => $request->kana,
-            'email' => $request->email,
-            'tel0' => $request->tel0,
-            'tel1' => $request->tel1,
-            'tel2' => $request->tel2,
-            'fax0' => $request->fax0,
-            'fax1' => $request->fax1,
-            'fax2' => $request->fax2,
-            'zipcode0' => $request->zipcode0,
-            'zipcode1' => $request->zipcode1,
-            'pref' => $request->pref,
-            'city' => $request->city,
-            'building' => $request->building,
-            'privacy_policy' => $request->privacy_policy,
-            'content' => $request->content,
-        ]);
 
+        return view('completed');
+    }
+
+
+    public function list()
+    {
         $inquiry_items = Inquiry_Item::paginate(10);
 
-        return view('completed', compact('inquiry_items'));
+        return view('list', compact('inquiry_items'));
     }
+    // public function list(Request $request)
+    // {
+    //     $items = Inquiry_Item::create([
+    //         'requirement' => $request->requirement,
+    //         'name' => $request->name,
+    //         'kana' => $request->kana,
+    //         'email' => $request->email,
+    //         'tel0' => $request->tel0,
+    //         'tel1' => $request->tel1,
+    //         'tel2' => $request->tel2,
+    //         'fax0' => $request->fax0,
+    //         'fax1' => $request->fax1,
+    //         'fax2' => $request->fax2,
+    //         'zipcode0' => $request->zipcode0,
+    //         'zipcode1' => $request->zipcode1,
+    //         'pref' => $request->pref,
+    //         'city' => $request->city,
+    //         'building' => $request->building,
+    //         'privacy_policy' => $request->privacy_policy,
+    //         'content' => $request->content,
+    //     ]);
+
+    //     $inquiry_items = Inquiry_Item::paginate(10);
+
+    //     return view('list', compact('inquiry_items'));
+    // }
 }

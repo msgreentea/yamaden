@@ -12,9 +12,6 @@ header {
     応募フォーム・お問い合わせ
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-.red {
-    color: red;
-}
 .form-left {
     width: 66%;
 }
@@ -79,6 +76,14 @@ input[type="select"] {
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+      to_link (オリジナル)
+  ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+*/
+.to_link a {
+    font-size: 20px;
+}
+/*
+　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
       confirm.blade.php
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
@@ -90,6 +95,11 @@ input[type="select"] {
       completed.blade.php
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
+th,
+td {
+    padding: 3px;
+    text-align: center;
+}
 .completed {
     height: 60vh;
     padding-top: 10%;
@@ -98,10 +108,8 @@ input[type="select"] {
     margin-top: 30px;
 }
 .pagination {
-    /* position: absolute;
-    top: 80%;
-    left: 50%; */
-    display: inline;
-    transform: translate(-50%, -50%);
-    width: 300px;
+    display: flex;
+    letter-spacing: 15px;
+    justify-content: center;
+    font-size: 18px;
 }
