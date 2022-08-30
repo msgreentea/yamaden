@@ -2,7 +2,6 @@
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('/css/contact.css') }}">
-{{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --}}
 @endsection
 
 @section('title')
@@ -30,20 +29,6 @@
             <th>建物名</th>
             <th>お問い合わせ内容</th>
         </tr>
-        {{-- <tr>
-            <td>{{ $created_at }}</td>
-            <td>{{ $requirement }}</td>
-            <td>{{ $name }}</td>
-            <td>{{ $kana }}</td>
-            <td>{{ $email }}</td>
-            <td>{{ $tel0 }}{{ $tel1 }}{{ $tel2 }}</td>
-            <td>{{ $fax0 }}{{ $fax1 }}{{ $fax2 }}</td>
-            <td>{{ $zipcode0 }}{{ $zipcode1 }}</td>
-            <td>{{ $pref }}</td>
-            <td>{{ $city }}</td>
-            <td>{{ $building }}</td>
-            <td>{{ $content }}</td>
-        </tr> --}}
         @foreach ($inquiry_items as $inquiry_item)
             <tr>
                 <td>{{ $inquiry_item->created_at->format('Y-m-d') }}</td>
@@ -62,7 +47,6 @@
         @endforeach
     </table>
     <div class="pagination inner center">
-        {{-- {{ $inquiry_items->links() }} --}}
         {{ $inquiry_items->links('vendor.pagination.default') }}
         <br>
     </div>
