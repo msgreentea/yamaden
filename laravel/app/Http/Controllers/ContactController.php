@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function Confirm(Request $request)
+    public function confirm(Request $request)
     {
         $this->validate($request, Inquiry_Item::$rules);
 
@@ -44,14 +44,14 @@ class ContactController extends Controller
             'content' => $request->content,
         ];
 
-        return view('confirm', $all_items);
+        return view('contact.confirm', $all_items);
     }
 
     //
     public function send(Request $request)
     {
 
-        return view('completed');
+        return view('contact.completed');
     }
 
 
@@ -59,7 +59,7 @@ class ContactController extends Controller
     {
         $inquiry_items = Inquiry_Item::paginate(10);
 
-        return view('list', compact('inquiry_items'));
+        return view('contact.list', compact('inquiry_items'));
     }
     // public function list(Request $request)
     // {
