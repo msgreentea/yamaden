@@ -423,11 +423,13 @@
       <li><a href="#faq5">Q. 資格や免許が無いのですが大丈夫ですか?</a></li>
     </ul>
 
+
     <!-- 要改善　ページ内リンク、ナビと被って見づらい。。 -->
     <!-- アコーディオンパネルにしたい！ -->
-
+    <br><p id="faq1"></p><br>
     <div class="side">
-      <h4 class="frame_title half"><a id="faq1">Q. 未経験でも大丈夫ですか?</a></h4>
+        <h4 class="frame_title half"><a>Q. 未経験でも大丈夫ですか?</a></h4>
+      {{-- <h4 class="frame_title half"><a id="faq1">Q. 未経験でも大丈夫ですか?</a></h4> --}}
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>
@@ -439,8 +441,10 @@
       </div>
     </div>
 
+    <br><p id="faq2"></p><br>
     <div class="side">
-      <h4 class="frame_title half"><a id="faq2">Q. 経験者ですが優遇して頂けますか?</a></h4>
+      <h4 class="frame_title half"><a>Q. 経験者ですが優遇して頂けますか?</a></h4>
+      {{-- <h4 class="frame_title half"><a id="faq2">Q. 経験者ですが優遇して頂けますか?</a></h4> --}}
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>
@@ -452,8 +456,9 @@
       </div>
     </div>
 
+    <br><p id="faq3"></p><br>
     <div class="side">
-      <h4 class="frame_title half"><a id="faq3">Q. 出張はありますか?</a></h4>
+      <h4 class="frame_title half"><a>Q. 出張はありますか?</a></h4>
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>
@@ -465,8 +470,9 @@
       </div>
     </div>
 
+    <br><p id="faq4"></p><br>
     <div class="side">
-      <h4 class="frame_title half"><a id="faq4">Q. 転勤はありますか?</a></h4>
+      <h4 class="frame_title half"><a>Q. 転勤はありますか?</a></h4>
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>
@@ -477,8 +483,9 @@
       </div>
     </div>
 
+    <br><p id="faq5"></p><br>
     <div class="side">
-      <h4 class="frame_title half"><a id="faq5">Q. 資格や免許が無いのですが大丈夫ですか?</a></h4>
+      <h4 class="frame_title half"><a>Q. 資格や免許が無いのですが大丈夫ですか?</a></h4>
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>

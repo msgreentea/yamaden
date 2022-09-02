@@ -16,7 +16,6 @@ header {
 */
 .pride {
     background-image: url(/pics/recruit/p5_bg_01.jpg);
-    /* background-image: url(./pics/recruit/p5_bg_01.jpg)no-repeat/center/top/transparent; */
     background-repeat: no-repeat;
     background-position: top;
     height: 750px;
@@ -82,7 +81,9 @@ table td p {
 }
 .faq .frame_title {
     margin-bottom: 70px;
+    margin-bottom: 250px;
     font-weight: bold;
+    padding: 5px;
     padding-left: 10px;
 }
 .ul-faq li {

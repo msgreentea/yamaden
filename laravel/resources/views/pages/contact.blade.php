@@ -19,7 +19,6 @@
     </div>
     <div class="side">
     <form action="{{ route('contact.confirm') }}" method="post" class="form-left">
-    {{-- <form action="{{ url('./confirm') }}" method="post" class="form-left"> --}}
         @csrf
         <!-- 要改善　入力欄は分割させたくない -->
         <table>

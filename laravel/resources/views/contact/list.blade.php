@@ -14,7 +14,7 @@
     <div class="entry-title center inner">
         <h1 class="sec_title bold center">お問い合わせ内容一覧</h1>
     </div>
-    <table class="completed-table">
+    <table class="list-table">
         <tr>
             <th>問い合わせ日時</th>
             <th>ご用件</th>
@@ -48,8 +48,12 @@
     </table>
     <div class="pagination inner center">
         {{ $inquiry_items->links('vendor.pagination.default') }}
+        {{-- {{ $inquiry_items->links('vendor.pagination.tailwind') }} --}}
         <br>
     </div>
     <br>
 </section>
+<div class="to_link red center">
+    <a class="inner underline" href="{{ url('contact') }}">お問い合わせページに戻る</a><br>
+</div>
 @endsection

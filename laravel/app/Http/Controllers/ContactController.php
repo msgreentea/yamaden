@@ -12,13 +12,6 @@ class ContactController extends Controller
     {
         $this->validate($request, Inquiry_Item::$rules);
 
-        // $all_items = $request->all();
-        // dd($all_items);
-
-
-        // $a = $request->requirement;
-        // dd($a);
-
         $all_items = [
             'requirement' => $request->requirement,
             'name' => $request->name,

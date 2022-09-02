@@ -124,7 +124,7 @@
   <footer class="padding">
     <img src="./pics/footer_box_bg.png" alt="">
     <ul>
-      <a href="{{ url('index')}}" class="underline"><li>トップページ</li></a>
+      <a href="{{ url('/')}}" class="underline"><li>トップページ</li></a>
       <a href="{{ url('company')}}" class="underline"><li>会社概要</li></a>
       <a href="{{ url('business')}}" class="underline"><li>業務内容</li></a>
       <a href="{{ url('result')}}" class="underline"><li>施工実績</li></a>

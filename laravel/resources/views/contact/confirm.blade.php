@@ -18,7 +18,7 @@
         <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
     </div>
     <div class="side">
-    <form action="{{ route('send') }}" method="post" class="form-left">
+    <form action="{{ route('contact.send') }}" method="post" class="form-left">
         @csrf
         <table>
         <tr>
@@ -36,8 +36,6 @@
                     <p class="middle">お問い合わせ</p>
                     <input type="hidden" name="requirement" value="2">
                 @endif
-                {{-- <input type="hidden" name="requirement" value="{{ $requirement }}"> --}}
-                {{-- <input type="hidden" name="requirement" value="{{ $requirement }}"> --}}
             </td>
         </tr>
         <tr>
@@ -78,10 +76,6 @@
                 <input type="hidden" name="tel0" value="{{ $tel0 }}">
                 <input type="hidden" name="tel1" value="{{ $tel1 }}">
                 <input type="hidden" name="tel2" value="{{ $tel2 }}">
-
-                {{-- <input type="hidden" name="tel-0" value="{{ $tel0 }}">
-                <input type="hidden" name="tel-1" value="{{ $tel1 }}">
-                <input type="hidden" name="tel-2" value="{{ $tel2 }}"> --}}
             </td>
         </tr>
         <tr>
@@ -176,9 +170,9 @@
             {{-- <input type="submit" class="btn-form" value="戻る"> --}}
             {{-- <input type="submit" class="btn-form" onclick="location.href=" value="送信"> --}}
 
-                <input type="submit" class="btn-form" onclick="location.href={{ route('send')}}" value="送信">
+                <input type="submit" class="btn-form" onclick="location.href={{ route('contact.send')}}" value="送信">
             </form>
-            <input type="submit" class="btn-form" onclick="location.href={{ route('contact')}}" value="戻る">
+            <input type="submit" class="btn-form" onclick="location.href={{ url('contact')}}" value="戻る">
         </div>
     <div class="form-right">
         <p>有限会社山田電気では、メールやお電話での求人ご応募・お問い合わせを承っております。 メールでのご応募・お問い合わせはご返信までお時間がかかる場合もございますので、お急ぎの方はお電話にて直接ご応募・お問い合わせ下さい。

@@ -278,8 +278,6 @@
       <h1 class="sec_title bold center">会社風景</h1>
     </div>
       <div class="pics">
-        {{-- <a href="" class="trisection"><img class="whiter" src="{{ asset('./pics/company/pic_of_us/01_pic_of_us.jpeg')}}" alt=""></a>
-        <a href="" class="trisection"><img class="whiter" src="{{ asset('./pics/company/pic_of_us/02_pic_of_us.jpg')}}" alt=""></a> --}}
         <a href="" class="trisection"><img class="whiter" src="./pics/company/pic_of_us/01_pic_of_us.jpeg" alt=""></a>
         <a href="" class="trisection"><img class="whiter" src="./pics/company/pic_of_us/02_pic_of_us.jpg" alt=""></a>
         <a href="" class="trisection"><img class="whiter" src="./pics/company/pic_of_us/03_pic_of_us.jpg" alt=""></a>
