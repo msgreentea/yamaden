@@ -16,8 +16,7 @@
         header
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <header>
-    <a href="{{ url('')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
-    {{-- <a href="{{ route('index')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a> --}}
+    <a href="{{ url('/')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
 
     {{-- <ul id="header-normal" class="header-normal">
     　<li class="bold header-list-normal"><a href="{{ url('/company') }}">会社概要</a></li>
@@ -53,12 +52,6 @@
       <li class="bold"><a href="{{ url('./recruit')}}">採用情報</a></li>
       <li class="bold"><a href="{{ url('./contact')}}">応募フォーム<br>お問い合わせ</a></li>
     </ul>
-    {{-- 　<li class="bold"><a href="{{ route('company') }}">会社概要</a></li>
-      <li class="bold"><a href="{{ route('business')}}">業務内容</a></li>
-      <li class="bold"><a href="{{ route('result')}}">施工実績</a></li>
-      <li class="bold"><a href="{{ route('recruit')}}">採用情報</a></li>
-      <li class="bold"><a href="{{ route('contact')}}">応募フォーム<br>お問い合わせ</a></li>
-    </ul> --}}
     <nav class="header-swiped padding center">
       <ul>
         <li class="bold"><a href="{{ url('company')}}">会社概要</a></li>
@@ -69,7 +62,6 @@
       </ul>
     </nav>
     <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
-    {{-- <a href="{{ route('index')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a> --}}
   </header>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 

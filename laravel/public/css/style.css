@@ -3,12 +3,14 @@
     header
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-header small {
+
+/* header small {
     background-color: inherit;
-}
-.header-normal {
+} */
+/* .header-normal {
     background-color: inherit;
-}
+} */
+
 header {
     /* background-color: azure; */
     /* height: 120vh; */
@@ -16,18 +18,24 @@ header {
     /* z-index: 99; */
     /* top: 0; */
     /* left: 0; */
-    background-image: url("./pics/index/mainvisual/slid_01.jpg");
+    background-image: url("/pics/index/mainvisual/slid_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 130vh;
+    width: 100%;
 }
 .mainvisual {
-    height: 130vh;
-    height: 1100px;
+    /* height: 130vh;
+    height: 1100px; */
     position: absolute;
     /* z-index: 99; */
-    top: 0;
+    /* top: 0;
     top: -20px;
-    left: 0;
+    left: 0; */
 }
-.img1 {
+
+/* .img1 {
     background-image: url(/pics/index/mainvisual/slid_01.jpg);
 }
 .img2 {
@@ -50,15 +58,16 @@ header {
 }
 .img8 {
     background-image: url(/pics/index/mainvisual/slid_08.jpg);
-}
-header .slick-dots {
+} */
+
+/* header .slick-dots {
     bottom: 4%;
     z-index: 1;
-}
+} */
 
-.header-swiped {
-    /* z-index: 2; */
-}
+/* .header-swiped {
+    z-index: 2;
+} */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     to_business
@@ -70,7 +79,8 @@ header .slick-dots {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    margin-top: 600px;
+    /* margin-top: 600px; */
+    margin-top: -20px;
     height: 100vh;
     height: 800px;
     position: relative;
@@ -108,8 +118,8 @@ header .slick-dots {
 .parallax-bg {
     background-attachment: fixed;
 }
-.scrollbox {
-}
+/* .scrollbox {
+} */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     to_recruit
