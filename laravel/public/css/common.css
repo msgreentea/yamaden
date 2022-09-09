@@ -4,6 +4,9 @@
 *:focus {
     outline: none;
 }
+/* html {
+    width: 100%;
+} */
 body {
     width: 100%;
     font-family: メイリオ, Meiryo, arial, "ヒラギノ角ゴ Pro W3",
@@ -13,13 +16,15 @@ body {
     font-size: 15px;
 }
 .padding {
-    /* padding: 0 17%; */
-    padding: 0 240px;
+    padding: 0 17%;
+    /* padding: 0 240px; */
 }
 .inner {
-    width: 960px;
+    /* width: 960px; */
+    width: 67%;
     margin: 0 auto;
-    margin: 0 auto 50px auto;
+    /* margin: 0 auto 50px auto; */
+    margin-bottom: 50px;
     display: block;
 }
 a {
@@ -127,6 +132,7 @@ table {
 tr {
     border: 1px solid black;
     font-size: 14px;
+    align-items: center;
 }
 th {
     border: 1px solid black;
@@ -280,31 +286,123 @@ header ul li:last-child {
     footer
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
-footer {
+.normal-footer {
     background-image: url(/pics/footer_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
     width: 100%;
 }
-footer img {
+.normal-footer img {
     padding-top: 30px;
     padding-bottom: 22px;
+    padding-left: 14%;
 }
-footer ul {
+.normal-footer ul {
     display: flex;
     font-weight: bold;
     font-size: 12px;
     justify-content: right;
     margin-bottom: 10px;
     padding-right: 50px;
+    padding-right: 19%;
 }
-footer a {
+.normal-footer a {
     padding-left: 10px;
     border-left: 1px solid black;
     margin-right: 10px;
 }
-footer small {
+.normal-footer a:first-child {
+    border-left: none;
+}
+.normal-footer small {
     line-height: 40px;
     font-size: 10px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.responsive {
+    display: none;
+}
+@media (max-width: 1024px) {
+    /* ベース */
+    html {
+        width: 100%;
+    }
+    .padding {
+        padding: 0 2%;
+    }
+    .inner {
+        width: 100%;
+        padding: 0 2.5%;
+    }
+    .header-normal,
+    .header-swiped {
+        display: none;
+    }
+    /* header */
+    .responsive-nav {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        background-color: #075c9e;
+        color: white;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header a small {
+        display: none;
+    }
+    .logo {
+        text-align: center;
+    }
+
+    /* contact */
+    .contact {
+        width: 100%;
+    }
+    .contact .inner {
+        padding: 0 10%;
+    }
+
+    /*  */
+
+    /* footer */
+    .normal-footer,
+    footer img {
+        display: none;
+    }
+    .responsive-footer {
+        display: block;
+        width: 100%;
+
+        margin-top: 200px;
+    }
+    .responsive-footer {
+        flex-direction: column;
+        padding: 0;
+        border-left: none;
+        line-height: 3;
+        background-color: #66d2fe;
+    }
+    .responsive-footer li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        border-bottom: 1px solid white;
+        padding: 0 2.5%;
+    }
+    .responsive-footer p {
+        background-color: #075c9e;
+        display: block;
+        color: white;
+    }
+    .responsive-footer small {
+        font-weight: bold;
+        font-size: 16px;
+    }
 }

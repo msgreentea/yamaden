@@ -18,33 +18,6 @@
   <header>
     <a href="{{ url('/')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
 
-    {{-- <ul id="header-normal" class="header-normal">
-    　<li class="bold header-list-normal"><a href="{{ url('/company') }}">会社概要</a></li>
-    　<li class="bold header-list-hover"><a href="{{ url('/company') }}">COMPANY</a></li>
-      <li class="bold header-list-normal"><a href="{{ url('/business')}}">業務内容</a></li>
-      <li class="bold header-list-hover"><a href="{{ url('/business')}}">BUSINESS</a></li>
-      <li class="bold header-list-normal"><a href="{{ url('/result')}}">施工実績</a></li>
-      <li class="bold header-list-hover"><a href="{{ url('/result')}}">RESULT</a></li>
-      <li class="bold header-list-normal"><a href="{{ url('/recruit')}}">採用情報</a></li>
-      <li class="bold header-list-hover"><a href="{{ url('/recruit')}}">RECRUIT</a></li>
-      <li class="bold header-list-normal"><a href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
-      <li class="bold header-list-hover"><a href="{{ url('/contact')}}">CONTACT</a></li>
-    </ul> --}}
-
-    {{-- <ul id="header-normal" class="header-normal">
-    　<li class="bold"><a class="header-list-normal" href="{{ url('/company') }}">会社概要</a></li>
-    　<li class="bold"><a class="header-list-hover" href="{{ url('/company') }}">COMPANY</a></li>
-      <li class="bold"><a class="header-list-normal" href="{{ url('/business')}}">業務内容</a></li>
-      <li class="bold"><a class="header-list-hover" href="{{ url('/business')}}">BUSINESS</a></li>
-      <li class="bold"><a class="header-list-normal" href="{{ url('/result')}}">施工実績</a></li>
-      <li class="bold"><a class="header-list-hover" href="{{ url('/result')}}">RESULT</a></li>
-      <li class="bold"><a class="header-list-normal" href="{{ url('/recruit')}}">採用情報</a></li>
-      <li class="bold"><a class="header-list-hover" href="{{ url('/recruit')}}">RECRUIT</a></li>
-      <li class="bold"><a class="header-list-normal" href="{{ url('/contact')}}">応募フォーム<br>お問い合わせ</a></li>
-      <li class="bold"><a class="header-list-hover" href="{{ url('/contact')}}">CONTACT</a></li>
-    </ul> --}}
-
-
     <ul id="header-normal" class="header-normal middle">
     　<li class="bold"><a href="{{ url('./company') }}">会社概要</a></li>
       <li class="bold"><a href="{{ url('./business')}}">業務内容</a></li>
@@ -62,46 +35,23 @@
       </ul>
     </nav>
     <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+    {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+    {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+    <nav class="responsive-nav responsive">
+        <div class="responsive-left">
+            <a href="">1</a>
+            <a href="">2</a>
+        </div>
+        <div class="responsive-right">
+            <a href="">3</a>
+            <a href="">4</a>
+        </div>
+    </nav>
+    {{-- <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a> --}}
+    {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
   </header>
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-    ↑　　　↑　　　　↑
-    ここまで common
-
-
-   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <main>
     @yield('content')
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-          Application Guidelines
-          募集要項
-      -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-      {{-- <section class="inner">
-        <div class="entry-title">
-          <h1 class="sec_title bold center">募集要項</h1>
-        </div>
-      </section> --}}
-      <!-- 2分割 -->
-      <!-- <div>
-        <div class="subtitle">
-          <h1 class="sec_title bold"></h1>
-        </div>
-        <div class="side">
-          <img class="half" src="" alt="">
-          <div class="text half">
-            <p></p>
-          </div>
-        </div>
-      </div> -->
-
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-
-      ここから common
-      ↓　　 ↓　　　↓
-
-  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
 </main>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -113,9 +63,9 @@
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         footer
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <footer class="padding">
+  <footer>
     <img src="./pics/footer_box_bg.png" alt="">
-    <ul>
+    <ul class="normal-footer">
       <a href="{{ url('/')}}" class="underline"><li>トップページ</li></a>
       <a href="{{ url('company')}}" class="underline"><li>会社概要</li></a>
       <a href="{{ url('business')}}" class="underline"><li>業務内容</li></a>
@@ -124,7 +74,30 @@
       <a href="{{ url('contact')}}" class="underline"><li>お問い合わせ応募フォーム</li></a>
       <a href="{{ url('blog')}}" class="underline"><li>オフィシャルブログ</li></a>
     </ul>
-    <p class="center"><small class="">Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
+    {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+    {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+    <ul class="responsive-footer responsive inner">
+        <a href="{{ url('/')}}" class="underline"><li><h6>トップページ</h6>&gt;</li></a>
+        <a href="{{ url('company')}}" class="underline"><li><h6>会社概要</h6>&gt;</li></a>
+        <a href="{{ url('business')}}" class="underline"><li><h6>業務内容</h6>&gt;</li></a>
+        <a href="{{ url('result')}}" class="underline"><li><h6>施工実績</h6>&gt;</li></a>
+        <a href="{{ url('recruit')}}" class="underline"><li><h6>採用情報</h6>&gt;</li></a>
+        <a href="{{ url('contact')}}" class="underline"><li><h6>お問い合わせ応募フォーム</h6>&gt;</li></a>
+        <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>&gt;</li></a>
+    </ul>
+    {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
+    <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
   </footer>
+
+    {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+    {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+  <footer>
+    {{-- <p class="center"><small class="">Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p> --}}
+  </footer>
+    {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
 </body>
 </html>
+
+    {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+    {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+    {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
