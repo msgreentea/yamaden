@@ -58,6 +58,8 @@ small {
 }
 .center {
     text-align: center;
+    align-items: center;
+    width: 0 auto;
 }
 .side {
     display: flex;
@@ -325,6 +327,12 @@ header ul li:last-child {
     display: none;
 }
 @media (max-width: 1024px) {
+    .responsive {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
     /* ベース */
     html {
         width: 100%;
@@ -357,8 +365,20 @@ header ul li:last-child {
     header a small {
         display: none;
     }
-    .logo {
+    .responsive-logo {
+        display: flex;
+        width: 100%;
         text-align: center;
+        z-index: 1;
+        background: white;
+        height: 170px;
+        padding-top: 50px;
+        font-weight: bold;
+        font-size: 42px;
+        justify-content: center;
+    }
+    .responsive-logo h1 {
+        letter-spacing: 5px;
     }
 
     /* contact */

@@ -16,16 +16,16 @@
         header
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
   <header>
-    <a href="{{ url('/')}}" class="underline"><small>@yield('title')|有限会社山田電気</small></a>
+    <a href="{{ url('/')}}" class="underline pc"><small>@yield('title')|有限会社山田電気</small></a>
 
-    <ul id="header-normal" class="header-normal middle">
+    <ul id="header-normal" class="header-normal middle pc">
     　<li class="bold"><a href="{{ url('./company') }}">会社概要</a></li>
       <li class="bold"><a href="{{ url('./business')}}">業務内容</a></li>
       <li class="bold"><a href="{{ url('./result')}}">施工実績</a></li>
       <li class="bold"><a href="{{ url('./recruit')}}">採用情報</a></li>
       <li class="bold"><a href="{{ url('./contact')}}">応募フォーム<br>お問い合わせ</a></li>
     </ul>
-    <nav class="header-swiped padding center">
+    <nav class="header-swiped padding center pc">
       <ul>
         <li class="bold"><a href="{{ url('company')}}">会社概要</a></li>
         <li class="bold"><a href="{{ url('business')}}">業務内容</a></li>
@@ -34,9 +34,12 @@
         <li class="bold"><a href="{{ url('contact')}}">応募フォーム<br>お問い合わせ</a></li>
       </ul>
     </nav>
-    <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+    <a href="{{ url('/')}}" class="logo pc"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
     {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
     {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+    <a href="{{ url('/')}}" class="responsive-logo responsive center">
+        <img src="./pics/favicon.ico" alt="企業ロゴ"><h1>有限会社山田電気</h1>
+    </a>
     <nav class="responsive-nav responsive">
         <div class="responsive-left">
             <a href="">1</a>
@@ -47,7 +50,6 @@
             <a href="">4</a>
         </div>
     </nav>
-    {{-- <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a> --}}
     {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
   </header>
 <main>
