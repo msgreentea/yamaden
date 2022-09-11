@@ -13,28 +13,54 @@
       代表ご挨拶
       greeting
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <div class="entry-title responsive">
+        <h1 class="sec_title bold center">代表ご挨拶</h1>
+    </div>
   <section class="greeting inner">
-    <div class="side">
+      {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+      {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+          <div class="entry-title pc">
+              <h1 class="sec_title bold center">代表ご挨拶</h1>
+          </div>
+        <div class="responsive inner">
+            <img class="pic_of_ceo" src="./pics/company/CA2935F0-96EE-A813-84D27302C38D5DE1-e1554444836262.jpg" alt="">
+            <div class="greeting-text_box">
+                <h3 class="bold"><span class="span-greeting">いつまでも愛される<br>
+                総合電気工事のスペシャリストとして</span></h3>
+                <p>長年にわたり、関係取引先の皆様のご厚情、ありがたく感謝申し上げます。<br>
+                山田電気は、先代からの社歴を含めますと、45年以上の社歴があります。また、この数年間で社風を一新し、今迄同様、建築現場におきましても腕を磨いて行く事のみならず、社会に貢献できる人間集団作りに邁進しております。</p>
+                <p>近頃では、高齢化社会の中で、若い世代の事を“いきなりスマホ”とか称する先輩方も出て来るぐらい、便利かつスピード感に溢れた時代だと思います。不自由の少ない世間となり、すばらしい事だと思います。ここで、一つ見直すべきは、そこへ至る過程を振り返り、物づくりに関しましても原点を紐解く必要が有るように思います。</p>
+                <p>弊社に於きましては、“山電の仕事の流れ”と云うフロー図を、若い社員に示すと同時に、顧客様と弊社との経緯・間柄を解説し、今後の相互に取ってもっと良い事を協調できるよう、今後も議論尽くしたいと考えております。</p>
+                <p>これが、社会貢献にも繋がると信じて居ります。</p>
+                <p class="right">有限会社山田電気　代表取締役　 山田 剛史</p>
+            </div>
+        </div>
+      {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
+    <div class="side pc">
       <img class="pic_of_ceo" src="./pics/company/CA2935F0-96EE-A813-84D27302C38D5DE1-e1554444836262.jpg" alt="">
       <div class="greeting-text_box">
-        <h1 class="sec_title bold center">代表ご挨拶</h1>
+        <h1 class="sec_title bold center pc">代表ご挨拶</h1>
         <h3 class="bold"><span class="span-greeting">いつまでも愛される<br>
         総合電気工事のスペシャリストとして</span></h3>
         <p>長年にわたり、関係取引先の皆様のご厚情、ありがたく感謝申し上げます。<br>
         山田電気は、先代からの社歴を含めますと、45年以上の社歴があります。また、この数年間で社風を一新し、今迄同様、建築現場におきましても腕を磨いて行く事のみならず、社会に貢献できる人間集団作りに邁進しております。</p>
+
       </div>
     </div>
-    <p>近頃では、高齢化社会の中で、若い世代の事を“いきなりスマホ”とか称する先輩方も出て来るぐらい、便利かつスピード感に溢れた時代だと思います。不自由の少ない世間となり、すばらしい事だと思います。ここで、一つ見直すべきは、そこへ至る過程を振り返り、物づくりに関しましても原点を紐解く必要が有るように思います。</p>
-    <p>弊社に於きましては、“山電の仕事の流れ”と云うフロー図を、若い社員に示すと同時に、顧客様と弊社との経緯・間柄を解説し、今後の相互に取ってもっと良い事を協調できるよう、今後も議論尽くしたいと考えております。</p>
-    <p>これが、社会貢献にも繋がると信じて居ります。</p>
-    <p class="right">有限会社山田電気　代表取締役　 山田 剛史</p>
+    <p class="pc">近頃では、高齢化社会の中で、若い世代の事を“いきなりスマホ”とか称する先輩方も出て来るぐらい、便利かつスピード感に溢れた時代だと思います。不自由の少ない世間となり、すばらしい事だと思います。ここで、一つ見直すべきは、そこへ至る過程を振り返り、物づくりに関しましても原点を紐解く必要が有るように思います。</p>
+    <p class="pc">弊社に於きましては、“山電の仕事の流れ”と云うフロー図を、若い社員に示すと同時に、顧客様と弊社との経緯・間柄を解説し、今後の相互に取ってもっと良い事を協調できるよう、今後も議論尽くしたいと考えております。</p>
+    <p class="pc">これが、社会貢献にも繋がると信じて居ります。</p>
+    <p class="right pc">有限会社山田電気　代表取締役　 山田 剛史</p>
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       企業方針
       corporate policies
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <section class="inner corporate_policy">
-    <div class="entry-title">
+   <div class="entry-title responsive">
+     <h1 class="sec_title bold center">企業方針</h1>
+   </div>
+  <section class="inner corporate_policy inner-narrower">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">企業方針</h1>
     </div>
     <h3 class="bold center"><span class="span-policy">迅速・丁寧をモットーにお客様と共存共栄を目指す！</span></h3>
@@ -66,10 +92,13 @@
       沿革 -社歴-
       company history
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <section class="inner company_history">
-    <div class="entry-title">
-      <h1 class="sec_title bold center">沿革 -社歴-</h1>
-    </div>
+   <div class="entry-title responsive">
+     <h1 class="sec_title bold center">沿革 -社歴-</h1>
+   </div>
+   <section class="inner company_history">
+       <div class="entry-title pc">
+         <h1 class="sec_title bold center">沿革 -社歴-</h1>
+       </div>
       <table>
         <tr>
           <th>昭和46年4月</th>
@@ -115,56 +144,59 @@
       会社概要
       company info
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <div class="entry-title responsive">
+        <h1 class="sec_title bold center">会社概要</h1>
+    </div>
   <section class="inner">
-    <div class="entry-title">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">会社概要</h1>
     </div>
-    <div class="table-company_info">
-      <table>
+    <div class="table-company_info pc">
+      <table class="pc">
         <tr>
-          <th class="th-company_info">会社名</th>
-          <td class="td-company_info">有限会社山田電気</td>
+          <th>会社名</th>
+          <td>有限会社山田電気</td>
         </tr>
         <tr>
-          <th class="th-company_info">所在地</th>
-          <td class="td-company_info">玉造本店<br>
+          <th>所在地</th>
+          <td>玉造本店<br>
           〒540-0004 大阪府大阪市中央区玉造1-23-15<br>
           東大阪営業所<br>
           〒577-0054 大阪府東大阪市高井田元町1-3-21</td>
         </tr>
         <tr>
-          <th class="th-company_info">TEL</th>
-          <td class="td-company_info">玉造本店<br>
+          <th>TEL</th>
+          <td>玉造本店<br>
           06-6762-2308<br>
           東大阪営業所<br>
           06-6787-9005</td>
         </tr>
         <tr>
-          <th class="th-company_info">FAX</th>
-          <td class="td-company_info">玉造本店<br>
+          <th>FAX</th>
+          <td>玉造本店<br>
           06-6762-2346<br>
           東大阪営業所<br>
           06-6787-9006</td>
         </tr>
         <tr>
-          <th class="th-company_info">設立</th>
-          <td class="td-company_info">1987年4月 山田電気（個人経営）で起業<br>
+          <th>設立</th>
+          <td>1987年4月 山田電気（個人経営）で起業<br>
           1997年10月21日 有限会社山田電気　設立</td>
         </tr>
         <tr>
-          <th class="th-company_info">資本金</th>
-          <td class="td-company_info">1300万円</td>
+          <th>資本金</th>
+          <td>1300万円</td>
         </tr>
         <tr>
-          <th class="th-company_info">取引銀行</th>
-          <td class="td-company_info">三井住友銀行　玉造支店<br>
+          <th>取引銀行</th>
+          <td>三井住友銀行　玉造支店<br>
           大阪信用金庫　玉造支店<br>
           尼崎信用金庫　天満支店<br>
           りそな銀行　　玉造支店</td>
         </tr>
         <tr>
-          <th class="th-company_info">主要取引先</th>
-          <td class="td-company_info">
+          <th>主要取引先</th>
+          <td>
             株式会社神戸屋<br>
             内外電機株式会社<br>
             株式会社Ｅ＆Ｃマクロム<br>
@@ -201,33 +233,33 @@
           </td>
         </tr>
       </table>
-      <table>
+      <table class="pc">
         <tr>
-          <th class="th-company_info">役員</th>
-          <td class="td-company_info">代表取締役　山田 剛史<br>
+          <th>役員</th>
+          <td>代表取締役　山田 剛史<br>
           専務取締役　遠田 浩史<br>
           常務取締役　西原 光英<br>
           監　査　役　山田 真紀子</td>
         </tr>
         <tr>
-          <th class="th-company_info">従業員数</th>
-          <td class="td-company_info">12名（協力会社 6社）</td>
+          <th>従業員数</th>
+          <td>12名（協力会社 6社）</td>
         </tr>
         <tr>
-          <th class="th-company_info">売上高</th>
-          <td class="td-company_info">第24期　3.2億円</td>
+          <th>売上高</th>
+          <td>第24期　3.2億円</td>
         </tr>
         <tr>
-          <th class="th-company_info">所属組合</th>
-          <td class="td-company_info">大阪府電気工事工業組合</td>
+          <th>所属組合</th>
+          <td>大阪府電気工事工業組合</td>
         </tr>
         <tr>
-          <th class="th-company_info">許可番号</th>
-          <td class="td-company_info">電気工事業 大阪府知事許可 (般-30) 第109816号</td>
+          <th>許可番号</th>
+          <td>電気工事業 大阪府知事許可 (般-30) 第109816号</td>
         </tr>
         <tr>
-          <th class="th-company_info">保有資格</th>
-          <td class="td-company_info">第一種電気工事士<br>
+          <th>保有資格</th>
+          <td>第一種電気工事士<br>
           第二種電気工事士<br>
           高圧電気取扱者<br>
           低圧電気取扱者<br>
@@ -248,8 +280,8 @@
           高圧ケーブル工事技能認定</td>
         </tr>
         <tr>
-          <th class="th-company_info">業務内容</th>
-          <td class="td-company_info">・高圧受変電設備の新設・改修工事<br>
+          <th>業務内容</th>
+          <td>・高圧受変電設備の新設・改修工事<br>
           ・インフラ整備幹線工事<br>
           ・工場プラント電気設備工事<br>
           ・商業施設電気設備工事<br>
@@ -261,20 +293,169 @@
         </tr>
       </table>
     </div>
+
+    {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
+    {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+
+    <div class="table-company_info responsive">
+      <table>
+        <tr>
+          <th>会社名</th>
+          <td>有限会社山田電気</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>玉造本店<br>
+          〒540-0004 大阪府大阪市中央区玉造1-23-15<br>
+          東大阪営業所<br>
+          〒577-0054 大阪府東大阪市高井田元町1-3-21</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>玉造本店<br>
+          06-6762-2308<br>
+          東大阪営業所<br>
+          06-6787-9005</td>
+        </tr>
+        <tr>
+          <th>FAX</th>
+          <td>玉造本店<br>
+          06-6762-2346<br>
+          東大阪営業所<br>
+          06-6787-9006</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>1987年4月 山田電気（個人経営）で起業<br>
+          1997年10月21日 有限会社山田電気　設立</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>1300万円</td>
+        </tr>
+        <tr>
+          <th>取引銀行</th>
+          <td>三井住友銀行　玉造支店<br>
+          大阪信用金庫　玉造支店<br>
+          尼崎信用金庫　天満支店<br>
+          りそな銀行　　玉造支店</td>
+        </tr>
+        <tr>
+          <th>主要取引先</th>
+          <td>
+            株式会社神戸屋<br>
+            内外電機株式会社<br>
+            株式会社Ｅ＆Ｃマクロム<br>
+            橋本鉄工株式会社<br>
+            松田電気工業株式会社<br>
+            株式会社ＨＥＸＥＬ　Ｗｏｒｋｓ<br>
+            株式会社浪速刃物製作所　<br>
+            株式会社三井E＆Sパワーシステムズ<br>
+            株式会社キムラプラスチックス<br>
+            ニッタ株式会社<br>
+            日鉄ビジネスサービス関西株式会社<br>
+            中央電設株式会社<br>
+            株式会社トーホーテクノ<br>
+            医療法人弘成会<br>
+            株式会社福山製作所<br>
+            財団法人関西電気設備管理技術者協会<br>
+            特殊溶接棒株式会社<br>
+            アピデ株式会社<br>
+            株式会社Ｋ‐ＴＥＣ<br>
+            協立冷機株式会社<br>
+            奥田金属株式会社<br>
+            株式会社竹福<br>
+            日大地所㈱・日生実業㈱<br>
+            飯田建設株式会社<br>
+            明和電気防災株式会社<br>
+            株式会社北浦工務店<br>
+            株式会社イナバ産業<br>
+            有限会社システム技研　<br>
+            株式会社九電工<br>
+            実紀コスミオン株式会社<br>
+            <br>
+            ※敬称略<br>
+            ※順不同
+          </td>
+        </tr>
+        <tr>
+          <th>役員</th>
+          <td>代表取締役　山田 剛史<br>
+          専務取締役　遠田 浩史<br>
+          常務取締役　西原 光英<br>
+          監　査　役　山田 真紀子</td>
+        </tr>
+        <tr>
+          <th>従業員数</th>
+          <td>12名（協力会社 6社）</td>
+        </tr>
+        <tr>
+          <th>売上高</th>
+          <td>第24期　3.2億円</td>
+        </tr>
+        <tr>
+          <th>所属組合</th>
+          <td>大阪府電気工事工業組合</td>
+        </tr>
+        <tr>
+          <th>許可番号</th>
+          <td>電気工事業 大阪府知事許可 (般-30) 第109816号</td>
+        </tr>
+        <tr>
+          <th>保有資格</th>
+          <td>第一種電気工事士<br>
+          第二種電気工事士<br>
+          高圧電気取扱者<br>
+          低圧電気取扱者<br>
+          １級電気工事施工管理技士<br>
+          ２級電気工事施工管理技士<br>
+          消防設備士<br>
+          工事担任者<br>
+          製図技能士<br>
+          防犯設備士<br>
+          アーク溶接<br>
+          ガス溶接<br>
+          足場組立作業<br>
+          玉掛技能<br>
+          酸素欠乏・硫化水素危険作業<br>
+          高所作業車運転（10ｍ以上）<br>
+          ケーブル延焼防火措置<br>
+          自由研削といし<br>
+          高圧ケーブル工事技能認定</td>
+        </tr>
+        <tr>
+          <th>業務内容</th>
+          <td>・高圧受変電設備の新設・改修工事<br>
+          ・インフラ整備幹線工事<br>
+          ・工場プラント電気設備工事<br>
+          ・商業施設電気設備工事<br>
+          ・ビル等電気設備工事<br>
+          ・空調・換気設備工事<br>
+          ・防災設備工事<br>
+          ・防犯カメラ・通信・ＬＡＮ設備工事<br>
+          ※特別高圧電気設備から弱電工事までの施工</td>
+        </tr>
+      </table>
+    </div>
+    {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       google map
    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="sec-map">
+  <section class="sec-map inner-narrower">
     <div class="map"></div>
-    <div class="inner"><a class="btn map-btn center underline" href="http://">大きな地図で見る</a></div>
+    <div class="inner pc"><a class="btn map-btn center underline" href="http://">大きな地図で見る</a></div>
+    <div class="responsive"><a class="btn map-btn center underline responsive-btn" href="http://">大きな地図で見る</a></div>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       会社風景
       pics of us
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <div class="entry-title responsive">
+      <h1 class="sec_title bold center">会社風景</h1>
+    </div>
   <section class="inner">
-    <div class="entry-title">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">会社風景</h1>
     </div>
       <div class="pics">
@@ -290,8 +471,11 @@
       組織図
       organization chart
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <div class="entry-title responsive">
+      <h1 class="sec_title bold center">組織図</h1>
+    </div>
   <section class="inner pic_org_chart">
-    <div class="entry-title">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">組織図</h1>
     </div>
     <img class="inner" src="./pics/company/47f018875f8a1d390c7b63b323fca63f1.png" alt="">
@@ -300,8 +484,11 @@
       社員紹介
       members
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <div class="entry-title responsive">
+      <h1 class="sec_title bold center">社員紹介</h1>
+    </div>
   <section class="inner">
-    <div class="entry-title">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">社員紹介</h1>
     </div>
     <div class="pics">

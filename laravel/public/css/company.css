@@ -32,10 +32,12 @@ header {
 }
 
 .greeting-text_box {
-    /* background-color: beige; */
+    /* background-color: yellow; */
     width: 450px;
     margin-top: 490px;
+    margin-top: 290px;
     margin: 243px 0 30px auto;
+    margin: 140px 0 0 auto;
 }
 .span-greeting {
     color: blue;
@@ -154,4 +156,99 @@ header {
 }
 .item {
     width: 30%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) {
+    header {
+        background-image: none;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        代表ご挨拶
+        greeting
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .greeting {
+        background-image: none;
+        height: auto;
+        position: unset;
+        padding-bottom: 20px;
+    }
+    .pic_of_ceo {
+        width: 250px;
+        height: 250px;
+        position: unset;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .greeting-text_box {
+        margin-top: 0;
+        width: 100%;
+    }
+    .greeting-text_box h3 {
+        margin: 0;
+    }
+    .span-greeting {
+        font-size: inherit;
+    }
+    .greeting p {
+        margin: 0;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        沿革 -社歴-
+        company history
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .company_history {
+        margin-top: 10px;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        会社概要
+        company info
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .table-company_info {
+        display: block;
+        display: table;
+        width: 100%;
+    }
+    .table-company_info table {
+        width: 100%;
+    }
+    .table-company_info table tr th,
+    .table-company_info table tr td {
+        font-size: 12px;
+    }
+    .table-company_info table tr td {
+        padding-left: 15px;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        google map
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    /* コメントアウト部分、commonの.responsive-btnに指定済み。不要なら消す */
+    .map-btn {
+        border: 1px solid #0080c8;
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+
+        /* width: 100%;
+        background-color: #0080c8;
+        border: none;
+        color: white;
+        text-decoration: underline;
+        border-radius: 5px;
+        font-weight: bold; */
+    }
+    .map-btn:hover {
+        background-color: #0080c8;
+    }
 }
