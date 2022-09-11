@@ -31,13 +31,16 @@
     </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
           featuress
-        -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-    <section class="inner features">
-      <div class="entry-title">
+    -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <div class="entry-title responsive">
         <h1 class="sec_title bold center">ガッツリ稼げて、土日祝の週休2日制</h1>
-        <!-- これタイトルなのおかしくない？ -->
+    </div>
+    <section class="inner features">
+      <div class="entry-title pc">
+        <h1 class="sec_title bold center">ガッツリ稼げて、土日祝の週休2日制</h1>
       </div>
-      <div class="side">
+
+      <div class="side reverse">
         <div class="text half">
           <p>【社内一貫体制】企業や官公庁の電気工事を幅広く担当<br>
             【高い技術力！】20～40代の技術スタッフが活躍中！<br>
@@ -46,6 +49,7 @@
         </div>
         <img class="half" src="./pics/recruit/features/3S4A9948_R.jpg" alt="">
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">安定実績</h1>
       </div>
@@ -57,10 +61,11 @@
           <p>メーカーの案件では元請の依頼もあります。</p>
         </div>
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">大規模案件を中心に担当</h1>
       </div>
-      <div class="side">
+      <div class="side reverse">
         <div class="text half">
           <p>当社では、一般住宅の工事は基よりビル、マンション、工場、プラントなどの<br>
           大規模施設の電気設備工事がメインです。</p>
@@ -69,6 +74,7 @@
         </div>
         <img class="half" src="./pics/result/p1/21.jpg" alt="">
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">さらにはこんな仕事も</h1>
       </div>
@@ -79,16 +85,18 @@
           <p>既に経験をお持ちの方も、さまざまな案件を担当し、さらに腕を磨いていける環境です。</p>
         </div>
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">働きやすい◎週休2日制できっちり休む！</h1>
       </div>
-      <div class="side">
+      <div class="side reverse">
         <div class="text half">
           <p>メリハリ重視の当社は、週休2日制です。</p>
           <p>しっかり働いて、きっちり休むがモットーです。</p>
         </div>
         <img class="half" src="./pics/recruit/features/d9d790ea92b2d9e2cb3ae9727d3309a7.jpg" alt="">
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">職場環境・社風の魅力</h1>
       </div>
@@ -101,11 +109,12 @@
           <p>活躍する20～40代の働き盛りの技術者たちは、真面目で仕事熱心です。休日もしっかりと確保し、社員が満足できる環境づくりにも取り組んでいます。</p>
         </div>
       </div>
+
       <div class="subtitle">
         <h1 class="sec_title bold">当社で、安定した将来を当社で描きませんか？</h1>
         <!-- 要改善　日本語おかしいんやけど！！ -->
       </div>
-      <div class="side">
+      <div class="side reverse">
         <div class="text half">
           <p>現在、現場を担当する社員は9名、幅広い年代の社員が活躍中です。<br>
             世代は30～40代が一番多く、10年以上勤務する社員もいます。<br>
@@ -123,8 +132,11 @@
           events
           イベント風景
         -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <div class="entry-title responsive">
+        <h1 class="sec_title bold center">施工実績</h1>
+    </div>
     <section class="inner events">
-      <div class="entry-title">
+      <div class="entry-title pc">
         <h1 class="sec_title bold center">施工実績</h1>
       </div>
       <div class="pics">
@@ -159,8 +171,11 @@
       Words from Employees
       社員からの言葉
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <div class="entry-title responsive">
+        <h1 class="sec_title bold center">社員からの言葉</h1>
+    </div>
     <section class="inner words_from_employees">
-      <div class="entry-title">
+      <div class="entry-title pc">
         <h1 class="sec_title bold center">社員からの言葉</h1>
       </div>
       <p class="text">弊社社員から、入社をお考えの皆様へ！</p>
@@ -227,7 +242,7 @@
         <img class="half" src="./pics/recruit/words/S__11690246-e1554446237890.jpg" alt="">
         <div class="text half">
           <p></p>
-          <!-- 要改善　まともに仕事しろ -->
+          <!-- 要改善　文字無いんやけど… -->
         </div>
       </div>
     </section>
@@ -236,8 +251,11 @@
         Application Guidelines
         募集要項
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    <div class="entry-title responsive">
+      <h1 class="sec_title bold center">募集要項</h1>
+    </div>
     <section class="inner application_guidelines">
-      <div class="entry-title">
+      <div class="entry-title pc">
         <h1 class="sec_title bold center">募集要項</h1>
       </div>
       <table class="ag-table">
@@ -364,8 +382,11 @@
       Qualifications
       電気工事士の各種資格！こんな資格が取得可能！
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<div class="entry-title responsive">
+    <h1 class="sec_title bold center">電気工事士の各種資格！こんな資格が取得可能！</h1>
+</div>
 <section class="inner">
-  <div class="entry-title">
+  <div class="entry-title pc">
     <h1 class="sec_title bold center">電気工事士の各種資格！こんな資格が取得可能！</h1>
   </div>
   <table class="table-qualifications">
@@ -405,8 +426,11 @@
       Frequently Asked Questions
       よくあるご質問
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+  <div class="entry-title responsive">
+    <h1 class="sec_title bold center"><a id="faq-top">よくあるご質問</a></h1>
+  </div>
   <section class="inner faq">
-    <div class="entry-title">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center"><a id="faq-top">よくあるご質問</a></h1>
     </div>
     <p>求人に関して皆様からよくご質問頂きます内容です。<br>

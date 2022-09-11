@@ -399,6 +399,19 @@ header ul li:last-child {
     }
     /*
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        画像右テキスト左、画像左テキスト右、みたいなのを矯正する用。
+        レスポンシブでテキストが上になるものにのみ指定
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .reverse img {
+        margin-bottom: 10px;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
         画像３分割
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     */

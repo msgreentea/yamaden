@@ -19,6 +19,7 @@ header {
     background-repeat: no-repeat;
     background-position: top;
     height: 750px;
+    height: auto;
     margin-top: 20px;
     margin-bottom: 70px;
     padding-top: 60px;
@@ -42,8 +43,8 @@ header {
 }
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-        Application Guidelines
-        募集要項
+    Application Guidelines
+    募集要項
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 table td p {
@@ -105,4 +106,70 @@ table td p {
 }
 .btn-faq:hover {
     background-color: #072a56;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) {
+    .half {
+        width: 100%;
+    }
+    .side {
+        display: flex;
+        display: block;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .reverse img {
+        margin-bottom: 10px;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        pride
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .padding .side {
+        display: block;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .pride {
+        background-image: none;
+        margin: 0;
+        padding: 0 1%;
+        padding-bottom: 0;
+    }
+    .pride h1 {
+        font-size: 24px;
+        background-image: url(/pics/responsive/headline_title_bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 3;
+        color: #072a56;
+    }
+    .pride .pics {
+        width: 81%;
+        margin: 0 auto;
+    }
+
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        features
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .features .entry-title {
+        margin-bottom: 0px;
+    }
+    .subtitle {
+        margin: 10px 0;
+    }
+
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        header
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
 }
