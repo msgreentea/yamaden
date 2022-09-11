@@ -34,3 +34,26 @@ header {
 .work_flow {
     margin-bottom: 30px;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) {
+    header {
+        background-image: none;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        仕事内容のご紹介
+        job description
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .half {
+        width: 100%;
+    }
+    .work_sceneries .trisection img {
+        margin-bottom: 0px;
+    }
+    .work_flow {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
