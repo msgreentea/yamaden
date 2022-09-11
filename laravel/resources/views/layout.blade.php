@@ -79,13 +79,20 @@
 {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
 {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
     <ul class="responsive-footer responsive inner-narrower">
-        <a href="{{ url('/')}}" class="underline"><li><h6>トップページ</h6>&gt;</li></a>
-        <a href="{{ url('company')}}" class="underline"><li><h6>会社概要</h6>&gt;</li></a>
-        <a href="{{ url('business')}}" class="underline"><li><h6>業務内容</h6>&gt;</li></a>
-        <a href="{{ url('result')}}" class="underline"><li><h6>施工実績</h6>&gt;</li></a>
-        <a href="{{ url('recruit')}}" class="underline"><li><h6>採用情報</h6>&gt;</li></a>
-        <a href="{{ url('contact')}}" class="underline"><li><h6>お問い合わせ応募フォーム</h6>&gt;</li></a>
-        <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>&gt;</li></a>
+        <a href="{{ url('/')}}" class="underline"><li><h6>トップページ</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('company')}}" class="underline"><li><h6>会社概要</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('business')}}" class="underline"><li><h6>業務内容</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('result')}}" class="underline"><li><h6>施工実績</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('recruit')}}" class="underline"><li><h6>採用情報</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('contact')}}" class="underline"><li><h6>お問い合わせ応募フォーム</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
+        <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>
+            <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
     </ul>
 {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
     <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>

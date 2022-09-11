@@ -531,7 +531,19 @@ header ul li:last-child {
         justify-content: space-between;
         font-size: 14px;
         border-bottom: 1px solid white;
-        padding: 0 2.5%;
+        /* padding: 0 2.5%; */
+        padding-left: 2.5%;
+        padding-right: 1%;
+        align-items: center;
+    }
+    .responsive-footer li img {
+        /* width: auto; */
+        /* width: 10px; */
+        height: 35px;
+        display: block;
+    }
+    .responsive-footer li:hover {
+        background-color: #8ef9ff;
     }
     .responsive-footer p {
         background-color: #075c9e;

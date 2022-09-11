@@ -32,3 +32,25 @@ header {
 .cr-btn:hover {
     background-color: #072a56;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) {
+    .frame_title {
+        background-color: white;
+        background-image: url(/pics/responsive/sub_title_bg.png);
+        height: auto;
+        color: black;
+        border: none;
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 10px;
+        border-bottom: 4px dashed #0080c8;
+    }
+    /* .frame_title:first-child {
+        margin-top: 0;
+    } */
+    .cr-btn {
+        text-decoration: underline;
+        font-size: 14px;
+    }
+}
