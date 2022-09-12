@@ -60,7 +60,7 @@
         contacts
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <section class="contact">
-    <a href="" class="inner whiter"><img src="./pics/contact_banner.png" alt=""></a>
+    <a href="" class="inner whiter center"><img src="./pics/contact_banner.png" alt=""></a>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         footer

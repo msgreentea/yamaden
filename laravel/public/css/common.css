@@ -419,6 +419,10 @@ header ul li:last-child {
     .reverse img {
         margin-bottom: 10px;
     }
+    .side:not(.banners) {
+        width: 100%;
+        /* display: block; */
+    }
     /*
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
         画像３分割
