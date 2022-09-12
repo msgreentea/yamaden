@@ -13,11 +13,14 @@
       Application Form & inquiry
       応募フォーム・お問い合わせ
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<div class="entry-title responsive">
+    <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
+</div>
 <section class="inner form">
-    <div class="entry-title">
+    <div class="entry-title pc">
         <h1 class="sec_title bold center">応募フォーム・お問い合わせ</h1>
     </div>
-    <div class="side">
+    <div class="side reverse">
     <form action="{{ route('contact.send') }}" method="post" class="form-left">
         @csrf
         <table>
@@ -184,8 +187,11 @@
       Privacy Policy
       プライバシーポリシー
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="pp inner">
-    <div class="entry-title">
+  <div class="entry-title responsive">
+    <h1 class="sec_title bold center">プライバシーポリシー</h1>
+  </div>
+  <section class="pp inner inner-narrower">
+    <div class="entry-title pc">
       <h1 class="sec_title bold center">プライバシーポリシー</h1>
     </div>
     <p class="pp-text">お預かりした個人情報は、個人情報保護法に基づき管理致します。<br>

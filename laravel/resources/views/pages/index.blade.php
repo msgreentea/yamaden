@@ -10,10 +10,37 @@
 
 @section('content')
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+      responsive menu
+  -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+  <section class="nav-icons responsive">
+      <ul class="trisection pics inner-narrower">
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_01.png" alt="会社概要">
+            <a href="{{ url('company')}}"></a>
+        </li>
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_02.png" alt="業務内容">
+            <a href="{{ url('business')}}"></a>
+        </li>
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_03.png" alt="施工実績">
+            <a href="{{ url('result')}}"></a>
+        </li>
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_04.png" alt="採用情報">
+            <a href="{{ url('recruit')}}"></a>
+        </li>
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_05.png" alt="応募フォーム<br>お問い合わせ">
+            <a href="{{ url('contact')}}"></a>
+        </li>
+        <li class="bold"><img src="/pics/responsive/index/nav-icons/icon_06.png" alt="ブログ">
+            <a href="{{ url('contact')}}"></a>
+        </li>
+      </ul>
+  </section>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_business
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="to_business scrollbox">
-    <div class="text-to_business">
+  {{-- <section class="to_business scrollbox column inner-cramped"> --}}
+  <section class="to_business scrollbox inner-cramped">
+    <img src="/pics/responsive/index/top_bg_01.png" alt="" class="to_business-img center responsive">
+    <div class="text-to_business left">
       <p>有限会社山田電気は大阪市にあり、総合電気工事会社として社会に貢献できるよう日々取り組んでおります。<br>
       ビル・住宅等の電気設備工事、商業施設等の電気設備工事、工場電気の電気設備工事、生産プラントの電気設備工事、防犯カメラ・ＬＡＮ設備工事、空調・換気の電気設備工事など、ありとあらゆる電気工事のスペシャリスト集団なんです。</p>
       <br>
@@ -34,8 +61,9 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_recruit
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="to_recruit center scrollbox">
-    <div class="text-to_recruit">
+  <section class="to_recruit center scrollbox column inner-cramped">
+    <img src="/pics/responsive/index/top_bg_02.png" alt="" class="to_business-img center responsive">
+    <div class="text-to_recruit left">
       <p>あなたの頑張りがきちんと評価される！<br>
       やり甲斐あるアットホームな職場が仲間募集中！</p>
       <br>
@@ -56,9 +84,12 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_result
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<div class="entry-title responsive">
+    <h1 class="sec_title bold center">大きな現場から小さな現場まで各現場を担当</h1>
+</div>
   <section class="to_result">
     <div class="text-to_result">
-      <h2>大きな現場から小さな現場まで各現場を担当</h2>
+      <h2 class="pc">大きな現場から小さな現場まで各現場を担当</h2>
       <div class="text-to_result-bottom">
         <p>ビルやマンション、工場、プラントなどの電気設備工事を手掛けてきました。有名ゼネコンや大手メーカーを顧客に、好調な業績を続けています。</p>
         <br>
@@ -72,8 +103,11 @@
       新着情報
       news
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<div class="entry-title news-title responsive">
+    <h1 class="sec_title bold center">新着情報</h1>
+</div>
   <section class="padding news">
-    <div class="entry-title news-title">
+    <div class="entry-title news-title pc">
       <h1 class="sec_title bold center">新着情報</h1>
     </div>
     <ul class="ul-news">

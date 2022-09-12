@@ -40,7 +40,7 @@
     <a href="{{ url('/')}}" class="responsive-logo responsive center">
         <img src="./pics/favicon.ico" alt="企業ロゴ"><h1>有限会社山田電気</h1>
     </a>
-    <nav class="responsive-nav responsive inner inner-narrower">
+    <nav class="responsive-nav responsive inner inner-narrower" width="100%">
         <div class="responsive-left">
             <a href="">1</a>
             <a href="">2</a>
@@ -66,8 +66,8 @@
         footer
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
   <footer>
-    <img src="./pics/footer_box_bg.png" alt="">
-    <ul class="normal-footer">
+    <img src="./pics/footer_box_bg.png" alt="" class="footer-logo pc">
+    <ul class="normal-footer pc">
       <a href="{{ url('/')}}" class="underline"><li>トップページ</li></a>
       <a href="{{ url('company')}}" class="underline"><li>会社概要</li></a>
       <a href="{{ url('business')}}" class="underline"><li>業務内容</li></a>
@@ -78,6 +78,7 @@
     </ul>
 {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
 {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
+{{-- <footer class="responsive"> --}}
     <ul class="responsive-footer responsive inner-narrower">
         <a href="{{ url('/')}}" class="underline"><li><h6>トップページ</h6>
             <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
@@ -94,15 +95,14 @@
         <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>
             <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
     </ul>
+{{-- </footer> --}}
 {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
     <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
   </footer>
 
 {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
 {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
-  <footer>
 {{-- <p class="center"><small class="">Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p> --}}
-  </footer>
 {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
 </body>
 </html>

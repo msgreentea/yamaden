@@ -74,7 +74,6 @@ header {
   ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
 */
 .to_business {
-    background-color: blue;
     background-image: url(/pics/index/top_bg_01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,4 +208,89 @@ header {
     width: 100%;
     width: 150px;
     height: auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media (max-width: 1024px) {
+    .responsive-logo {
+        display: none;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        text-align: left;
+    }
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        header
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    header {
+        /* width: 100%; */
+        height: auto;
+        height: 200vh;
+    }
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        nav-icons
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .nav-icons {
+        padding: 30px 0;
+    }
+    .nav-icons .trisection {
+        display: flex;
+    }
+    .nav-icons .trisection li {
+        width: 31%;
+        display: block;
+    }
+    .nav-icons .trisection img {
+        width: 100%;
+        /* margin-bottom: 30px; */
+    }
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        to_business
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .to_business {
+        background-image: none;
+        width: 100%;
+        height: auto;
+        position: unset;
+    }
+    .to_business-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .text-to_business {
+        width: 100%;
+        color: black;
+        text-align: left;
+        position: unset;
+        padding: 20px 0;
+    }
+
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        to_recruit
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .to_recruit {
+        background-image: none;
+        height: auto;
+    }
+
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        n
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
 }
