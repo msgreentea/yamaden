@@ -30,12 +30,13 @@
       </div>
     </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-          featuress
+            ガッツリ稼げて、土日祝の週休２日制
+            featuress
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
     <div class="entry-title responsive">
         <h1 class="sec_title bold center">ガッツリ稼げて、土日祝の週休2日制</h1>
     </div>
-    <section class="inner features">
+    <section class="inner features inner-narrower">
       <div class="entry-title pc">
         <h1 class="sec_title bold center">ガッツリ稼げて、土日祝の週休2日制</h1>
       </div>
@@ -112,7 +113,7 @@
 
       <div class="subtitle">
         <h1 class="sec_title bold">当社で、安定した将来を当社で描きませんか？</h1>
-        <!-- 要改善　日本語おかしいんやけど！！ -->
+        <!-- 要改善　日本語おかしいんやけど… -->
       </div>
       <div class="side reverse">
         <div class="text half">
@@ -131,7 +132,7 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
           events
           イベント風景
-        -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+    -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
     <div class="entry-title responsive">
         <h1 class="sec_title bold center">施工実績</h1>
     </div>
@@ -139,32 +140,39 @@
       <div class="entry-title pc">
         <h1 class="sec_title bold center">施工実績</h1>
       </div>
+
       <div class="pics">
         <div class="event trisection">
-          <h4 class="frame_title center">大阪城公園にて花見</h4>
+          <h4 class="frame_title center bold">大阪城公園にて花見</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/features/d9d790ea92b2d9e2cb3ae9727d3309a7.jpg" alt=""></a>
         </div>
+
         <div class="event trisection">
           <h4 class="frame_title center">Ｈ28年 花見</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/events/605f06b0930f198c78f7d51368640723.jpg" alt=""></a>
         </div>
+
         <div class="event trisection">
           <h4 class="frame_title center">Ｈ28年 花見</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/events/089068331cefb8b8ad2034765d266cc1.jpg" alt=""></a>
         </div>
+
         <div class="event trisection">
           <h4 class="frame_title center">飲み会</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/events/5443495705d193759d566a4823fc74fc.jpg" alt=""></a>
         </div>
+
         <div class="event trisection">
           <h4 class="frame_title center">日本拳法 審判</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/events/DSC_2371_Rs.jpg" alt=""></a>
         </div>
+
         <div class="event trisection">
           <h4 class="frame_title center">Ｈ22 忘年会香住民宿・城崎・いずし</h4>
           <a href="" class="whiter"><img class="item" src="./pics/recruit/events/2730c4fc1dfca2fd54a90a9fb43e04fb.jpg" alt=""></a>
         </div>
       </div>
+
     </section>
 
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -174,7 +182,7 @@
     <div class="entry-title responsive">
         <h1 class="sec_title bold center">社員からの言葉</h1>
     </div>
-    <section class="inner words_from_employees">
+    <section class="inner words_from_employees inner-narrower">
       <div class="entry-title pc">
         <h1 class="sec_title bold center">社員からの言葉</h1>
       </div>
@@ -436,10 +444,10 @@
     <p>求人に関して皆様からよくご質問頂きます内容です。<br>
     ご不明点がありましたらお気軽にご相談下さい。<br>
     皆様の求人応募を心よりお待ちしております。</p>
-    <div class="subtitle">
+    <div class="subtitle pc">
       <h1 class="sec_title bold">よくあるご質問 一覧</h1>
     </div>
-    <ul class="ul-faq">
+    <ul class="ul-faq pc">
       <li><a href="#faq1">Q. 未経験でも大丈夫ですか?</a></li>
       <li><a href="#faq2">Q. 経験者ですが優遇して頂けますか?</a></li>
       <li><a href="#faq3">Q. 出張はありますか?</a></li>
@@ -450,7 +458,7 @@
 
     <!-- 要改善　ページ内リンク、ナビと被って見づらい。。 -->
     <!-- アコーディオンパネルにしたい！ -->
-    <br><p id="faq1"></p><br>
+    <div class="pc"><br><p id="faq1"></p><br></div>
     <div class="side">
         <h4 class="frame_title half"><a>Q. 未経験でも大丈夫ですか?</a></h4>
       {{-- <h4 class="frame_title half"><a id="faq1">Q. 未経験でも大丈夫ですか?</a></h4> --}}
@@ -459,13 +467,12 @@
           <p>A.</p>
           <p>はい、大丈夫です。初めは、簡単な作業からやって頂き徐々に仕事を覚えて頂きます。</p>
           <p>熟練した先輩方が、手取り足取り指導しますのでご安心ください。</p>
-          <a href="#faq-top" class="btn btn-faq right center">記事の先頭へ</a>
+          <a href="#faq-top" class="btn btn-faq right center pc">記事の先頭へ</a>
         </div>
-        <p></p>
       </div>
     </div>
 
-    <br><p id="faq2"></p><br>
+    <div class="pc"><br><p id="faq2"></p><br></div>
     <div class="side">
       <h4 class="frame_title half"><a>Q. 経験者ですが優遇して頂けますか?</a></h4>
       {{-- <h4 class="frame_title half"><a id="faq2">Q. 経験者ですが優遇して頂けますか?</a></h4> --}}
@@ -474,13 +481,12 @@
           <p>A.</p>
           <p>経験のある方には、どんどんと仕事をお任せします。</p>
           <p>ただ、過去の実績ではなく、現在の仕事態度を見させて頂き、安心して任せられると判断させて頂きました方には、優遇させて頂きます。</p>
-          <a href="#faq-top" class="btn btn-faq right center">記事の先頭へ</a>
+          <a href="#faq-top" class="btn btn-faq right center pc">記事の先頭へ</a>
         </div>
-        <p></p>
       </div>
     </div>
 
-    <br><p id="faq3"></p><br>
+    <div class="pc"><br><p id="faq3"></p><br></div>
     <div class="side">
       <h4 class="frame_title half"><a>Q. 出張はありますか?</a></h4>
       <div class="text half">
@@ -488,26 +494,24 @@
           <p>A.</p>
           <p>大阪市を中心とした近畿圏がメインですが、取引先は日本全国にあります。</p>
           <p>短期出張～長期出張まで、現場により出張があります。</p>
-          <a href="#faq-top" class="btn btn-faq right center">記事の先頭へ</a>
+          <a href="#faq-top" class="btn btn-faq right center pc">記事の先頭へ</a>
         </div>
-        <p></p>
       </div>
     </div>
 
-    <br><p id="faq4"></p><br>
+    <div class="pc"><br><p id="faq4"></p><br></div>
     <div class="side">
       <h4 class="frame_title half"><a>Q. 転勤はありますか?</a></h4>
       <div class="text half">
         <div class="faq-right">
           <p>A.</p>
           <p>転勤はございません。東大阪営業所での勤務となります。</p>
-          <a href="#faq-top" class="btn btn-faq right center">記事の先頭へ</a>
+          <a href="#faq-top" class="btn btn-faq right center pc">記事の先頭へ</a>
         </div>
-        <p></p>
       </div>
     </div>
 
-    <br><p id="faq5"></p><br>
+    <div class="pc"><br><p id="faq5"></p><br></div>
     <div class="side">
       <h4 class="frame_title half"><a>Q. 資格や免許が無いのですが大丈夫ですか?</a></h4>
       <div class="text half">
@@ -515,9 +519,8 @@
           <p>A.</p>
           <p>はい、大丈夫です。入社して頂いてからヤル気のある方には、各種資格を取得して頂いております。</p>
           <p>みなさん仕事をしながら、資格や免許を取得されていますのでご安心ください。</p>
-          <a href="#faq-top" class="btn btn-faq right center">記事の先頭へ</a>
+          <a href="#faq-top" class="btn btn-faq right center pc">記事の先頭へ</a>
         </div>
-        <p></p>
       </div>
     </div>
 

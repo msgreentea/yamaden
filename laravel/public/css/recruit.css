@@ -113,7 +113,7 @@ table td p {
     .half {
         width: 100%;
     }
-    .side {
+    .side:not(.banners) {
         display: flex;
         display: block;
     }
@@ -167,6 +167,36 @@ table td p {
         margin: 10px 0;
     }
 
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        events
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .events .frame_title {
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        faq
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .faq p {
+        padding-bottom: 0;
+    }
+    .faq .side {
+        /* padding: 0; */
+        margin: 0;
+    }
+    .faq .frame_title {
+        margin: 0;
+    }
+    .faq p {
+        line-height: 2;
+    }
+    .faq-right {
+        padding: 10px 0;
+    }
     /*
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
         header

@@ -357,7 +357,16 @@ header ul li:last-child {
         padding: 0 2%;
         /* padding: 0 4%; */
     }
+    p {
+        line-height: 1.5;
+        font-size: 14px;
+    }
 
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        titles
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
     .entry-title {
         background-color: #65d1fd;
         background-image: url(/pics/responsive/entry_title_bg.png);
