@@ -46,7 +46,9 @@
       <br>
       <p>建築現場におきましても腕を磨いて行く事のみならず、社会に貢献できる人間集団作りに邁進しております。</p>
       <!-- 要改善　ボタンhover時動きつけたいなぁ -->
-      <a class="btn btn-to_business center" href="{{ url('business') }}"><img src="./pics/index/business_btn.png" alt="業務内容はこちら"></a>
+      <a class="btn center pc" href="{{ url('business') }}"><img class="pc" src="./pics/index/business_btn.png" alt="業務内容はこちら"></a>
+      {{-- <a class="btn btn-to_business center pc" href="{{ url('business') }}"><img class="pc" src="./pics/index/business_btn.png" alt="業務内容はこちら"></a> --}}
+      <a class="btn cr-btn center responsive" href="{{ url('business') }}">業務内容はこちら</a>
     </div>
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -55,7 +57,7 @@
       スクロールエフェクト
       パララックス
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section id="parallax" class="blank_space parallax-bg">
+  <section id="parallax" class="blank_space parallax-bg pc">
 
   </section>
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -71,7 +73,9 @@
       必要な資格取得を支援(消防設備士、電気工事施工管理技師、 溶接、玉掛けなど、一生モノの資格が取得可能)<br>
       昇給年1回・賞与年2回 / 交通費全額支給<br>
       各種社会保険完備 / 各種手当有・資格手当有 / 社員旅行有</p>
-      <a class="btn btn-to_recruit center" href="{{ url('./recruit') }}"><img src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
+      <a class="btn center pc" href="{{ url('./recruit') }}"><img class="pc" src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a>
+      {{-- <a class="btn btn-to_recruit center pc" href="{{ url('./recruit') }}"><img class="pc" src="./pics/index/recruit_btn.png" alt="採用情報はこちら"></a> --}}
+      <a class="btn cr-btn center responsive" href="{{ url('business') }}">採用情報はこちら</a>
     </div>
   </section>
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -84,10 +88,10 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       to_result
     -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-<div class="entry-title responsive">
-    <h1 class="sec_title bold center">大きな現場から小さな現場まで各現場を担当</h1>
-</div>
-  <section class="to_result">
+  <div class="entry-title responsive">
+        <h1 class="sec_title bold center">大きな現場から小さな現場まで各現場を担当</h1>
+  </div>
+  <section class="to_result inner">
     <div class="text-to_result">
       <h2 class="pc">大きな現場から小さな現場まで各現場を担当</h2>
       <div class="text-to_result-bottom">
@@ -95,7 +99,9 @@
         <br>
         <p>手掛けて来ました実績の多さが、自信の証です。<br>
         丁寧・安全・迅速に電気設備工事してまいります。</p>
-        <a class="btn btn-to_result center" href="{{ url('./result') }}"><img src="./pics/index/results_btn.png" alt="施工実績はこちら"></a>
+        <a class="btn center pc" href="{{ url('./result') }}"><img class="pc" src="./pics/index/results_btn.png" alt="施工実績はこちら"></a>
+        {{-- <a class="btn btn-to_result center" href="{{ url('./result') }}"><img src="./pics/index/results_btn.png" alt="施工実績はこちら"></a> --}}
+        <a class="btn cr-btn center responsive" href="{{ url('./result') }}">施工実績はこちら</a>
       </div>
     </div>
   </section>

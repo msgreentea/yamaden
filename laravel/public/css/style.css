@@ -91,9 +91,9 @@ header {
     top: 30%;
     left: 210px;
 }
-.btn-to_business {
+/* .btn-to_business {
     padding-top: 70px;
-}
+} */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     blank space
@@ -137,9 +137,9 @@ header {
     height: 300px;
     margin: auto auto 50px auto;
 }
-.btn-to_recruit {
-    padding-top: 15px;
-}
+/* .btn-to_recruit {
+    margin-top: 15px;
+} */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     to_result
@@ -167,12 +167,18 @@ header {
 .text-to_result-bottom {
     padding-top: 415px;
 }
-.btn-to_result {
-    padding-top: 20px;
+.to_result .btn {
+    /* padding-top: 20px; */
+    /* margin: 20px 20px 0 auto; ``*/
     width: 350px;
-    margin: 0 20px 0 auto;
     display: block;
 }
+/* .btn-to_result {
+    width: 350px;
+    display: block;
+} */
+/* padding-top: 20px; */
+/* margin: 20px 20px 0 auto; */
 /*
 　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     新着情報
@@ -223,9 +229,36 @@ header {
         display: flex;
         flex-direction: column;
     }
+    /* テキストを左に寄せる。positionをunset */
     .left {
         text-align: left;
+        width: 100%;
+        color: black;
+        position: unset;
+        padding: 20px 0;
     }
+
+    /*
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        btn
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .btn {
+        padding: 0;
+        margin: 10px 0;
+    }
+    .cr-btn {
+        background-color: #0080c8;
+        color: white;
+        font-weight: bold;
+        padding: 12px;
+        border-radius: 5px;
+        text-decoration: underline;
+    }
+    .cr-btn:hover {
+        background-color: #072a56;
+    }
+
     /*
     　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
         header
@@ -270,12 +303,10 @@ header {
         width: 70%;
         margin: 0 auto;
     }
-    .text-to_business {
-        width: 100%;
-        color: black;
-        text-align: left;
-        position: unset;
-        padding: 20px 0;
+
+    .btn-to_business {
+        padding-top: 0;
+        /* margin-top: 20px; */
     }
 
     /*
@@ -287,7 +318,52 @@ header {
         background-image: none;
         height: auto;
     }
+    .btn-to_recruit {
+        padding-top: 0;
+    }
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        to_recruit
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .text-to_recruit {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
 
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        to_result
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .to_result {
+        background-image: none;
+        height: auto;
+        padding-top: 0;
+    }
+    .text-to_result {
+        width: 100%;
+        margin: 0;
+    }
+    .text-to_result-bottom {
+        padding: 0;
+    }
+    .to_result .btn {
+        width: 100%;
+    }
+
+    /*
+    　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+        新着情報
+        news
+    ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
+    */
+    .news {
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     /*
     　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
         n
