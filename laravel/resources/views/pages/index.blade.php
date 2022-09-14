@@ -12,25 +12,25 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
       responsive menu
   -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <section class="nav-icons responsive">
+  <section class="index-icons responsive">
       <ul class="trisection pics inner-narrower">
         <li class="bold">
-            <a href="{{ url('company')}}"><img src="/pics/responsive/index/nav-icons/icon_01.png" alt="会社概要"></a>
+            <a href="{{ url('company')}}"><img src="/pics/responsive/index/index-icons/icon_01.png" alt="会社概要"></a>
         </li>
         <li class="bold">
-            <a href="{{ url('business')}}"><img src="/pics/responsive/index/nav-icons/icon_02.png" alt="業務内容"></a>
+            <a href="{{ url('business')}}"><img src="/pics/responsive/index/index-icons/icon_02.png" alt="業務内容"></a>
         </li>
         <li class="bold">
-            <a href="{{ url('result')}}"><img src="/pics/responsive/index/nav-icons/icon_03.png" alt="施工実績"></a>
+            <a href="{{ url('result')}}"><img src="/pics/responsive/index/index-icons/icon_03.png" alt="施工実績"></a>
         </li>
         <li class="bold">
-            <a href="{{ url('recruit')}}"><img src="/pics/responsive/index/nav-icons/icon_04.png" alt="採用情報"></a>
+            <a href="{{ url('recruit')}}"><img src="/pics/responsive/index/index-icons/icon_04.png" alt="採用情報"></a>
         </li>
         <li class="bold">
-            <a href="{{ url('contact')}}"><img src="/pics/responsive/index/nav-icons/icon_05.png" alt="応募フォーム<br>お問い合わせ"></a>
+            <a href="{{ url('contact')}}"><img src="/pics/responsive/index/index-icons/icon_05.png" alt="応募フォーム<br>お問い合わせ"></a>
         </li>
         <li class="bold">
-            <a href="{{ url('contact')}}"><img src="/pics/responsive/index/nav-icons/icon_06.png" alt="ブログ"></a>
+            <a href="{{ url('contact')}}"><img src="/pics/responsive/index/index-icons/icon_06.png" alt="ブログ"></a>
         </li>
       </ul>
   </section>

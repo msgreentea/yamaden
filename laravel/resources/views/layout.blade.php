@@ -42,7 +42,16 @@
     </a>
     <nav class="responsive-nav responsive inner inner-narrower" width="100%">
         <div class="responsive-left">
-            <a href="">1</a>
+            <a href="">
+                {{-- <div id="menu" class="menu">
+                    <img src="/pics/responsive/nav-icons/sp1.gif" alt="">
+                </div> --}}
+                <div id="menu" class="menu">
+                    <span class="menu__line--top"></span>
+                    <span class="menu__line--middle"></span>
+                    <span class="menu__line--bottom"></span>
+                </div>
+            </a>
             <a href="">2</a>
         </div>
         <div class="responsive-right">
@@ -95,6 +104,22 @@
         <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>
             <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
     </ul>
+    {{-- <div id="menu" class="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div> --}}
+    <nav id="nav-hamburger" class="nav nav-hamburger">
+      <ul>
+        <li class="hamburger-item"><a href="index.html">ホーム</a></li>
+        <li class="hamburger-item"><a href="service.html">事業内容</a></li>
+        <li class="hamburger-item"><a href="news.html">ニュース</a></li>
+        <li class="hamburger-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="hamburger-item"><a href="company.html">会社概要</a></li>
+        <li class="hamburger-item"><a href="recruit.html">採用情報</a></li>
+        <li class="hamburger-item"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
 {{-- </footer> --}}
 {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
     <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>

@@ -271,20 +271,20 @@ header {
     }
     /*
     　＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
-        nav-icons
+        index-icons
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊
     */
-    .nav-icons {
+    .index-icons {
         padding: 30px 0;
     }
-    .nav-icons .trisection {
+    .index-icons .trisection {
         display: flex;
     }
-    .nav-icons .trisection li {
+    .index-icons .trisection li {
         width: 31%;
         display: block;
     }
-    .nav-icons .trisection img {
+    .index-icons .trisection img {
         width: 100%;
         /* margin-bottom: 30px; */
     }
