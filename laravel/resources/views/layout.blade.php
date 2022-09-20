@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="{{ asset('/css/common.css') }}">
   @yield('css')
   <link rel="shortcut icon" href="/pics/favicon.ico" type="image/x-icon">
+  {{-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> --}}
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  {{-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> --}}
+  <script src="https://kit.fontawesome.com/fc7bf4de58.js" crossorigin="anonymous"></script>
   <title>@yield('title') | 有限会社山田電気</title>
 </head>
 
@@ -15,52 +19,78 @@
   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         header
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
-  <header>
+  <header class="pc">
     <a href="{{ url('/')}}" class="underline pc"><small>@yield('title')|有限会社山田電気</small></a>
 
-    <ul id="header-normal" class="header-normal middle pc">
-    　<li class="bold"><a href="{{ url('./company') }}">会社概要</a></li>
-      <li class="bold"><a href="{{ url('./business')}}">業務内容</a></li>
-      <li class="bold"><a href="{{ url('./result')}}">施工実績</a></li>
-      <li class="bold"><a href="{{ url('./recruit')}}">採用情報</a></li>
-      <li class="bold"><a href="{{ url('./contact')}}">応募フォーム<br>お問い合わせ</a></li>
+    <ul id="header-normal" class="header-normal middle">
+        <li class="bold"><a href="{{ url('./company') }}">会社概要</a></li>
+        <li class="bold"><a href="{{ url('./business')}}">業務内容</a></li>
+        <li class="bold"><a href="{{ url('./result')}}">施工実績</a></li>
+        <li class="bold"><a href="{{ url('./recruit')}}">採用情報</a></li>
+        <li class="bold"><a href="{{ url('./contact')}}">応募フォーム<br>お問い合わせ</a></li>
     </ul>
-    {{-- <nav class="header-swiped padding center pc"> --}}
-      <ul class="header-swiped padding center inner pc">
+    <ul class="header-swiped padding center">
         <li class="bold"><a href="{{ url('company')}}">会社概要</a></li>
         <li class="bold"><a href="{{ url('business')}}">業務内容</a></li>
         <li class="bold"><a href="{{ url('result')}}">施工実績</a></li>
         <li class="bold"><a href="{{ url('recruit')}}">採用情報</a></li>
         <li class="bold"><a href="{{ url('contact')}}">応募フォーム<br>お問い合わせ</a></li>
-      </ul>
-    {{-- </nav> --}}
-    <a href="{{ url('/')}}" class="logo pc"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+    </ul>
+    <a href="{{ url('/')}}" class="logo"><img src="./pics/branding_box_bg.png" alt="企業ロゴ"></a>
+  </header>
+
+
 {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
 {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
-    <a href="{{ url('/')}}" class="responsive-logo responsive center">
-        <img src="./pics/favicon.ico" alt="企業ロゴ"><h1>有限会社山田電気</h1>
-    </a>
-    <nav class="responsive-nav responsive inner inner-narrower" width="100%">
-        <div class="responsive-left">
+  <header class="responsive">
+    {{-- <nav class="responsive-nav responsive inner-narrower pc">
+        <div class="responsive-nav-left responsive-nav-items">
             <a href="">
-                {{-- <div id="menu" class="menu">
-                    <img src="/pics/responsive/nav-icons/sp1.gif" alt="">
-                </div> --}}
                 <div id="menu" class="menu">
                     <span class="menu__line--top"></span>
                     <span class="menu__line--middle"></span>
                     <span class="menu__line--bottom"></span>
                 </div>
             </a>
-            <a href="">2</a>
+            <a href=""><i class="fa-sharp fa-solid fa-phone-volume fa-fw fa-lg icon-phone"></i></a>
         </div>
-        <div class="responsive-right">
-            <a href="">3</a>
-            <a href="">4</a>
+        <div class="responsive-nav-right responsive-nav-items">
+            <a href=""><i class="fa-solid fa-angle-up fa-fw fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-pencil"></i></a>
         </div>
+    </nav> --}}
+
+    <nav class="responsive-nav inner">
+        <ul>
+            <div class="responsive-nav-left responsive-nav-items">
+                <li>
+                    <a href="">
+                        {{-- <div id="menu" class="menu">
+                            <img src="/pics/responsive/nav-icons/sp1.gif" alt="">
+                        </div> --}}
+                        <div id="menu" class="menu">
+                            <span class="menu__line--top"></span>
+                            <span class="menu__line--middle"></span>
+                            <span class="menu__line--bottom"></span>
+                        </div>
+                    </a>
+                </li>
+                <li><a href=""><i class="fa-sharp fa-solid fa-phone-volume fa-fw fa-lg icon-phone"></i></a></li>
+            </div>
+            <div class="responsive-nav-right responsive-nav-items">
+                <li><a href=""><i class="fa-solid fa-angle-up fa-fw fa-2x icon-arrow"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-pencil"></i></a></li>
+            </div>
+        </ul>
     </nav>
-{{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
+
+    <a href="{{ url('/')}}" class="responsive-logo responsive center">
+        <img src="./pics/favicon.ico" alt="企業ロゴ"><h1>有限会社山田電気</h1>
+    </a>
   </header>
+{{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
+
+
 <main>
     @yield('content')
 
