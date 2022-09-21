@@ -218,12 +218,6 @@ header {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media (max-width: 1024px) {
-    .pc {
-        display: none;
-    }
-    .responsive {
-        display: inline;
-    }
     .responsive-logo {
         display: none;
     }

@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="{{ asset('/css/common.css') }}">
   @yield('css')
   <link rel="shortcut icon" href="/pics/favicon.ico" type="image/x-icon">
-  {{-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> --}}
   <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-  {{-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> --}}
   <script src="https://kit.fontawesome.com/fc7bf4de58.js" crossorigin="anonymous"></script>
   <title>@yield('title') | 有限会社山田電気</title>
 </head>
@@ -104,9 +102,9 @@
   <!--  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         footer
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-  <footer>
-    <img src="./pics/footer_box_bg.png" alt="" class="footer-logo pc">
-    <ul class="normal-footer pc">
+<footer class="pc footer-pc">
+    <img src="./pics/footer_box_bg.png" alt="" class="footer-logo">
+    <ul class="normal-footer">
       <a href="{{ url('/')}}" class="underline"><li>トップページ</li></a>
       <a href="{{ url('company')}}" class="underline"><li>会社概要</li></a>
       <a href="{{ url('business')}}" class="underline"><li>業務内容</li></a>
@@ -115,10 +113,12 @@
       <a href="{{ url('contact')}}" class="underline"><li>お問い合わせ応募フォーム</li></a>
       <a href="{{ url('blog')}}" class="underline"><li>オフィシャルブログ</li></a>
     </ul>
+    <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
+</footer>
 {{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
 {{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
-{{-- <footer class="responsive"> --}}
-    <ul class="responsive-footer responsive inner-narrower">
+<footer class="footer-responsive responsive">
+    <ul class="responsive-footer inner-narrower">
         <a href="{{ url('/')}}" class="underline"><li><h6>トップページ</h6>
             <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
         <a href="{{ url('company')}}" class="underline"><li><h6>会社概要</h6>
@@ -134,12 +134,8 @@
         <a href="{{ url('blog')}}" class="underline"><li><h6>オフィシャルブログ</h6>
             <img src="./pics/responsive/menu_icon.png" alt="＞"></li></a>
     </ul>
-    {{-- <div id="menu" class="menu">
-      <span class="menu__line--top"></span>
-      <span class="menu__line--middle"></span>
-      <span class="menu__line--bottom"></span>
-    </div> --}}
-    <nav id="nav-hamburger" class="nav nav-hamburger">
+
+    {{-- <nav id="nav-hamburger" class="nav nav-hamburger">
       <ul>
         <li class="hamburger-item"><a href="index.html">ホーム</a></li>
         <li class="hamburger-item"><a href="service.html">事業内容</a></li>
@@ -147,17 +143,11 @@
         <li class="hamburger-item"><a href="blog.html">社員ブログ</a></li>
         <li class="hamburger-item"><a href="company.html">会社概要</a></li>
         <li class="hamburger-item"><a href="recruit.html">採用情報</a></li>
-        <li class="hamburger-item"><a href="contact.html">お問い合わせ</a></li>
+        <li class="hamburger-item border"><a href="contact.html">お問い合わせ</a></li>
       </ul>
-    </nav>
-{{-- </footer> --}}
-{{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
-    <p class="center"><small>Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p>
-  </footer>
-
-{{-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --}}
-{{-- * * * * * * * * * * * * * * * * * * * * * レスポンシブ * * * * * * * * * * * * * * * * * * * * * --}}
-{{-- <p class="center"><small class="">Copyright (C) 有限会社山田電気 All Rights Reserved.</small></p> --}}
+    </nav> --}}
+    <p class="center"><small>Copyright (C) 有限会社山田電気</small></p>
+</footer>
 {{-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ --}}
 </body>
 </html>

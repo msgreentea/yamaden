@@ -671,10 +671,10 @@ footer {
         footer
     ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ ＊ * * * * *
     */
-    .normal-footer,
+    /* .normal-footer,
     footer img {
         display: none;
-    }
+    } */
     .responsive-footer {
         display: block;
         width: 100%;
@@ -698,9 +698,8 @@ footer {
         padding-right: 1%;
         align-items: center;
     }
+
     .responsive-footer li img {
-        /* width: auto; */
-        /* width: 10px; */
         height: 35px;
         display: block;
     }
@@ -715,6 +714,13 @@ footer {
     .responsive-footer small {
         font-weight: bold;
         font-size: 16px;
+    }
+    footer p small {
+        display: block;
+        width: 100%;
+        background-color: #075c9e;
+        color: white;
+        font-weight: bold;
     }
 
     /*  */
