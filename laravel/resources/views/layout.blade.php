@@ -79,7 +79,7 @@
             </div>
             <div class="responsive-nav-right responsive-nav-items">
                 <li><a href=""><i class="fa-solid fa-angle-up fa-fw fa-2x icon-arrow"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-pencil"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-fw fa-pencil"></i></a></li>
             </div>
         </ul>
     </nav>
