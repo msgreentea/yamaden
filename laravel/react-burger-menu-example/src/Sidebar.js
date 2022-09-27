@@ -1,17 +1,22 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import './App.css';
+import { slide as Menu } from 'react-burger-menu';
+import './Sidebar.css';
 
-function App() {
+export default props => {
   return (
-    <div className="App" id="outer-container">
-      <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-      <div id="page-wrap">
-        <h1>Cool Restaurant</h1>
-        <h2>Check out our offerings in the sidebar!</h2>
-      </div>
-    </div>
+    <Menu>
+      <a className="menu-item" href="/">
+        Home
+      </a>
+      <a className="menu-item" href="/salads">
+        Salads
+      </a>
+      <a className="menu-item" href="/pizzas">
+        Pizzas
+      </a>
+      <a className="menu-item" href="/desserts">
+        Desserts
+      </a>
+    </Menu>
   );
-}
-
-export default App;
+};
